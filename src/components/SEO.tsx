@@ -14,7 +14,7 @@ const pages:Record<string,[string,string]>={
 '/admin':['Administration','Restricted ESSYRA catalogue, stock, service and policy administration.'],
 '/policies':['Policies and privacy','Read about quotations, delivery enquiries, customer care and room-photo privacy.'],
 '/contact':['Contact ESSYRA','Contact Umamah Ibreeq, founder of ESSYRA, at +92 317 2197499.']};
-export default function SEO(){const {pathname}=useLocation(),{products}=useStore();useEffect(()=>{const product=pathname.startsWith('/product/')?products.find(p=>'/product/'+p.id===pathname):undefined;
+export default function SEO(){const {pathname:rawPathname}=useLocation(),pathname=rawPathname.replace(/\/+$/,'')||'/',{products}=useStore();useEffect(()=>{const product=pathname.startsWith('/product/')?products.find(p=>'/product/'+p.id===pathname):undefined;
 const [title,description]=product?[product.name,product.description]:pages[pathname]||['Page not found','This ESSYRA page could not be found. Explore the furniture collection or return home.'];
 const base=import.meta.env.VITE_SITE_URL||'https://essyra-home.quietibex64.chatgpt.site',url=base+pathname;
 document.title=title+' — ESSYRA';const meta=(name:string,content:string,property=false)=>{let el=document.querySelector<HTMLMetaElement>(`meta[${property?'property':'name'}="${name}"]`);if(!el){el=document.createElement('meta');el.setAttribute(property?'property':'name',name);document.head.append(el)}el.content=content};
