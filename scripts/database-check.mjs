@@ -12,7 +12,7 @@ create function extensions.digest(text,text) returns bytea language sql as $$sel
 grant usage on schema auth,storage to anon,authenticated,service_role;grant execute on all functions in schema auth to anon,authenticated,service_role;`);
 // PGlite supplies PostgreSQL but not pgcrypto here; only the digest implementation is stubbed.
 const migration=(await readFile('supabase/migrations/202610190001_core.sql','utf8')).replace('create extension if not exists pgcrypto with schema extensions;','');
-await db.exec(migration);await db.exec(await readFile('supabase/migrations/202610190002_media_and_operations.sql','utf8'));console.log('Migration parsed and applied in PostgreSQL.');
+await db.exec(migration);await db.exec(await readFile('supabase/migrations/202610190002_media_and_operations.sql','utf8'));await db.exec(await readFile('supabase/migrations/202610190003_store_checkout.sql','utf8'));console.log('Migrations parsed and applied in PostgreSQL.');
 const alice='11111111-1111-4111-a111-111111111111',bob='22222222-2222-4222-a222-222222222222',guest='33333333-3333-4333-a333-333333333333';
 await db.exec(`insert into auth.users(id) values('${alice}'),('${bob}'),('${guest}');
 insert into public.categories(id,slug,name) values('44444444-4444-4444-a444-444444444444','living','Living room');
@@ -34,4 +34,24 @@ await db.exec(reserve('bbbbbbbb-bbbb-4bbb-abbb-bbbbbbbbbbbb'));await db.exec(res
 const job=(await db.query('select id from public.preview_jobs limit 1')).rows[0].id;await db.exec(`select public.finalize_preview('${job}',false);select public.finalize_preview('${job}',false);`);assert.equal((await db.query('select reserved from public.quota_windows')).rows[0].reserved,2);
 await asUser(bob);assert.equal((await db.query('select * from public.preview_jobs')).rows.length,0);assert.equal((await db.query('select * from public.room_assets')).rows.length,0);
 await asUser(guest,true);await db.exec(`select public.delete_room('99999999-9999-4999-a999-999999999999')`);await db.exec('reset role');assert.equal((await db.query('select reserved from public.quota_windows')).rows[0].reserved,0);
-console.log('Passed: duplicate checkout, stock, price conflicts, RLS isolation, role escalation denial, guest checkout denial, disabled-provider no reservation, guest cap, duplicate jobs, once-only release and room deletion cancellation.');await db.close();
+console.log('Passed: duplicate checkout, stock, price conflicts, RLS isolation, role escalation denial, guest checkout denial, disabled-provider no reservation, guest cap, duplicate jobs, once-only release and room deletion cancellation.');await db.exec('reset role');
+await db.exec("update public.variants set stock_on_hand=10 where sku='ESS-TABLE'");
+await asUser(alice);
+const customer=JSON.stringify({name:'Test Customer',phone:'03001234567',city:'Lahore',address:'Test address for database checks only',notes:''});
+const storeCheckout=`select public.place_store_order('aaaaaaaa-0000-4000-a000-000000000001','[{"productId":"table","variant":"brown","quantity":2}]','${customer}','cod',200000)`;
+await db.exec(storeCheckout);await db.exec(storeCheckout);
+assert.equal((await db.query('select * from public.store_orders')).rows.length,1);
+const order=(await db.query('select * from public.store_orders')).rows[0];assert.equal(order.payment_state,'unpaid');assert.equal(order.order_state,'received');assert.equal(order.total_paisa,200000);
+await fails(storeCheckout.replace('200000','1000'),'must reject duplicate-key payload changes');
+await fails(storeCheckout.replace('000000000001','000000000002').replace('200000','1000'),'must reject client price tampering');
+await fails(storeCheckout.replace('000000000001','000000000003').replace("'cod'","'online'"),'unconfigured online payments must not create orders');
+await fails(`update public.store_orders set payment_state='paid' where id='${order.id}'`,'customer must not mark paid');
+await fails(`select public.manage_store_order('${order.id}','delivered')`,'customer cannot fulfil orders');
+await asUser(bob);assert.equal((await db.query('select * from public.store_orders')).rows.length,0);
+await asUser(guest,true);await fails(storeCheckout,'anonymous users cannot submit orders');
+await db.exec('reset role');await db.exec(`update public.profiles set role='administrator' where id='${bob}'`);await asUser(bob);await fails(`select public.manage_store_order('${order.id}','processing')`,'admin must have MFA');
+await db.exec(`select set_config('request.jwt.claims','{"is_anonymous":false,"aal":"aal2"}',false)`);
+await fails(`select public.manage_store_order('${order.id}','delivered','','',true)`,'cannot skip fulfilment states');
+await db.exec(`select public.manage_store_order('${order.id}','processing');select public.manage_store_order('${order.id}','dispatched','Carrier','TRACK-123');select public.manage_store_order('${order.id}','delivered','Carrier','TRACK-123',true)`);
+assert.equal((await db.query('select payment_state from public.store_orders')).rows[0].payment_state,'paid');
+console.log('Passed store checkout: server totals, idempotent retries, key conflicts, disabled gateway, private orders, no customer payment writes, guest denial, MFA and fulfilment transitions.');await db.close();

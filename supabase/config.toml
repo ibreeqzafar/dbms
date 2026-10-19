@@ -11,3 +11,7 @@ verify_jwt = false
 verify_jwt = false
 [functions.maintenance]
 verify_jwt = false
+
+# Prepared only: deploy after the checkout migration is authorised and installed.
+[functions.store-payments]
+verify_jwt = false

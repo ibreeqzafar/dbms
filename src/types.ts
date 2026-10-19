@@ -6,4 +6,4 @@ export type Order={id:string;ownerId:string;createdAt:string;status:'demo-confir
 export type SavedDesign={roomId?:string;id:string;ownerId:string;name:string;createdAt:string;products:string[];preferences:string};
 export type PreviewJob={id:string;ownerId:string;windowKey:string;status:'reserved'|'running'|'completed'|'failed'|'cancelled';createdAt:string;expiresAt:string;productId:string;mode:'illustrative-demo'|'provider';error?:string};
 export type Policy={id:string;title:string;body:string};
-export type Settings={recommendationsPaused:boolean;previewsPaused:boolean;supportPaused:boolean;policies:Policy[]};
+export type Settings={recommendationsPaused:boolean;previewsPaused:boolean;supportPaused:boolean;onlinePaymentsEnabled?:boolean;checkoutPaused?:boolean;policies:Policy[]};

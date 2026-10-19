@@ -5,3 +5,12 @@ Video: https://videos.pexels.com/video-files/29466011/12684178_1920_1080_60fps.m
 Poster: matching Pexels video thumbnail
 License: Pexels license https://www.pexels.com/license/
 Downloaded for a furnished-interior inspiration section. No endorsement or exact ESSYRA inventory is claimed.
+
+ESSYRA five-room film (TR Studio / Pexels), free-to-use footage:
+Living: https://www.pexels.com/video/luxurious-modern-living-room-interior-29466011/
+Dining: https://www.pexels.com/video/elegant-luxury-dining-room-interior-with-chandelier-29466021/
+Kitchen: https://www.pexels.com/video/modern-kitchen-interior-design-with-elegant-marble-finishes-29466033/
+Bedroom: https://www.pexels.com/video/luxurious-bedroom-with-elegant-decor-and-furniture-29466037/
+Entrance: https://www.pexels.com/video/luxurious-modern-interior-entrance-hallway-29466047/
+License: https://www.pexels.com/license/
+Playback uses the original range-supported Pexels CDN videos. This is a curated real-footage sequence, not a spatially navigable 3D model.
