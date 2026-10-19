@@ -5,3 +5,5 @@ UI/UX Pro Max informed an editorial, warm minimal interior-design direction: ivo
 Responsive breakpoints at 640, 850 and 1150 px collapse grids, navigation and the studio. Visible labels, focus rings, alt text, status/error messages, keyboard controls and reduced-motion behaviour support accessibility. The persistent design and support entries remain separate. Real AI, demo commerce, approximate models and photo consent are described at their point of use.
 
 The three-dimensional house loads only on its route, uses modest geometry, caps pixel ratio and provides a scene error boundary/fallback. The original sofa asset shares geometry and materials. Source maps are disabled in production.
+
+The homepage now leads with a realistic photographic interior film rather than the geometric layout study. A sticky category bar supports direct shopping by furniture type. Film seeking follows natural page scroll; chapters, playback, skip and reduced-motion controls provide alternatives. Product imagery stays free of reference badges. Film provenance is recorded in public/films/CREDITS.txt.

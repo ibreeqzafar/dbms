@@ -4,7 +4,8 @@ import {useStore} from '../lib/store';
 const pages:Record<string,[string,string]>={
 '/':['Find the soul of your place','Walk through five rooms, explore 517 sample furniture pieces, and compose your own room with ESSYRA.'],
 '/collection':['The furniture collection','Explore sample furniture pieces with sample product photos, demonstration specifications and clearly labelled ESSYRA demo prices.'],
-'/walkthrough':['The interactive 3D house','Explore five furnished rooms with keyboard, touch or guided controls and discover furniture through product hotspots.'],
+'/walkthrough':['The ESSYRA interior film','Explore a realistic interior film at your own pace, then discover furniture for every room.'],
+'/walkthrough/layout':['Interactive layout study','Explore the original approximate furniture layout with keyboard and touch controls.'],
 '/studio':['Interior design studio','Match furniture to your budget, style and explicit measurements. Compose free illustrative room overlays with separate photo-saving consent.'],
 '/account/recovery':['Reset your password','Choose a new ESSYRA password using your verified recovery link.'],
 '/account':['Your account','Access your own ESSYRA practice orders and privately saved room designs.'],
