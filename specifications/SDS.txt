@@ -1,0 +1,162 @@
+Interior Design Recommendator SDS
+Software Design Specification | Version 2.0 | 9 October 2026
+1 Introduction
+Purpose and scope
+SRS 2.0 and Level 0–2 DFDs define a 2,000+ product store with interior AI and separate support chat. Scope: variants/search, accounts, wishlist/cart, orders, private designs and admin. Prototype: demo orders/local overlay; real services require integrations. Future: multi-item preview, mobile, subscriptions, AR/3D. PKR; Asia/Karachi reset.
+Users and access
+Role
+Access boundary
+Guest
+Browse, use general support and design advice, and request real previews within the guest allowance. Sign in to save or checkout.
+Customer
+Access their own profile, cart, wishlist, orders, room assets, jobs and saved designs.
+Administrator
+Maintain catalogue, stock, policies, accounts, orders and AI settings through audited permissions.
+2 System Architecture
+Architectural style
+React/TypeScript/Vite/Tailwind presents the site; Supabase Auth verifies identity, PostgreSQL stores relational data and Storage separates public products/private rooms. Edge Functions/SQL enforce sensitive operations. AI adapters isolate providers; models never authorize, price, allocate stock or verify payment.
+
+Figure 1  Application architecture and integration boundaries
+Processing and deployment boundaries
+Commit jobs before HTTP 202. Scheduled/local processors use leases, provider IDs and bounded retries within runtime limits; background functions alone are not durable queues. Bound image decoding/metadata removal before hosted uploads. Browser gets public settings/session; server retains privileged/provider keys.
+Deployment and operations
+Deploy Vite, migrations/RLS, separate buckets, secret-configured functions and protected job/search/cleanup schedules. Start with demos/overlay; verify credentials, capacity, ownership and failures before enabling integrations. Log IDs/states/retries/once-only transitions; monitor queue age/errors/cleanup/cap. Document database/media recovery; test isolated restore. No automatic paid fallback.
+3 Component and User Interface Design
+Modules and SRS mapping
+Process and module
+Main operations
+SRS mapping
+1.0 Manage Access
+Verify identity/status/profiles; guest claim requires proof of both owners. Sign-in switches quota without transferring credits.
+FR-01-02
+2.0 Manage Catalogue
+Search/filter/page; validate SKUs/CSV; archive; atomically audit catalogue changes and queue search updates.
+FR-03-04FR-25-26
+3.0 Shopping and Orders
+Cart/wishlist; live quotes; explicit checkout; once-only stock; owned orders and audited fulfillment.
+FR-05-08FR-21
+4.0 Support Chat
+Retrieve live facts/policies and owned orders; route design to 5.0; return safe answers/links.
+FR-22-24
+5.0 Interior Design
+Validate room; rank eligible variants/vibe/fit; shared-quota previews; private save/delete.
+FR-09-20
+6.0 Policies and Operations
+Publish policies; configure/pause AI; inspect failures; authorize account actions; separate processing/saving/marketing consents.
+FR-27-28
+Recommendation and chatbot design
+Normalize to centimeters; code filters active available variants by quantity, hard budget, placement bounds, allowed rotation and height. Missing bounds: UNKNOWN; measured failure: NO FIT. Measure passage clearance separately. Validate ranked IDs; show live facts, 1–2 vibe sentences and fit notes. Empty inputs invite styles; no matches invite revised constraints without silent relaxation.
+Support uses approved read-only tools, never generated SQL/order/payment actions. Unknown answers show approved contact; tickets require a working confirmation flow.
+Screen design
+Screen group
+Required interaction
+Storefront
+Home, categories, search and variant details; 24 cards per results page; clear stock and price.
+Design workspace
+Up to three photos, one base view, preferences and placement inputs; advice cards and Try This Item.
+Preview workspace
+Credit notice, real job state, original/result comparison, illustrative notice, overlay controls and save/delete.
+Customer account
+Sign-in, profile, wishlist, cart, confirmed checkout, own orders and private saved designs.
+Admin dashboard
+Catalogue and CSV preview, stock, order status, policy publishing, account status, quota and audit views.
+Technology choices
+Layer
+Selected design
+Presentation
+TypeScript, React, Vite and Tailwind CSS
+Identity
+Supabase Auth and server-controlled profiles
+Application
+Supabase Edge Functions and SQL routines
+Data
+Supabase PostgreSQL
+Media
+Supabase Storage
+Asynchronous work
+PostgreSQL job leases and a configured processor
+AI integration
+Configurable text, vision and image adapters
+4 Database Design
+UUID primary keys, foreign keys and UTC timestamps identify records; private storage object keys replace public room URLs.
+Record group
+Essential keys and fields
+Profile and AISubject
+Profile → AuthUser: role/active. AISubject: exactly one account/guest owner, tier/claim.
+Category Product ProductVariant
+Category parent; Product category/active; Variant product, unique SKU, minor-unit price/currency, cm dimensions, on-hand/reserved stock.
+Cart CartItem WishlistItem
+Cart owner; CartItem cart/variant/quantity; Wishlist owner/variant. Unique owner/variant prevents duplicates.
+Order OrderItem
+Order owner/key/totals/address and separate order/payment/fulfillment states; lines retain variant/quantity and immutable SKU/price.
+Inventory and payment records
+Reservation: order line/held quantity/expiry; Adjustment: once-only stock action; Payment/Event: provider reference/unique event ID.
+RoomSession RoomAsset
+Room: subject/preferences/budget scope/bounds; Asset: room/private key/type/expiry/deletion; ≤3 active sources.
+Recommendation records
+Run: room/input/version; Item: run/variant/rank/vibe/fit.
+SavedDesign SavedDesignAsset
+Design: owner/room; DesignAsset joins explicitly retained unexpired files.
+PreviewJob PreviewResult
+Job: subject/room/variant/mode/key/state/lease/provider ID/timestamps; Result: job/private asset.
+QuotaWindow QuotaEntry
+Window: subject/original boundaries/limit/reserved/consumed; unique job Entry: RESERVED/CONSUMED/RELEASED.
+Policies and operations
+Policies, settings, audit, consent, search outbox and cleanup store approved knowledge, actors, configuration, retries and expiry work.
+Relationships and normalization
+Category–Product, Product–Variant, Room–Asset and Order–Item are one-to-many. OrderItem links variants; ProductStyle/SavedDesignAsset link styles/assets. Masters use 3NF; order snapshots preserve confirmed values.
+Constraints and database objects
+Require quantities >0, nonnegative money and stock, reserved stock no greater than on-hand stock, valid states and unique request keys per owner and operation. Use integer minor units for money and decimal centimeters for dimensions. Archive catalogue records without deleting order history.
+Protected SQL atomically enforces quota, checkout and stock; updated_at stamps changes. Catalogue writes include audit/search outbox. Public views expose approved fields; owner summaries retain RLS. Index SKU/search, owner+created_at, job state/lease and asset expiry. ProductMedia/Style/GuestSession support core records.
+5 Interior Design and Preview Workflows
+Room intake and matching
+Require processing consent. Accept up to three JPEG/PNG/WebP photos, ≤10 MB and 20 megapixels each; validate actual bytes/decoding, strip unnecessary metadata, assign owner/expiry and choose one base. Photos do not establish measured dimensions. Enabled vision reports uncertain visible features; otherwise use entered preferences.
+Shared quota and job state
+
+Figure 2  Persisted preview states and credit finalization
+Both entry points share exact-variant previews. Guests: three total; accounts: initially ten/day when capacity permits. Compute Asia/Karachi midnight; store UTC windows; in-flight jobs retain original window. Available=max(0,limit−consumed−reserved). Text/support/samples/overlays use no image credits; local drag/resize/rotate requires no upload. Show mode/credits/reset/sign-up/illustrative notice. Disabled rendering reserves nothing.
+Reservation transaction
+Verify owner, room, variant, consent, mode and cap/pause. Resolve duplicate key; changed input conflicts. Lock quota window; reject exhaustion; atomically insert QUEUED job/RESERVED entry. Regeneration needs new key.
+Execution and finalization
+Lease job; persist provider ID; submit permitted room/variant/placement. Poll or verify callbacks; reconcile uncertain outcomes before retry. Store private output; atomically finalize success/CONSUMED or failure/cancel/expiry/RELEASED once, despite duplicates.
+Fallback and asset lifecycle
+Delete unsaved sources after terminal processing; abandoned sources/unsaved previews expire within 24 hours. Owners save selected unexpired assets privately. Delete/expiry blocks access, cancels jobs and retries derivative cleanup. Recheck before publication; discard late results. Successful credits stay consumed; deleted sources require reupload.
+6 Interface and Transaction Design
+API contract
+Routes use Supabase /functions/v1; Auth uses its SDK. Shared schemas validate JSON. Verified sessions determine identity, never browser owner_id; responses include request ID/safe error code.
+Method and route
+Result and integrity
+GET catalog
+Public active search/filter/sort/page.
+POST rooms; POST recommendations
+Owned validated uploads/consent → room/expiry; owned constraints → variants/vibe/fit.
+POST preview-jobs; GET preview-jobs/{id}
+Atomic credit reservation → 202/job/status/quota; owner recovers result; repeated key reuses job.
+POST designs; DELETE rooms/{id}
+Customer saves selected unexpired assets; owner blocks room and schedules cleanup.
+POST cart; POST checkout
+Customer variants/quantity and confirmed quote/delivery/key → cart or unique order.
+POST chat
+Grounded answer/references/links; owned order query needs customer identity.
+PATCH admin/catalogue; PATCH admin/settings
+Admin/MFA; validated edits/CSV outcomes; audited updates/search outbox.
+POST payment-webhook
+Optional: verify signature and deduplicate event before reconciliation.
+Checkout and inventory transaction
+Quote live prices/quantities/delivery/charges/discounts; customer confirms. Transaction resolves key, locks variants in stable order, rechecks stock/totals and creates immutable lines/reservations once. Conflicts abort for review. Available=on-hand−active reservations; uniquely keyed policy actions commit/release stock once. Separate payment/fulfillment; verified events/authorized COD establish payment. Label demos; collect no card details.
+Errors and recovery
+Errors: 400/422 invalid input; 401 missing identity; 403 denied access; 404 inaccessible record; 409 price/stock/key conflict; 429 quota/abuse; 503 paused/unavailable integration. Quota errors include remaining/reset/sign-up guidance. Roll back failures and log safe request IDs without secrets/room content.
+7 Security Deployment and Verification
+Security and privacy controls
+Use HTTPS, validation, parameterized access and private-data/storage RLS. Anonymous Auth uses authenticated role: check anonymous status/owner. Customers are owner-scoped; admins require server role, active status/MFA. Restrict/authorize SQL routines; fix search_path. Server holds secrets; prompts/retrieval use read-only allowlists. Check room owner/expiry/deletion; disable private caching. Separate consents/honor withdrawal; enforce abuse limits/global cap.
+Verification plan and release criteria
+Area
+Required checks
+Capacity
+2,000+ products, 24 cards/page; catalogue p95 ≤2 s at 20 users; preview acceptance p95 ≤3 s excluding upload; generation measured separately.
+Correctness
+CSV/archive retrieval; no matches/unknown fit/rotations/hard budgets; concurrent credits/reset/duplicates/failures; price changes/stock races/repeated checkout/payment events.
+Security and recovery
+Ownership/guest claim/MFA/expiry/deletion/late results; support restrictions; outage/restart/pause/demo labels; isolated restore.
+Usability and AI quality
+WCAG 2.2 AA keyboard/labels/status; evaluate 20 permitted rooms for variant fidelity, room preservation and placement.

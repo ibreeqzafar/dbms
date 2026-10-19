@@ -1,0 +1,13 @@
+project_id = "essyra"
+
+[functions.recommendations]
+verify_jwt = false
+[functions.preview-jobs]
+verify_jwt = true
+[functions.preview-worker]
+verify_jwt = false
+
+[functions.room-assets]
+verify_jwt = false
+[functions.maintenance]
+verify_jwt = false

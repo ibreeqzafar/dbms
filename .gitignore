@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo
+*.tar.gz
+scripts/.ikea-reference-cache/
+src/data/catalogue-import-checkpoint.json
+src/data/catalogue-import-progress.json
+
+*-desktop.png
+*-mobile.png

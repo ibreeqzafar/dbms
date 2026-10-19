@@ -1,0 +1,9 @@
+export type Room='living'|'bedroom'|'office'|'dining'|'kitchen';
+export type Product={active?:boolean;id:string;name:string;brand:string;category:Room;subcategory:string;description:string;dimensions:{width:number|null;depth:number|null;height:number|null};materials:string[];colors:string[];sourceUrl:string;referenceImage:string|null;demoPricePKR:number;demoStock:number;tags:string[];style:string};
+export type CartLine={productId:string;quantity:number;variant:string};
+export type Profile={id:string;name:string;email:string;role:'customer'|'administrator';demo:boolean};
+export type Order={id:string;ownerId:string;createdAt:string;status:'demo-confirmed';total:number;key:string;lines:{product:Product;quantity:number;variant:string;unitPrice:number}[]};
+export type SavedDesign={roomId?:string;id:string;ownerId:string;name:string;createdAt:string;products:string[];preferences:string};
+export type PreviewJob={id:string;ownerId:string;windowKey:string;status:'reserved'|'running'|'completed'|'failed'|'cancelled';createdAt:string;expiresAt:string;productId:string;mode:'illustrative-demo'|'provider';error?:string};
+export type Policy={id:string;title:string;body:string};
+export type Settings={recommendationsPaused:boolean;previewsPaused:boolean;supportPaused:boolean;policies:Policy[]};

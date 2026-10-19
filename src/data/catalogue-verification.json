@@ -1,0 +1,583 @@
+{
+  "verifiedOn": "2026-10-19",
+  "count": 517,
+  "rooms": {
+    "living": 119,
+    "bedroom": 121,
+    "office": 111,
+    "dining": 114,
+    "kitchen": 52
+  },
+  "categoryPages": [
+    {
+      "room": "living",
+      "url": "https://www.ikea.com/gb/en/cat/tv-benches-10810/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/tv-benches-10810/",
+      "candidateCount": 77
+    },
+    {
+      "room": "living",
+      "url": "https://www.ikea.com/gb/en/cat/sofas-fu003/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/sofas-fu003/",
+      "candidateCount": 107
+    },
+    {
+      "room": "living",
+      "url": "https://www.ikea.com/gb/en/cat/armchairs-chaise-longues-fu006/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/armchairs-fu006/",
+      "candidateCount": 102
+    },
+    {
+      "room": "living",
+      "url": "https://www.ikea.com/gb/en/cat/coffee-side-tables-10705/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/living-room-tables-10705/",
+      "candidateCount": 46
+    },
+    {
+      "room": "bedroom",
+      "url": "https://www.ikea.com/gb/en/cat/wardrobes-19053/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/wardrobes-19053/",
+      "candidateCount": 55
+    },
+    {
+      "room": "bedroom",
+      "url": "https://www.ikea.com/gb/en/cat/bedside-tables-20656/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/bedside-tables-20656/",
+      "candidateCount": 38
+    },
+    {
+      "room": "office",
+      "url": "https://www.ikea.com/gb/en/cat/desks-computer-desks-20649/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/desks-computer-desks-20649/",
+      "candidateCount": 75
+    },
+    {
+      "room": "bedroom",
+      "url": "https://www.ikea.com/gb/en/cat/bed-frames-19074/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/products-products/",
+      "candidateCount": 0
+    },
+    {
+      "room": "dining",
+      "url": "https://www.ikea.com/gb/en/cat/dining-chairs-25220/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/kitchen-chairs-25220/",
+      "candidateCount": 54
+    },
+    {
+      "room": "office",
+      "url": "https://www.ikea.com/gb/en/cat/desk-chairs-20652/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/desk-chairs-20652/",
+      "candidateCount": 53
+    },
+    {
+      "room": "bedroom",
+      "url": "https://www.ikea.com/gb/en/cat/chests-of-drawers-10451/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/chest-of-drawers-10451/",
+      "candidateCount": 49
+    },
+    {
+      "room": "kitchen",
+      "url": "https://www.ikea.com/gb/en/cat/kitchen-trolleys-islands-10471/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/kitchen-islands-trolleys-10471/",
+      "candidateCount": 55
+    },
+    {
+      "room": "dining",
+      "url": "https://www.ikea.com/gb/en/cat/bar-stools-chairs-20864/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/bar-stools-chairs-20864/",
+      "candidateCount": 24
+    },
+    {
+      "room": "living",
+      "url": "https://www.ikea.com/gb/en/cat/bookcases-shelving-units-st002/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/bookcases-shelving-units-st002/",
+      "candidateCount": 77
+    },
+    {
+      "room": "dining",
+      "url": "https://www.ikea.com/gb/en/cat/dining-tables-21825/",
+      "finalUrl": "https://www.ikea.com/gb/en/cat/dining-tables-21825/",
+      "candidateCount": 44
+    }
+  ],
+  "fetchFailures": [],
+  "missingDimensions": {
+    "width": 12,
+    "depth": 15,
+    "height": 74
+  },
+  "excludedComponents": [
+    "https://www.ikea.com/gb/en/p/norrava-lid-bamboo-50591774/",
+    "https://www.ikea.com/gb/en/p/norrava-lid-bamboo-00542861/",
+    "https://www.ikea.com/gb/en/p/vadholma-rack-for-kitchen-island-black-80402381/"
+  ],
+  "finishVerification": {
+    "initiallyEmpty": 53,
+    "filledFromOfficialProductNames": 53,
+    "remainingEmpty": 0,
+    "sources": [
+      {
+        "id": "landskrona-armchair-gunnared-dark-grey-wood-s09269720",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/landskrona-armchair-gunnared-dark-grey-wood-s09269720/",
+        "sourceProductName": "LANDSKRONA Armchair - Gunnared dark grey/wood",
+        "colors": [
+          "Gunnared dark grey",
+          "wood"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-lappviken-white-s89330691",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-lappviken-white-s89330691/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Lappviken white 180x42x38 cm",
+        "colors": [
+          "white",
+          "Lappviken white"
+        ]
+      },
+      {
+        "id": "lack-tv-bench-white-00625521",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lack-tv-bench-white-00625521/",
+        "sourceProductName": "LACK TV bench - white 90x36x45 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-black-brown-bjoerkoeviken-oak-veneer-s29622904",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-black-brown-bjoerkoeviken-oak-veneer-s29622904/",
+        "sourceProductName": "BESTÅ TV bench with doors - black-brown Björköviken/oak veneer 180x42x38 cm",
+        "colors": [
+          "black-brown Björköviken",
+          "oak veneer"
+        ]
+      },
+      {
+        "id": "raskog-norrava-trolley-with-lid-beige-s79622096",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-beige-s79622096/",
+        "sourceProductName": "RÅSKOG / NORRÅVA Trolley with lid - beige 35x45x77 cm",
+        "colors": [
+          "beige"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-black-brown-lappviken-black-brown-s79330663",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-black-brown-lappviken-black-brown-s79330663/",
+        "sourceProductName": "BESTÅ TV bench with doors - black-brown/Lappviken black-brown 180x42x38 cm",
+        "colors": [
+          "black-brown",
+          "Lappviken black-brown"
+        ]
+      },
+      {
+        "id": "raskog-norrava-trolley-with-lid-pink-s19622155",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-pink-s19622155/",
+        "sourceProductName": "RÅSKOG / NORRÅVA Trolley with lid - pink 35x45x77 cm",
+        "colors": [
+          "pink"
+        ]
+      },
+      {
+        "id": "lagkapten-desk-white-stained-oak-effect-white-s29638113",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lagkapten-desk-white-stained-oak-effect-white-s29638113/",
+        "sourceProductName": "LAGKAPTEN Desk - white stained/oak effect white 120x60 cm",
+        "colors": [
+          "white stained",
+          "oak effect white"
+        ]
+      },
+      {
+        "id": "lastare-wardrobe-combination-white-s79613308",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lastare-wardrobe-combination-white-s79613308/",
+        "sourceProductName": "LASTARE Wardrobe combination - white 60x42x201 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-krukmakare-dark-grey-green-s69597380",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-krukmakare-dark-grey-green-s69597380/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Krukmakare dark grey-green 180x42x38 cm",
+        "colors": [
+          "white",
+          "Krukmakare dark grey-green"
+        ]
+      },
+      {
+        "id": "raskog-norrava-trolley-with-lid-red-brown-s99622236",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-red-brown-s99622236/",
+        "sourceProductName": "RÅSKOG / NORRÅVA Trolley with lid - red-brown 35x45x77 cm",
+        "colors": [
+          "red-brown"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-bjoerkoeviken-oak-veneer-s59622912",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-bjoerkoeviken-oak-veneer-s59622912/",
+        "sourceProductName": "BESTÅ TV bench with doors - white Björköviken/oak veneer 180x42x38 cm",
+        "colors": [
+          "white Björköviken",
+          "oak veneer"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-black-brown-hedeviken-brown-stained-oak-veneer-s39622908",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-black-brown-hedeviken-brown-stained-oak-veneer-s39622908/",
+        "sourceProductName": "BESTÅ TV bench with doors - black-brown Hedeviken/brown stained oak veneer 180x42x38 cm",
+        "colors": [
+          "black-brown Hedeviken",
+          "brown stained oak veneer"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-dark-grey-00538618",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-dark-grey-00538618/",
+        "sourceProductName": "BESTÅ TV bench - dark grey 180x40x64 cm",
+        "colors": [
+          "dark grey"
+        ]
+      },
+      {
+        "id": "raskog-norrava-trolley-with-lid-red-brown-s89622232",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-red-brown-s89622232/",
+        "sourceProductName": "RÅSKOG / NORRÅVA Trolley with lid - red-brown 28x38x61 cm",
+        "colors": [
+          "red-brown"
+        ]
+      },
+      {
+        "id": "kjellarne-corner-desk-white-40613677",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/kjellarne-corner-desk-white-40613677/",
+        "sourceProductName": "KJELLARNE Corner desk - white 138x130 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-black-brown-70474062",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-black-brown-70474062/",
+        "sourceProductName": "BESTÅ TV bench - black-brown 180x40x38 cm",
+        "colors": [
+          "black-brown"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-white-70299879",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-white-70299879/",
+        "sourceProductName": "BESTÅ TV bench - white 180x40x64 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-black-brown-80299874",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-black-brown-80299874/",
+        "sourceProductName": "BESTÅ TV bench - black-brown 180x40x64 cm",
+        "colors": [
+          "black-brown"
+        ]
+      },
+      {
+        "id": "raskog-norrava-trolley-with-lid-light-turquoise-s39622159",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-light-turquoise-s39622159/",
+        "sourceProductName": "RÅSKOG / NORRÅVA Trolley with lid - light turquoise 35x45x77 cm",
+        "colors": [
+          "light turquoise"
+        ]
+      },
+      {
+        "id": "lastare-wardrobe-combination-white-blue-s29630777",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lastare-wardrobe-combination-white-blue-s29630777/",
+        "sourceProductName": "LASTARE Wardrobe combination - white/blue 60x42x201 cm",
+        "colors": [
+          "white",
+          "blue"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-white-00474070",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-white-00474070/",
+        "sourceProductName": "BESTÅ TV bench - white 180x40x38 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-black-brown-90294512",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-black-brown-90294512/",
+        "sourceProductName": "BESTÅ TV bench - black-brown 120x40x38 cm",
+        "colors": [
+          "black-brown"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-black-brown-40299885",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-black-brown-40299885/",
+        "sourceProductName": "BESTÅ TV bench - black-brown 120x40x64 cm",
+        "colors": [
+          "black-brown"
+        ]
+      },
+      {
+        "id": "eket-media-storage-combination-dark-grey-s89580982",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-media-storage-combination-dark-grey-s89580982/",
+        "sourceProductName": "EKET Media storage combination - dark grey 210x35x35 cm",
+        "colors": [
+          "dark grey"
+        ]
+      },
+      {
+        "id": "eket-media-storage-combination-white-s29580980",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-media-storage-combination-white-s29580980/",
+        "sourceProductName": "EKET Media storage combination - white 210x35x35 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "skalsta-chair-plastic-black-tubular-metal-light-grey-beige-s69608468",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/skalsta-chair-plastic-black-tubular-metal-light-grey-beige-s69608468/",
+        "sourceProductName": "SKÅLSTA Chair - plastic black/tubular metal/light grey-beige",
+        "colors": [
+          "plastic black",
+          "tubular metal",
+          "light grey-beige"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-lappviken-stubbarp-white-s89622958",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-lappviken-stubbarp-white-s89622958/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Lappviken/Stubbarp white 240x42x76 cm",
+        "colors": [
+          "white",
+          "Lappviken",
+          "Stubbarp white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-bjoerkoeviken-stubbarp-oak-veneer-s59622969",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-bjoerkoeviken-stubbarp-oak-veneer-s59622969/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Björköviken/Stubbarp oak veneer 240x42x76 cm",
+        "colors": [
+          "white",
+          "Björköviken",
+          "Stubbarp oak veneer"
+        ]
+      },
+      {
+        "id": "dalfred-bar-stool-birch-80613091",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/dalfred-bar-stool-birch-80613091/",
+        "sourceProductName": "DALFRED Bar stool - birch 63-74 cm",
+        "colors": [
+          "birch"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-hedeviken-stubbarp-oak-veneer-s39622965",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-hedeviken-stubbarp-oak-veneer-s39622965/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Hedeviken/Stubbarp oak veneer 240x42x76 cm",
+        "colors": [
+          "white",
+          "Hedeviken",
+          "Stubbarp oak veneer"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-lappviken-stubbarp-white-s69622959",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-lappviken-stubbarp-white-s69622959/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Lappviken/Stubbarp white 240x42x50 cm",
+        "colors": [
+          "white",
+          "Lappviken",
+          "Stubbarp white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-black-brown-bjoerkoeviken-stubbarp-oak-veneer-s79622968",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-black-brown-bjoerkoeviken-stubbarp-oak-veneer-s79622968/",
+        "sourceProductName": "BESTÅ TV bench with doors - black-brown/Björköviken/Stubbarp oak veneer 240x42x76 cm",
+        "colors": [
+          "black-brown",
+          "Björköviken",
+          "Stubbarp oak veneer"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-pipmakare-white-s59622974",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-pipmakare-white-s59622974/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Pipmakare white 240x42x50 cm",
+        "colors": [
+          "white",
+          "Pipmakare white"
+        ]
+      },
+      {
+        "id": "besta-tv-bench-with-doors-white-bjoerkoeviken-stubbarp-oak-veneer-s99622967",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/besta-tv-bench-with-doors-white-bjoerkoeviken-stubbarp-oak-veneer-s99622967/",
+        "sourceProductName": "BESTÅ TV bench with doors - white/Björköviken/Stubbarp oak veneer 240x42x50 cm",
+        "colors": [
+          "white",
+          "Björköviken",
+          "Stubbarp oak veneer"
+        ]
+      },
+      {
+        "id": "eket-wall-cabinet-with-2-drawers-brown-walnut-effect-s89581175",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-wall-cabinet-with-2-drawers-brown-walnut-effect-s89581175/",
+        "sourceProductName": "EKET Wall cabinet with 2 drawers - brown walnut effect 35x35x35 cm",
+        "colors": [
+          "brown walnut effect"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-gunnared-beige-white-s59508228",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-gunnared-beige-white-s59508228/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Gunnared beige/white",
+        "colors": [
+          "Gunnared beige",
+          "white"
+        ]
+      },
+      {
+        "id": "ektorp-3-seat-sofa-mangbyn-brown-multicolour-s59619759",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-mangbyn-brown-multicolour-s59619759/",
+        "sourceProductName": "EKTORP 3-seat sofa - Mångbyn brown/multicolour",
+        "colors": [
+          "Mångbyn brown",
+          "multicolour"
+        ]
+      },
+      {
+        "id": "eket-wall-cabinet-with-2-drawers-dark-grey-s39329384",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-wall-cabinet-with-2-drawers-dark-grey-s39329384/",
+        "sourceProductName": "EKET Wall cabinet with 2 drawers - dark grey 35x35x35 cm",
+        "colors": [
+          "dark grey"
+        ]
+      },
+      {
+        "id": "eket-wall-cabinet-with-2-drawers-white-s69329387",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-wall-cabinet-with-2-drawers-white-s69329387/",
+        "sourceProductName": "EKET Wall cabinet with 2 drawers - white 35x35x35 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-gunnared-beige-black-s69508223",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-gunnared-beige-black-s69508223/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Gunnared beige/black",
+        "colors": [
+          "Gunnared beige",
+          "black"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-grann-light-brown-black-s89508203",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-grann-light-brown-black-s89508203/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Grann light brown/black",
+        "colors": [
+          "Grann light brown",
+          "black"
+        ]
+      },
+      {
+        "id": "ektorp-3-seat-sofa-alhamn-dark-grey-blue-s59628706",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-alhamn-dark-grey-blue-s59628706/",
+        "sourceProductName": "EKTORP 3-seat sofa - Alhamn dark grey-blue",
+        "colors": [
+          "Alhamn dark grey-blue"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-grann-light-brown-white-s59508209",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-grann-light-brown-white-s59508209/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Grann light brown/white",
+        "colors": [
+          "Grann light brown",
+          "white"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-gunnared-dark-grey-black-s09508235",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-gunnared-dark-grey-black-s09508235/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Gunnared dark grey/black",
+        "colors": [
+          "Gunnared dark grey",
+          "black"
+        ]
+      },
+      {
+        "id": "eket-media-storage-combination-brown-walnut-effect-s69580983",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/eket-media-storage-combination-brown-walnut-effect-s69580983/",
+        "sourceProductName": "EKET Media storage combination - brown walnut effect 210x35x35 cm",
+        "colors": [
+          "brown walnut effect"
+        ]
+      },
+      {
+        "id": "oerfjaell-childrens-desk-chair-white-vissle-light-green-90541433",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/oerfjaell-childrens-desk-chair-white-vissle-light-green-90541433/",
+        "sourceProductName": "ÖRFJÄLL Children's desk chair - white/Vissle light green",
+        "colors": [
+          "white",
+          "Vissle light green"
+        ]
+      },
+      {
+        "id": "lastare-chest-of-4-drawers-white-40599351",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lastare-chest-of-4-drawers-white-40599351/",
+        "sourceProductName": "LASTARE Chest of 4 drawers - white 60x42x100 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "loberget-sibben-childrens-desk-chair-white-s59337670",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/loberget-sibben-childrens-desk-chair-white-s59337670/",
+        "sourceProductName": "LOBERGET / SIBBEN Children's desk chair - white",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "lastare-chest-of-4-drawers-white-20599352",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/lastare-chest-of-4-drawers-white-20599352/",
+        "sourceProductName": "LASTARE Chest of 4 drawers - white 40x42x100 cm",
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "id": "ektorp-3-seat-sofa-blekinge-white-s29628703",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-blekinge-white-s29628703/",
+        "sourceProductName": "EKTORP 3-seat sofa - Blekinge white",
+        "colors": [
+          "Blekinge white"
+        ]
+      },
+      {
+        "id": "tossberg-malskaer-swivel-chair-gunnared-dark-grey-white-s69508242",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/tossberg-malskaer-swivel-chair-gunnared-dark-grey-white-s69508242/",
+        "sourceProductName": "TOSSBERG / MALSKÄR Swivel chair - Gunnared dark grey/white",
+        "colors": [
+          "Gunnared dark grey",
+          "white"
+        ]
+      },
+      {
+        "id": "skogsta-bar-stool-with-backrest-counter-height-acacia-50620677",
+        "sourceUrl": "https://www.ikea.com/gb/en/p/skogsta-bar-stool-with-backrest-counter-height-acacia-50620677/",
+        "sourceProductName": "SKOGSTA Bar stool with backrest - counter height acacia 62 cm",
+        "colors": [
+          "counter height acacia"
+        ]
+      }
+    ]
+  },
+  "dimensionFieldMapping": {
+    "width": "schema.org Product.width in cm",
+    "depth": "schema.org Product.depth in cm",
+    "height": "schema.org Product.height in cm; absent/variable stays null",
+    "swappedFields": false
+  }
+}

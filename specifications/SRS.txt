@@ -1,0 +1,209 @@
+Interior Design Recommendator SRS
+Software Requirements Specification | Version 2.0 | 9 October 2026
+1 Introduction
+Purpose
+A 2,000+ product furniture store provides interior AI advice and separate support chat. Customers submit room photos/preferences, receive explained catalogue recommendations, preview exact variants and choose whether to buy.
+Scope
+Scope: catalogue/variants, filters, accounts, wishlist/cart, confirmed orders/history, private designs, recommendations, single-item previews, shared quotas and admin. Catalogue changes update shopping and AI retrieval. Prototype uses labeled demo orders/local overlays; real rendering, payments, notifications and tickets need integrations. Future: multi-item previews, mobile apps, subscriptions, AR and 3D.
+Objectives
+Objectives: grounded advice, explained suitability, budget/size checks, private room content, AI cost control and normalized transactional data.
+2 Overall Description
+Product overview
+Technology: TypeScript, React, Vite and Tailwind CSS; Supabase PostgreSQL, Auth, Storage and Edge Functions. Server functions enforce permissions, prices, quotas and AI calls; persistent jobs and a configured processor support asynchronous previews. Product media is public; room assets are private.
+Main users
+User
+Responsibilities and access
+Guest
+Browse and search; obtain design advice; use general support chat; request previews within the guest allowance. Sign in to save designs or checkout.
+Customer
+Manage their own profile, wishlist, cart, orders and saved designs; use the daily preview allowance; delete their room content.
+Administrator
+Maintain products, variants, stock and policies; manage orders and permitted account actions; configure AI limits; review failures and audit records.
+AI roles and operating assumptions
+Interior AI ranks eligible furniture and explains its effect; support answers approved shopping/owned-order queries. AI cannot authorize, order or verify payment. Retailers supply accurate data/policies; customers provide measurements, which ordinary photos cannot prove. PKR currency; Asia/Karachi reset; English with translation-ready text. Credentials/capacity are deployment dependencies.
+Acceptance checks
+Verify updates/archives, empty preferences/no matches, missing measurements, hard budgets/size/orientation, concurrent quota reservations, refunds/releases, reset timing, duplicate jobs/orders/payment events, guest claims, unauthorized access, expiry/deletion/late results, price changes, stock races, outage recovery, truthful demo labels, private saving, isolated restoration, accessibility and the 20-room image evaluation.
+3 Functional Requirements
+ID
+Area
+Brief requirement
+FR-01
+Accounts
+Configured registration, sign-in/out and recovery; verify identity and deny disabled accounts.
+FR-02
+Permissions
+Server verifies roles and ownership for every protected action.
+FR-03
+Catalogue
+2,000+ products; pagination, sorting and category, price, size, color, material, style and availability filters.
+FR-04
+Variants
+Show exact variant SKU, images, description, dimensions, material, currency, price and stock; update facts/images on selection.
+FR-05
+Wishlist and cart
+Wishlist add/remove; cart quantities >0/add/update/remove. Totals are estimates; checkout rechecks prices/stock.
+FR-06
+Checkout
+Customer confirms delivery and amount; server validates methods, charges, discounts and stock; one order per request key.
+FR-07
+Inventory
+Transactional stock allocation prevents overselling; failed, cancelled or expired holds release once.
+FR-08
+Order history
+Customers view only owned lines/totals/payment/fulfillment; admin changes log actor/time; label demo orders.
+FR-09
+Room inputs
+Up to three photos, one base view, room type, optional measurements/units, budget scope, style, colors, retained furniture and placement.
+FR-10
+Upload handling
+Show privacy notice; validate bytes/size/dimensions, strip unnecessary metadata and record owner/expiry.
+FR-11
+Room understanding
+Enabled vision describes visible features with uncertainty; otherwise use entered preferences. Photos never prove measured dimensions.
+FR-12
+Recommendations
+Retrieve active available variants before AI ranking; validate IDs/show live facts. Empty preferences invite style choices; no eligible items show no match.
+FR-13
+Budget and fit
+Code checks quantity, hard budget and supplied placement bounds; missing measurements mean unknown fit. Measure doorway/walking clearance separately.
+FR-14
+Interior vibe
+Each recommendation gives 1–2 room-specific vibe sentences and a practical fit note; catalogue supplies product/material facts.
+3 Functional Requirements Continued
+ID
+Area
+Brief requirement
+FR-15
+Try This Item
+Shared Try This Item previews one exact variant in one base photo with optional target region.
+FR-16
+AI previews
+Atomically reserve shared credit and persist asynchronous job; show actual status, original/result and illustrative notice.
+FR-17
+Preview modes
+Label AI, samples and overlays. Local drag/resize/rotate overlay needs no room upload or image credit.
+FR-18
+Quota display
+All real preview entry points share server allowance; show remaining credits, action cost and reset/sign-up prompt.
+FR-19
+Job history
+Persist inputs, variant, mode, state, provider ID and times; refresh recovers status; repeated keys reuse job.
+FR-20
+Save and delete
+Customer explicitly saves selected unexpired private assets or deletes content; deletion blocks access, cancels work and removes derivatives/late results.
+FR-21
+Purchase choice
+Preview/regenerate/save never orders. Customer selects variant/quantity and confirms server-calculated checkout.
+FR-22
+Support chatbot
+Site-wide support answers approved product, price, stock, delivery, returns, payment, account and usage questions with valid links.
+FR-23
+Order assistance
+Order queries require sign-in/ownership. Chat explains orders or guides confirmation; cannot create orders or prove payment.
+FR-24
+Fallback support
+Route design questions to interior assistant; unknown facts/outages show approved support; tickets only when implemented.
+FR-25
+Catalogue admin
+Admin adds/edits/archives catalogue/media/stock. CSV preview matches stable SKUs, validates rows and reports accepted/rejected records.
+FR-26
+Catalogue updates
+Catalogue writes atomically include audit/search events; processor retries refresh; live checks reject stale/archived candidates.
+FR-27
+Policies and AI settings
+Admin publishes policies, configures limits/reset, pauses AI and inspects usage/failures. Paused previews reserve no credits.
+FR-28
+Consent and promotions
+Separate processing, saving and marketing consent; configured promotions require opt-in and withdrawal stops campaigns.
+4 Non Functional Requirements
+ID
+Category
+Verification target
+NFR-01
+Capacity and speed
+At least 2,000 products plus variants and 24 cards per page. Prototype targets: catalogue API p95 within 2 seconds with 20 concurrent users; preview acceptance within 3 seconds excluding upload. Measure external generation latency separately.
+NFR-02
+Security
+Use HTTPS, validated inputs, parameterized access, server-only secrets, ownership checks and restricted roles. Public admin access must require MFA. Unauthorized order, asset, design and job reads must fail.
+NFR-03
+Privacy and uploads
+Keep room files private with limited access and separate consent. Accept JPEG, PNG or WebP up to 10 MB and 20 megapixels per photo; reject corrupt files before provider calls.
+NFR-04
+Reliability
+Persist jobs; use bounded retries and a configured processor. Provider outages must leave catalogue shopping usable. Duplicate requests and execution must not duplicate orders, stock deductions or credit finalization.
+NFR-05
+Usability
+Provide responsive layouts, keyboard controls, labeled forms, readable contrast and announced errors and job status. Target WCAG 2.2 AA for the main browsing, design and checkout flows.
+NFR-06
+AI quality
+Validate every recommended variant and display an explicit fit status. Evaluate enabled image generation on 20 permitted room images for variant fidelity, room preservation and placement before public use.
+NFR-07
+Maintenance and recovery
+Use shared input schemas, versioned SQL migrations and configurable provider adapters. Document database and media recovery; demonstrate restoration of sample products and orders in an isolated environment.
+NFR-08
+Cost control
+Stay within configured free capacity with a global cap and pause switch. Unavailable services must show fallback behavior and reject new AI jobs without credits or an automatic paid fallback.
+5 Database Requirements
+Data area
+Main entities and essential records
+Identity
+AuthUser, Profile, GuestSession, AISubject. Identity, roles, active status and one verified account or guest owner per AI subject.
+Catalogue
+Category, Product, ProductVariant, ProductMedia, Style. Unique SKU, attributes, dimensions, price, currency, stock and media for each variant.
+Shopping
+WishlistItem, Cart, CartItem, Order, OrderItem. Selected variants, quantities, confirmed totals and immutable purchase snapshots.
+Stock and payment
+InventoryReservation, InventoryAdjustment, Payment, PaymentEvent. Once-only stock changes; independent payment state and deduplicated verified events.
+Room designs
+RoomSession, RoomAsset, RecommendationRun, RecommendationItem, SavedDesign. Preferences, private files, current variant links, vibe text, fit status and saved ownership.
+Preview quota
+PreviewJob, PreviewResult, QuotaWindow, QuotaEntry. Job state, request key and one reserved, consumed or released credit entry per real AI job.
+Knowledge and operations
+PolicyVersion, SearchUpdateEvent, Setting, AuditLog, ConsentRecord, CleanupTask. Approved knowledge, settings, audits, consent, update retries and asset deletion work.
+Use primary/foreign keys, 3NF, unique SKUs/request keys, valid-state checks, quantities >0 and nonnegative stock. Money uses integer minor units; dimensions use decimal centimeters. Transactions protect checkout/quota; indexes support search/ownership. Category–Product, Product–Variant and RoomSession–Asset are one-to-many; OrderItem links orders/variants. Archive products while preserving historical orders.
+6 Business Rules
+ID
+Rule
+BR-01
+Only active existing variants with enough stock; live database facts control identity, materials, price and availability.
+BR-02
+One real-preview allowance; text, support, samples and local overlays use no image credits.
+BR-03
+Guests: three total previews per validated identity, then sign-up; abuse limits/global cap also apply.
+BR-04
+Accounts: configurable, initially ten/day when capacity permits; midnight Asia/Karachi reset shown exactly. No guest-credit transfer.
+BR-05
+Reserve once on acceptance; consume once on success; release once on failure/cancel/expiry. Exclude reservations from availability; retain original window.
+BR-06
+Duplicate keys reuse job/order; regeneration needs new key. Reconcile uncertain provider outcomes before resubmission.
+BR-07
+Fit uses supplied placement bounds/permitted orientation; missing measurements mean unknown. Room size/images cannot prove passage clearance.
+BR-08
+Live price × quantity meets hard budget; sum whole-selection budgets. Never silently relax budget, size or availability.
+BR-09
+Delete unsaved sources after terminal processing; abandoned sources/unsaved previews expire within 24 hours. Saved assets private; block expired access/retry cleanup.
+BR-10
+Explicit checkout; once-only stock; immutable snapshots; payment separate. Verify provider events or authorized COD; AI/redirects prove nothing; demo collects no card data.
+BR-11
+Preview is illustrative; original product photos/dimensions remain purchase reference. Marketing needs separate revocable opt-in.
+7 Use Cases
+Use case
+Main flow and exceptions
+UC-01 Register/sign in
+Guest/customer completes a configured identity flow; invalid credentials fail. Account allowance starts after sign-in. Transfer guest room content only through a verified claim.
+UC-02 Obtain recommendations
+Guest/customer enters room/preferences. Backend validates constraints and ranking and returns current variants, vibe and fit notes. Missing measurements show unknown; no matches invite revised constraints.
+UC-03 Preview
+Owner with a base photo selects Try This Item. Check variant, mode and quota; reserve a credit and queue. Success consumes, failure releases, duplicate requests reuse. Disabled rendering offers a labeled local overlay.
+UC-04 Limit reached
+Reject new AI previews without reservation. Guests see sign-up; customers see daily reset. Shopping/text advice remain available under separate rate limits.
+UC-05 Save/delete
+Customer explicitly saves owned unexpired assets privately. Delete blocks access, cancels jobs and removes original/derived/late outputs. Guests sign in to save; expired assets cannot be restored by saving.
+UC-06 Support
+Approved retrieval answers product/policy/site questions with links. Order queries require ownership. Unknown answers route to configured support; design questions route to interior advice.
+UC-07 Confirm order
+Recheck cart totals/stock; customer confirms delivery and amount. A transaction creates one order and allocation. Duplicates return that order; conflicts require review. Payment awaits verification; test checkout is labeled demo.
+UC-08 Admin maintenance
+Preview edits/CSV, apply valid records, and commit database, audit and search events. Processor refreshes retrieval/retries failures. Admins publish policy, change limits or pause previews; validation errors explain rejected changes.
+8 Conclusion
+Grounded advice and illustrative previews support shopping; separate AI roles, quotas, private assets and transactions protect ownership and purchase history.
