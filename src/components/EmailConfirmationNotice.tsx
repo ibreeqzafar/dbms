@@ -1,0 +1,7 @@
+import {useEffect,useState} from 'react';
+import {supabase} from '../lib/supabase';
+export default function EmailConfirmationNotice({email,onSignIn}:{email:string;onSignIn:()=>void}){
+ const [seconds,setSeconds]=useState(60),[busy,setBusy]=useState(false),[message,setMessage]=useState('');
+ useEffect(()=>{const timer=setInterval(()=>setSeconds(s=>Math.max(0,s-1)),1000);return()=>clearInterval(timer)},[]);
+ return <section className="email-confirmation" aria-label="Verify your email"><h2>Check your inbox.</h2><p>Use the verification link requested for <strong>{email}</strong> to confirm that the email belongs to you, then sign in. Check spam or junk if you cannot find it.</p><div className="button-row"><button type="button" className="btn secondary small" disabled={busy||seconds>0} onClick={async()=>{if(!supabase)return;setBusy(true);setMessage('');try{const {error}=await supabase.auth.resend({type:'signup',email,options:{emailRedirectTo:location.origin+'/account'}});if(error)throw error;setMessage('Another verification email was requested. Please check your inbox.');setSeconds(60)}catch{setMessage('A verification email could not be requested. Please try again later or contact our team.')}finally{setBusy(false)}}}>{busy?'Requesting…':seconds>0?`Resend available in ${seconds}s`:'Resend verification email'}</button><button type="button" className="text-button" onClick={onSignIn}>Return to sign in</button></div><p role="status">{message}</p></section>
+}

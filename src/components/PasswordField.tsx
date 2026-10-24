@@ -1,0 +1,7 @@
+import {useState} from 'react';
+import {suggestStrongPassword} from '../lib/password';
+export default function PasswordField({value,onChange,registration=false,id='account-password'}:{value:string;onChange:(value:string)=>void;registration?:boolean;id?:string}){
+ const [visible,setVisible]=useState(false),[generated,setGenerated]=useState(false);
+ const generate=()=>{onChange(suggestStrongPassword());setVisible(true);setGenerated(true)};
+ return <div className="password-field"><label htmlFor={id}>{registration?'Create password':'Password'}</label><input id={id} name="password" type={visible?'text':'password'} value={value} onChange={e=>{onChange(e.target.value);setGenerated(false)}} required minLength={8} autoComplete={registration?'new-password':'current-password'} aria-describedby={registration?id+'-hint':undefined}/><div className="button-row password-actions"><button type="button" className="text-button" aria-controls={id} aria-pressed={visible} onClick={()=>setVisible(v=>!v)}>{visible?'Hide password':'Show password'}</button>{registration&&<button type="button" className="text-button" onClick={generate}>Suggest a strong password</button>}</div>{registration&&<small id={id+'-hint'}>At least 8 characters. Use a unique password; 12 or more characters is recommended. Your browser or password manager may also suggest one. Save a generated password in your password manager.</small>}{generated&&<small role="status">A strong password has been generated. Save it in your password manager and confirm it below.</small>}</div>
+}
