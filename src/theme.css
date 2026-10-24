@@ -1,0 +1,39 @@
+:root{color-scheme:light;--surface:#eae7dd;--surface-soft:#efede5;--action:#30372f;--action-ink:#fff}
+:root[data-theme=dark]{color-scheme:dark;--paper:#191f1a;--ink:#f0eee5;--muted:#b9c1b3;--line:#465044;--sand:#293127;--wood:#d6ba93;--surface:#252e25;--surface-soft:#202920;--action:#ded5c1;--action-ink:#20271f;color:var(--ink);background:var(--paper)}
+body{background:var(--paper);color:var(--ink)}
+.theme-toggle{flex-shrink:0;border-radius:50%;color:var(--ink)}
+.header-tools{gap:16px}.header-tools>.theme-toggle{width:44px;height:44px}
+[data-theme=dark] :focus-visible{outline-color:#d8be91}
+[data-theme=dark] .site-header nav{background:var(--paper)}
+[data-theme=dark] .site-header nav a.active{border-color:var(--ink)}
+[data-theme=dark] .category-bar{background:#202920f5;border-color:var(--line)}
+[data-theme=dark] .category-bar-label{color:var(--muted);border-color:var(--line)}
+[data-theme=dark] .category-bar-links a:hover,[data-theme=dark] .category-bar-links a.selected{color:#f2e3c4;border-color:#d9c29d}
+[data-theme=dark] .design-invitation,[data-theme=dark] .footer,[data-theme=dark] .catalogue-filters,[data-theme=dark] .checkout-card,[data-theme=dark] .success-state,[data-theme=dark] .account-signin,[data-theme=dark] .preview-workspace{background:var(--surface)}
+[data-theme=dark] .empty-state,[data-theme=dark] .mode-notice,[data-theme=dark] .upload-zone,[data-theme=dark] .chat-bubble.guide{background:var(--surface-soft);border-color:var(--line)}
+[data-theme=dark] .room-canvas{background:#303a2e}
+[data-theme=dark] .footer small,[data-theme=dark] .footer p,[data-theme=dark] .footer-note p,[data-theme=dark] .footer-bottom,[data-theme=dark] .product-meta,[data-theme=dark] .breadcrumbs,[data-theme=dark] .page-head>p,[data-theme=dark] .sort{color:var(--muted)}
+[data-theme=dark] .btn{background:var(--action);border-color:var(--action);color:var(--action-ink)}
+[data-theme=dark] .btn:hover{background:#eee5d2;border-color:#eee5d2}
+[data-theme=dark] .btn.secondary{background:transparent;border-color:#9eac95;color:var(--ink)}
+[data-theme=dark] .btn.secondary:hover,[data-theme=dark] .icon-btn:hover{background:#ffffff12}
+[data-theme=dark] .btn.ivory{background:#f2efe5;color:#233223;border-color:#f2efe5}
+[data-theme=dark] input,[data-theme=dark] select,[data-theme=dark] textarea{border-color:#7c8a74;background:transparent;color:var(--ink)}
+[data-theme=dark] select option{background:var(--surface);color:var(--ink)}
+[data-theme=dark] input::placeholder,[data-theme=dark] textarea::placeholder{color:#aeb9a7;opacity:1}
+[data-theme=dark] input[type=checkbox],[data-theme=dark] input[type=radio],[data-theme=dark] input[type=range]{accent-color:#dac6a5}
+[data-theme=dark] .tiny-label,[data-theme=dark] .text-link,[data-theme=dark] .quantity-control,[data-theme=dark] .footer-bottom,[data-theme=dark] .concierge,[data-theme=dark] .concierge>header,[data-theme=dark] .concierge>form,[data-theme=dark] .quick-questions button{border-color:var(--line)}
+[data-theme=dark] .error{background:#3d2820;color:#ffceb3;border-color:#e6a17c}
+[data-theme=dark] .design-invitation-photo>span,[data-theme=dark] .floating-note{background:#243023ed;color:var(--ink)}
+[data-theme=dark] .design-agent{color:var(--ink)}
+[data-theme=dark] .support-agent{background:#ded5c1;color:#20271f}
+[data-theme=dark] .chat-bubble.you{background:#43503d;color:#f9f5ea}
+[data-theme=dark] .chat-product .btn{color:var(--action-ink)!important}
+[data-theme=dark] .wish-button,[data-theme=dark] .product-discover{background:#f7f5ef;color:#30372f}
+/* Product photography keeps a neutral light well in both themes. */
+[data-theme=dark] .product-image,[data-theme=dark] .product-detail-image,[data-theme=dark] .cart-img,[data-theme=dark] .recommendation-img{background:#eeece5;color:#30372f;color-scheme:light}
+/* Overlays on the architectural study need their own dark surface and readable ink. */
+[data-theme=dark] .room-indicator,[data-theme=dark] .mode-switch,[data-theme=dark] .scene-reset,[data-theme=dark] .scene-product,[data-theme=dark] .scene-nearby,[data-theme=dark] .move-pad button,[data-theme=dark] .guided-control,[data-theme=dark] .scene-bottom>p,[data-theme=dark] .scene-hotspot>span,[data-theme=dark] .scene-hotspot>small,[data-theme=dark] .illustrative-label{background:#202a20ed;color:var(--ink);border-color:var(--line)}
+[data-theme=dark] .scene-loading,[data-theme=dark] .scene-fallback{background:var(--surface);color:var(--ink)}
+[data-theme=dark] .chat-checkout .checkout-card{background:transparent}
+@media(max-width:640px){.header-tools{gap:6px}.header-tools>.theme-toggle{width:40px;min-width:40px;height:44px}.site-header{gap:12px}.wordmark{font-size:27px;letter-spacing:3px}.wordmark>span{font-size:5.5px;letter-spacing:1.7px}}

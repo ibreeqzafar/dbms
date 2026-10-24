@@ -101,7 +101,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/klippan-2-seat-sofa-flackarp-medium-grey-s89246862/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/klippan-2-seat-sofa-flackarp-medium-grey__1576944_pe1032838_s5.jpg",
-    "demoPricePKR": 22000,
+    "demoPricePKR": 13200,
     "demoStock": 12,
     "tags": [
       "living",
@@ -2835,8 +2835,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -2873,8 +2873,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -3044,8 +3044,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -5713,7 +5713,7 @@
     "description": "STOCKHOLM tv benches reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 178.8,
-      "depth": 42.0,
+      "depth": 42,
       "height": 56.2
     },
     "materials": [
@@ -5785,9 +5785,9 @@
     "subcategory": "Solitaire wardrobes",
     "description": "GULLABERG solitaire wardrobes reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 128.0,
-      "depth": 64.0,
-      "height": 201.0
+      "width": 128,
+      "depth": 64,
+      "height": 201
     },
     "materials": [
       "Particle- and fibreboard with plastic honeycomb filling",
@@ -5924,8 +5924,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -6136,8 +6136,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige, white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -6370,8 +6370,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -6470,8 +6470,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige, white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -7459,8 +7459,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -7826,8 +7826,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in grey. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -7903,8 +7903,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -8019,8 +8019,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -8546,8 +8546,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 236.4
     },
     "materials": [
@@ -8724,8 +8724,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige, white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 100.0,
-      "depth": 60.0,
+      "width": 100,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -8872,8 +8872,8 @@
     "subcategory": "PAX wardrobes with doors",
     "description": "PAX pax wardrobes with doors reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 150.0,
-      "depth": 60.0,
+      "width": 150,
+      "depth": 60,
       "height": 201.2
     },
     "materials": [
@@ -11495,7 +11495,7 @@
     "subcategory": "Bar stools & chairs",
     "description": "SYNTORP bar stools & chairs reference in grey, black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 60.0,
+      "width": 60,
       "depth": 56,
       "height": 101
     },
@@ -12526,7 +12526,7 @@
     "subcategory": "Bar stools & chairs",
     "description": "KESNACKEN bar stools & chairs reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": 43.0,
+      "width": 43,
       "depth": 50,
       "height": 77
     },
@@ -13185,7 +13185,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-mangbyn-brown-multicolour-s59619759/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-mangbyn-brown-multicolour__1545764_pe1019854_s5.jpg",
-    "demoPricePKR": 83000,
+    "demoPricePKR": 49800,
     "demoStock": 6,
     "tags": [
       "living",
@@ -13443,7 +13443,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-kilanda-light-beige-s29509012/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-kilanda-light-beige__1577723_pe1033470_s5.jpg",
-    "demoPricePKR": 116250,
+    "demoPricePKR": 69750,
     "demoStock": 9,
     "tags": [
       "living",
@@ -13519,7 +13519,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-kilanda-dark-blue-s89509009/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-kilanda-dark-blue__1194843_pe902111_s5.jpg",
-    "demoPricePKR": 125750,
+    "demoPricePKR": 75450,
     "demoStock": 15,
     "tags": [
       "living",
@@ -13854,7 +13854,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-hakebo-grey-green-s19509003/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-hakebo-grey-green__1577722_pe1033469_s5.jpg",
-    "demoPricePKR": 168500,
+    "demoPricePKR": 101100,
     "demoStock": 6,
     "tags": [
       "living",
@@ -14040,7 +14040,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-alhamn-dark-grey-blue-s59628706/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-alhamn-dark-grey-blue__1546692_pe1020066_s5.jpg",
-    "demoPricePKR": 192250,
+    "demoPricePKR": 115350,
     "demoStock": 21,
     "tags": [
       "living",
@@ -14196,7 +14196,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/glostad-3-seat-sofa-knisa-dark-grey-80595940/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/glostad-3-seat-sofa-knisa-dark-grey__1234948_pe917261_s5.jpg",
-    "demoPricePKR": 211250,
+    "demoPricePKR": 126750,
     "demoStock": 15,
     "tags": [
       "living",
@@ -14348,7 +14348,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-hakebo-dark-grey-s79509000/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-hakebo-dark-grey__1577720_pe1033467_s5.jpg",
-    "demoPricePKR": 230250,
+    "demoPricePKR": 138150,
     "demoStock": 9,
     "tags": [
       "living",
@@ -14550,7 +14550,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-blekinge-white-s29628703/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-blekinge-white__1578502_pe1034145_s5.jpg",
-    "demoPricePKR": 254000,
+    "demoPricePKR": 152400,
     "demoStock": 6,
     "tags": [
       "living",
@@ -14664,7 +14664,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-2-seat-sofa-knaebaeck-light-beige-s69615322/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-2-seat-sofa-knaebaeck-light-beige__1576548_pe1032525_s5.jpg",
-    "demoPricePKR": 268250,
+    "demoPricePKR": 160950,
     "demoStock": 15,
     "tags": [
       "living",
@@ -14818,7 +14818,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-2-seat-sofa-alhamn-dark-yellow-brown-s39615328/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-2-seat-sofa-alhamn-dark-yellow-brown__1576543_pe1032530_s5.jpg",
-    "demoPricePKR": 287250,
+    "demoPricePKR": 172350,
     "demoStock": 9,
     "tags": [
       "living",
@@ -14931,7 +14931,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tibbleby-beige-grey-s69440596/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tibbleby-beige-grey__1577303_pe1033081_s5.jpg",
-    "demoPricePKR": 14000,
+    "demoPricePKR": 8400,
     "demoStock": 18,
     "tags": [
       "living",
@@ -15081,7 +15081,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-2-seat-sofa-alhamn-dark-grey-blue-s99615325/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-2-seat-sofa-alhamn-dark-grey-blue__1489763_pe1003959_s5.jpg",
-    "demoPricePKR": 33000,
+    "demoPricePKR": 19800,
     "demoStock": 12,
     "tags": [
       "living",
@@ -15158,7 +15158,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-kelinge-grey-turquoise-s79443052/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-kelinge-grey-turquoise__1577275_pe1033058_s5.jpg",
-    "demoPricePKR": 42500,
+    "demoPricePKR": 25500,
     "demoStock": 18,
     "tags": [
       "living",
@@ -15200,7 +15200,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tallmyra-blue-s89500476/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tallmyra-blue__1577018_pe1032898_s5.jpg",
-    "demoPricePKR": 47250,
+    "demoPricePKR": 28350,
     "demoStock": 21,
     "tags": [
       "living",
@@ -15279,7 +15279,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tresund-anthracite-s79482835/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tresund-anthracite__1577611_pe1033359_s5.jpg",
-    "demoPricePKR": 56750,
+    "demoPricePKR": 34050,
     "demoStock": 9,
     "tags": [
       "living",
@@ -15390,7 +15390,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tallmyra-medium-grey-s29500479/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tallmyra-medium-grey__1577023_pe1032907_s5.jpg",
-    "demoPricePKR": 71000,
+    "demoPricePKR": 42600,
     "demoStock": 18,
     "tags": [
       "living",
@@ -15466,7 +15466,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tresund-light-beige-s59482836/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tresund-light-beige__1577609_pe1033360_s5.jpg",
-    "demoPricePKR": 80500,
+    "demoPricePKR": 48300,
     "demoStock": 6,
     "tags": [
       "living",
@@ -15799,7 +15799,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-tallmyra-white-black-s69500482/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-tallmyra-white-black__0781544_pe760855_s5.jpg",
-    "demoPricePKR": 123250,
+    "demoPricePKR": 73950,
     "demoStock": 15,
     "tags": [
       "living",
@@ -15915,7 +15915,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/saltmyran-3-seat-sofa-oereryd-grey-beige-70618517/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/saltmyran-3-seat-sofa-oereryd-grey-beige__1576103_pe1032228_s5.jpg",
-    "demoPricePKR": 137500,
+    "demoPricePKR": 82500,
     "demoStock": 6,
     "tags": [
       "living",
@@ -16028,7 +16028,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tibbleby-beige-grey-s29440598/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tibbleby-beige-grey__1577305_pe1033079_s5.jpg",
-    "demoPricePKR": 151750,
+    "demoPricePKR": 91050,
     "demoStock": 15,
     "tags": [
       "living",
@@ -16111,7 +16111,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/saltmyran-3-seat-sofa-oereryd-blue-90618521/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/saltmyran-3-seat-sofa-oereryd-blue__1578447_pe1034090_s5.jpg",
-    "demoPricePKR": 161250,
+    "demoPricePKR": 96750,
     "demoStock": 21,
     "tags": [
       "living",
@@ -16483,7 +16483,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-kelinge-grey-turquoise-s79443047/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-kelinge-grey-turquoise__1055797_pe848105_s5.jpg",
-    "demoPricePKR": 208750,
+    "demoPricePKR": 125250,
     "demoStock": 15,
     "tags": [
       "living",
@@ -16591,7 +16591,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tallmyra-blue-s59500468/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tallmyra-blue__1576994_pe1032879_s5.jpg",
-    "demoPricePKR": 223000,
+    "demoPricePKR": 133800,
     "demoStock": 6,
     "tags": [
       "living",
@@ -16668,7 +16668,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tallmyra-dark-green-s39500469/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tallmyra-dark-green__1576996_pe1032881_s5.jpg",
-    "demoPricePKR": 232500,
+    "demoPricePKR": 139500,
     "demoStock": 12,
     "tags": [
       "living",
@@ -16900,7 +16900,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tallmyra-white-black-s39500474/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tallmyra-white-black__0781446_pe760770_s5.jpg",
-    "demoPricePKR": 261000,
+    "demoPricePKR": 156600,
     "demoStock": 12,
     "tags": [
       "living",
@@ -16974,7 +16974,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tresund-light-beige-s69482826/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tresund-light-beige__1577606_pe1033354_s5.jpg",
-    "demoPricePKR": 270500,
+    "demoPricePKR": 162300,
     "demoStock": 18,
     "tags": [
       "living",
@@ -17154,7 +17154,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-gransel-natural-s09489637/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-gransel-natural__1577698_pe1033445_s5.jpg",
-    "demoPricePKR": 294250,
+    "demoPricePKR": 176550,
     "demoStock": 15,
     "tags": [
       "living",
@@ -17239,7 +17239,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-tallmyra-blue-s69514945/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-tallmyra-blue__1577690_pe1033437_s5.jpg",
-    "demoPricePKR": 16250,
+    "demoPricePKR": 9750,
     "demoStock": 21,
     "tags": [
       "living",
@@ -17393,7 +17393,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tresund-anthracite-s89482825/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tresund-anthracite__1577610_pe1033358_s5.jpg",
-    "demoPricePKR": 35250,
+    "demoPricePKR": 21150,
     "demoStock": 15,
     "tags": [
       "living",
@@ -17436,7 +17436,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-hemmesta-light-beige-s79514940/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-hemmesta-light-beige__1577692_pe1033439_s5.jpg",
-    "demoPricePKR": 40000,
+    "demoPricePKR": 24000,
     "demoStock": 18,
     "tags": [
       "living",
@@ -17809,7 +17809,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-gransel-grey-brown-s39489631/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-gransel-grey-brown__1577699_pe1033446_s5.jpg",
-    "demoPricePKR": 87500,
+    "demoPricePKR": 52500,
     "demoStock": 12,
     "tags": [
       "living",
@@ -17889,7 +17889,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-tallmyra-dark-green-s49514951/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-tallmyra-dark-green__1577689_pe1033436_s5.jpg",
-    "demoPricePKR": 97000,
+    "demoPricePKR": 58200,
     "demoStock": 18,
     "tags": [
       "living",
@@ -18038,7 +18038,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-hallarp-white-s89489643/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-hallarp-white__1577691_pe1033441_s5.jpg",
-    "demoPricePKR": 116000,
+    "demoPricePKR": 69600,
     "demoStock": 12,
     "tags": [
       "living",
@@ -18124,7 +18124,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/hyltarp-3-seat-sofa-gransel-grey-s09514929/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/hyltarp-3-seat-sofa-gransel-grey__1577693_pe1033440_s5.jpg",
-    "demoPricePKR": 125500,
+    "demoPricePKR": 75300,
     "demoStock": 18,
     "tags": [
       "living",
@@ -18268,7 +18268,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/gullvalla-3-seat-sofa-silkeryd-dark-grey-beige-50618504/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/gullvalla-3-seat-sofa-silkeryd-dark-grey-beige__1578444_pe1034087_s5.jpg",
-    "demoPricePKR": 144500,
+    "demoPricePKR": 86700,
     "demoStock": 12,
     "tags": [
       "living",
@@ -18351,7 +18351,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/gullvalla-3-seat-sofa-silkeryd-grey-green-60618513/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/gullvalla-3-seat-sofa-silkeryd-grey-green__1576775_pe1032702_s5.jpg",
-    "demoPricePKR": 154000,
+    "demoPricePKR": 92400,
     "demoStock": 18,
     "tags": [
       "living",
@@ -18535,7 +18535,7 @@
     ],
     "sourceUrl": "https://www.ikea.com/gb/en/p/glostad-3-seat-sofa-with-chaise-longue-knisa-dark-grey-s89578601/",
     "referenceImage": "https://www.ikea.com/gb/en/images/products/glostad-3-seat-sofa-with-chaise-longue-knisa-dark-grey__1577736_pe1033483_s5.jpg",
-    "demoPricePKR": 177750,
+    "demoPricePKR": 106650,
     "demoStock": 15,
     "tags": [
       "living",
