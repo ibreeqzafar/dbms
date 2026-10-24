@@ -1,0 +1,32 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const db=new PGlite();
+await db.exec(`create role anon;create role authenticated;create role service_role bypassrls;create schema auth;create schema private;
+create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,is_anonymous boolean default false,raw_user_meta_data jsonb default '{}');
+create table public.profiles(id uuid primary key references auth.users on delete cascade,name text not null default '',role text default 'customer',active boolean default true,created_at timestamptz default now());
+create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+create function auth.jwt() returns jsonb language sql stable as $$select coalesce(nullif(current_setting('request.jwt.claims',true),''),'{}')::jsonb$$;
+create function private.is_customer() returns boolean language sql stable security definer set search_path='' as $$select auth.uid() is not null and not coalesce((auth.jwt()->>'is_anonymous')::boolean,true) and exists(select 1 from public.profiles where id=auth.uid() and active)$$;
+create function private.is_admin() returns boolean language sql stable security definer set search_path='' as $$select private.is_customer() and auth.jwt()->>'aal'='aal2' and exists(select 1 from public.profiles where id=auth.uid() and role='administrator' and active)$$;
+create function private.new_profile() returns trigger language plpgsql security definer set search_path='' as $$begin insert into public.profiles(id,name) values(new.id,coalesce(new.raw_user_meta_data->>'name',''));return new;end$$;
+create trigger create_profile after insert on auth.users for each row execute function private.new_profile();
+grant usage on schema auth,private,public to authenticated,anon;grant execute on all functions in schema auth,private to authenticated,anon;`);
+const alice='11111111-1111-4111-a111-111111111111',bob='22222222-2222-4222-a222-222222222222',admin='33333333-3333-4333-a333-333333333333';
+await db.exec(`insert into auth.users(id,email,email_confirmed_at) values('${alice}','alice@example.test',now());`);
+await db.exec(await readFile('supabase/migrations/202610240004_customer_relationships.sql','utf8'));
+assert.equal((await db.query('select marketing_opt_in from public.customer_contacts')).rows[0].marketing_opt_in,false);
+await db.exec(`insert into auth.users(id,email,raw_user_meta_data) values('${bob}','bob@example.test','{"name":"Bob","marketing_opt_in":true}'),('${admin}','admin@example.test','{}');update public.profiles set role='administrator' where id='${admin}';`);
+const bobRow=(await db.query(`select * from public.customer_contacts where owner_id='${bob}'`)).rows[0];assert.equal(bobRow.marketing_opt_in,true);assert.equal(bobRow.email_verified,false);
+async function asUser(id,aal='aal1',anonymous=false){await db.exec(`reset role;select set_config('request.jwt.claim.sub','${id}',false);select set_config('request.jwt.claims','{"is_anonymous":${anonymous},"aal":"${aal}"}',false);set role authenticated;`)}
+async function denied(sql){let failed=false;try{await db.exec(sql)}catch{failed=true}assert(failed,sql)}
+await asUser(alice);assert.equal((await db.query('select * from public.customer_contacts')).rows.length,1);await db.exec('select public.set_marketing_preference(true)');await denied("update public.customer_contacts set marketing_opt_in=true");await denied("insert into public.marketing_consent_events(owner_id,opted_in,notice_version,source) values(auth.uid(),true,'forged','account')");
+await asUser(admin);assert.equal((await db.query('select * from public.customer_contacts')).rows.length,1);
+await asUser(admin,'aal2');assert.equal((await db.query('select * from public.customer_contacts')).rows.length,3);
+await asUser(bob);await db.exec('select public.set_marketing_preference(false)');await db.exec(`reset role;update auth.users set email_confirmed_at=now() where id='${bob}'`);assert.equal((await db.query(`select marketing_opt_in from public.customer_contacts where owner_id='${bob}'`)).rows[0].marketing_opt_in,false);
+await asUser(bob);await db.exec('select public.set_marketing_preference(true)');await db.exec(`reset role;update auth.users set email='bob-new@example.test',email_confirmed_at=null where id='${bob}';update public.profiles set name='Bobby' where id='${bob}'`);const changed=(await db.query(`select * from public.customer_contacts where owner_id='${bob}'`)).rows[0];assert.equal(changed.marketing_opt_in,false);assert.equal(changed.email_verified,false);assert.equal(changed.name,'Bobby');
+await asUser(bob,'aal1',true);assert.equal((await db.query('select * from public.customer_contacts')).rows.length,0);await denied('select public.set_marketing_preference(true)');
+await db.exec(`reset role;set role anon;`);await denied('select * from public.customer_contacts');await denied('select public.set_marketing_preference(true)');
+await db.exec(`reset role;delete from auth.users where id='${bob}'`);assert.equal((await db.query(`select * from public.customer_contacts where owner_id='${bob}'`)).rows.length,0);
+console.log('Passed customer registration, existing-user opt-out, unverified consent, unsubscribe persistence, changed-email reset, private access, MFA administrator access, anonymous denial and deletion cascade. No external emails sent.');
+await db.close();
