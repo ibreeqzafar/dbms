@@ -313,7 +313,7 @@
     "dimensions": {
       "width": 144,
       "depth": 199,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Solid pine",
@@ -680,7 +680,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 78
     },
     "materials": [
       "Particleboard",
@@ -752,7 +752,7 @@
     "dimensions": {
       "width": 62,
       "depth": 60,
-      "height": null
+      "height": 140
     },
     "materials": [
       "Steel",
@@ -791,7 +791,7 @@
     "dimensions": {
       "width": 71,
       "depth": 71,
-      "height": null
+      "height": 114
     },
     "materials": [
       "Steel",
@@ -3589,7 +3589,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4036,7 +4036,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4073,7 +4073,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4263,7 +4263,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4471,7 +4471,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4508,7 +4508,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -4915,7 +4915,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Particleboard",
@@ -5511,9 +5511,9 @@
     "subcategory": "Battery operated LED lights",
     "description": "GÖMPYSSLING battery operated led lights reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
-      "height": null
+      "width": 7,
+      "depth": 7,
+      "height": 80
     },
     "materials": [
       "ABS plastic (min. 50% recycled)",
@@ -5533,7 +5533,10 @@
       "battery operated led lights",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
   },
   {
     "id": "pinntorp-chair-red-stained-40529476",
@@ -8303,7 +8306,7 @@
     "dimensions": {
       "width": 160,
       "depth": 80,
-      "height": null
+      "height": 78
     },
     "materials": [
       "Particleboard",
@@ -9403,9 +9406,9 @@
     "subcategory": "Kitchen chairs",
     "description": "TEODORES kitchen chairs reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
-      "height": null
+      "width": 60,
+      "depth": 60,
+      "height": 95
     },
     "materials": [
       "Steel",
@@ -9424,7 +9427,12 @@
       "kitchen chairs",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
   },
   {
     "id": "lastare-wardrobe-combination-white-with-height-extension-unit-s89602903",
@@ -10855,9 +10863,9 @@
     "subcategory": "Bar stools & chairs",
     "description": "RÄVSTEN bar stools & chairs reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
-      "height": null
+      "width": 33,
+      "depth": 33,
+      "height": 95
     },
     "materials": [
       "Solid rubberwood",
@@ -10876,7 +10884,10 @@
       "bar stools & chairs",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
   },
   {
     "id": "groensta-bar-stool-counter-height-white-in-outdoor-30554635",
@@ -11158,9 +11169,9 @@
     "subcategory": "Bar stools & chairs",
     "description": "RÄVSTEN bar stools & chairs reference in black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
-      "height": null
+      "width": 160,
+      "depth": 80,
+      "height": 78
     },
     "materials": [
       "Solid rubberwood",
@@ -11334,7 +11345,7 @@
     "subcategory": "Home office desks",
     "description": "MICKE home office desks reference in brown, black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
+      "width": 100,
       "depth": 100,
       "height": 142
     },
@@ -11413,7 +11424,7 @@
     "subcategory": "Home office desks",
     "description": "MICKE home office desks reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
+      "width": 100,
       "depth": 100,
       "height": 142
     },
@@ -11976,7 +11987,7 @@
     "dimensions": {
       "width": 50,
       "depth": 50,
-      "height": null
+      "height": 142
     },
     "materials": [
       "Solid birch",
@@ -12190,7 +12201,7 @@
     "dimensions": {
       "width": 50,
       "depth": 50,
-      "height": null
+      "height": 142
     },
     "materials": [
       "Solid birch",
@@ -12899,7 +12910,7 @@
     "dimensions": {
       "width": 62,
       "depth": 60,
-      "height": null
+      "height": 140
     },
     "materials": [
       "Steel",
@@ -13046,7 +13057,7 @@
     "dimensions": {
       "width": 70,
       "depth": 70,
-      "height": null
+      "height": 123
     },
     "materials": [
       "Polyurethane foam 35 kg/cu.m.",
@@ -13162,7 +13173,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -13273,7 +13284,7 @@
     "dimensions": {
       "width": 59,
       "depth": 65,
-      "height": null
+      "height": 108
     },
     "materials": [
       "Steel",
@@ -13312,7 +13323,7 @@
     "dimensions": {
       "width": 70,
       "depth": 70,
-      "height": null
+      "height": 123
     },
     "materials": [
       "Polyurethane foam 35 kg/cu.m.",
@@ -13381,7 +13392,7 @@
     "description": "ÅLHULT extendable dining tables reference in beige, brown. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 80,
-      "depth": null,
+      "depth": 64,
       "height": 75
     },
     "materials": [
@@ -13418,7 +13429,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -13494,7 +13505,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -13538,7 +13549,7 @@
     "dimensions": {
       "width": 64,
       "depth": 64,
-      "height": null
+      "height": 95
     },
     "materials": [
       "Steel",
@@ -13610,7 +13621,7 @@
     "dimensions": {
       "width": 64,
       "depth": 64,
-      "height": null
+      "height": 95
     },
     "materials": [
       "Through dyed grain leather from cattle",
@@ -13648,7 +13659,7 @@
     "description": "ÅLHULT extendable dining tables reference in brown, black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 80,
-      "depth": null,
+      "depth": 88,
       "height": 75
     },
     "materials": [
@@ -13685,7 +13696,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 88
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -13829,7 +13840,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -14015,7 +14026,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -14092,7 +14103,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 75
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -14135,7 +14146,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 95
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -14163,7 +14174,10 @@
       "home office chairs",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
   },
   {
     "id": "glostad-3-seat-sofa-knisa-dark-grey-80595940",
@@ -14175,7 +14189,7 @@
     "dimensions": {
       "width": 171,
       "depth": 78,
-      "height": null
+      "height": 85
     },
     "materials": [
       "65% polyester (min. 90% recycled)",
@@ -14203,7 +14217,10 @@
       "3 seater sofas",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
   },
   {
     "id": "storklinta-chest-of-6-drawers-white-70627550",
@@ -14323,7 +14340,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -14405,7 +14422,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 88
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -14445,7 +14462,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 95
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -14476,7 +14493,10 @@
       "home office chairs",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
   },
   {
     "id": "tossberg-malskaer-swivel-chair-gunnared-dark-grey-white-s69508242",
@@ -14488,7 +14508,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 74
     },
     "materials": [
       "100% polyester (min. 40% recycled)",
@@ -14528,7 +14548,7 @@
     "dimensions": {
       "width": 218,
       "depth": 88,
-      "height": null
+      "height": 88
     },
     "materials": [
       "Plywood",
@@ -14567,8 +14587,8 @@
     "subcategory": "Round dining tables",
     "description": "LISABO round dining tables reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 206,
+      "depth": 94,
       "height": 74
     },
     "materials": [
@@ -14637,7 +14657,7 @@
     "dimensions": {
       "width": 206,
       "depth": 94,
-      "height": null
+      "height": 90
     },
     "materials": [
       "76% cotton",
@@ -14683,7 +14703,7 @@
     "dimensions": {
       "width": 65,
       "depth": 65,
-      "height": null
+      "height": 85
     },
     "materials": [
       "Polypropylene plastic (min. 20% recycled)",
@@ -14790,7 +14810,7 @@
     "dimensions": {
       "width": 206,
       "depth": 94,
-      "height": null
+      "height": 85
     },
     "materials": [
       "71% polyester (min. 90% recycled)",
@@ -14835,8 +14855,8 @@
     "subcategory": "Round dining tables",
     "description": "LISABO round dining tables reference in black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 105,
+      "depth": 105,
       "height": 74
     },
     "materials": [
@@ -15053,7 +15073,7 @@
     "dimensions": {
       "width": 206,
       "depth": 94,
-      "height": null
+      "height": 90
     },
     "materials": [
       "71% polyester (min. 90% recycled)",
@@ -15219,7 +15239,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 90
     },
     "materials": [
       "Steel",
@@ -15485,7 +15505,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 90
     },
     "materials": [
       "Steel",
@@ -15555,8 +15575,8 @@
     "subcategory": "Extendable dining tables",
     "description": "SKANSNÄS extendable dining tables reference in beige, brown. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 68,
+      "depth": 68,
       "height": 75
     },
     "materials": [
@@ -15593,7 +15613,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Steel",
@@ -15630,7 +15650,7 @@
     "dimensions": {
       "width": 71,
       "depth": 71,
-      "height": null
+      "height": 114
     },
     "materials": [
       "Steel",
@@ -15665,8 +15685,8 @@
     "subcategory": "Extendable dining tables",
     "description": "SKANSNÄS extendable dining tables reference in beige. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 115,
+      "depth": 115,
       "height": 75
     },
     "materials": [
@@ -15702,7 +15722,7 @@
     "description": "ÅLHULT extendable dining tables reference in brown, black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 80,
-      "depth": null,
+      "depth": 88,
       "height": 75
     },
     "materials": [
@@ -15739,7 +15759,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Steel",
@@ -15818,7 +15838,7 @@
     "dimensions": {
       "width": 71,
       "depth": 71,
-      "height": null
+      "height": 114
     },
     "materials": [
       "Steel",
@@ -15890,7 +15910,7 @@
     "dimensions": {
       "width": 187,
       "depth": 79,
-      "height": null
+      "height": 114
     },
     "materials": [
       "Polypropylene plastic",
@@ -15933,7 +15953,7 @@
     "description": "ÅLHULT extendable dining tables reference in beige, brown. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 80,
-      "depth": null,
+      "depth": 60,
       "height": 75
     },
     "materials": [
@@ -15958,7 +15978,10 @@
       "extendable dining tables",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "depth"
+    ]
   },
   {
     "id": "storklinta-chest-of-4-drawers-oak-effect-80627535",
@@ -16047,7 +16070,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Steel",
@@ -16086,7 +16109,7 @@
     "dimensions": {
       "width": 187,
       "depth": 79,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Polypropylene plastic",
@@ -16163,8 +16186,8 @@
     "subcategory": "Extendable dining tables",
     "description": "ROSENTORP extendable dining tables reference in white. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 110,
+      "depth": 110,
       "height": 75
     },
     "materials": [
@@ -16237,7 +16260,7 @@
     "dimensions": {
       "width": 68,
       "depth": 68,
-      "height": null
+      "height": 92
     },
     "materials": [
       "Steel",
@@ -16344,7 +16367,7 @@
     "dimensions": {
       "width": 56,
       "depth": 56,
-      "height": null
+      "height": 75
     },
     "materials": [
       "Polypropylene plastic",
@@ -16378,7 +16401,7 @@
     "dimensions": {
       "width": 66,
       "depth": 66,
-      "height": null
+      "height": 132
     },
     "materials": [
       "Steel",
@@ -16720,7 +16743,7 @@
     "dimensions": {
       "width": 60,
       "depth": 54,
-      "height": null
+      "height": 123
     },
     "materials": [
       "73% polyester (min. 90% recycled)",
@@ -16757,7 +16780,7 @@
     "dimensions": {
       "width": 66,
       "depth": 66,
-      "height": null
+      "height": 132
     },
     "materials": [
       "Steel",
@@ -16802,7 +16825,7 @@
     "dimensions": {
       "width": 67,
       "depth": 67,
-      "height": null
+      "height": 97
     },
     "materials": [
       "100 % polyester (100% recycled)",
@@ -17128,7 +17151,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -17173,7 +17196,7 @@
     "dimensions": {
       "width": 53,
       "depth": 53,
-      "height": null
+      "height": 83
     },
     "materials": [
       "Steel",
@@ -17215,7 +17238,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -17258,7 +17281,7 @@
     "dimensions": {
       "width": 53,
       "depth": 53,
-      "height": null
+      "height": 83
     },
     "materials": [
       "Steel",
@@ -17412,7 +17435,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -17490,7 +17513,7 @@
     "dimensions": {
       "width": 53,
       "depth": 53,
-      "height": null
+      "height": 83
     },
     "materials": [
       "Polypropylene plastic",
@@ -17639,7 +17662,7 @@
     "dimensions": {
       "width": 69,
       "depth": 69,
-      "height": null
+      "height": 86
     },
     "materials": [
       "Steel",
@@ -17707,8 +17730,8 @@
     "subcategory": "Extendable dining tables",
     "description": "ROSENTORP extendable dining tables reference in black. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
-      "width": null,
-      "depth": null,
+      "width": 232,
+      "depth": 93,
       "height": 75
     },
     "materials": [
@@ -17783,7 +17806,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -17828,7 +17851,7 @@
     "dimensions": {
       "width": 69,
       "depth": 69,
-      "height": null
+      "height": 86
     },
     "materials": [
       "Steel",
@@ -17865,7 +17888,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -18014,7 +18037,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -18057,7 +18080,7 @@
     "dimensions": {
       "width": 66,
       "depth": 66,
-      "height": null
+      "height": 129
     },
     "materials": [
       "Steel",
@@ -18098,7 +18121,7 @@
     "dimensions": {
       "width": 232,
       "depth": 93,
-      "height": null
+      "height": 91
     },
     "materials": [
       "68 % viscose",
@@ -18245,7 +18268,7 @@
     "dimensions": {
       "width": 182,
       "depth": 83,
-      "height": null
+      "height": 78
     },
     "materials": [
       "Polypropylene plastic",
@@ -18287,7 +18310,7 @@
     "dimensions": {
       "width": 66,
       "depth": 66,
-      "height": null
+      "height": 129
     },
     "materials": [
       "Steel",
@@ -18328,7 +18351,7 @@
     "dimensions": {
       "width": 182,
       "depth": 83,
-      "height": null
+      "height": 78
     },
     "materials": [
       "Polypropylene plastic",
@@ -18369,7 +18392,7 @@
     "description": "VIHALS extendable dining tables reference in green. View the manufacturer source for assembly, care and product details.",
     "dimensions": {
       "width": 74,
-      "depth": null,
+      "depth": 60,
       "height": 75
     },
     "materials": [
@@ -18391,7 +18414,10 @@
       "extendable dining tables",
       "manufacturer reference"
     ],
-    "style": "Scandinavian"
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "depth"
+    ]
   },
   {
     "id": "gullaberg-chest-of-8-drawers-white-20609902",
@@ -18473,7 +18499,7 @@
     "dimensions": {
       "width": 63,
       "depth": 63,
-      "height": null
+      "height": 88
     },
     "materials": [
       "75 % polyester (100% recycled)",
@@ -18540,6 +18566,3148 @@
     "tags": [
       "living",
       "chaise sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "gullaberg-bed-frame-white-luroey-s89614524",
+    "name": "GULLABERG Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "GULLABERG double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 146,
+      "depth": 198,
+      "height": 113
+    },
+    "materials": [
+      "Solid wood",
+      "Acrylic paint",
+      "Fibreboard",
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Adhesive",
+      "Laminated veneer lumber",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/gullaberg-bed-frame-white-luroey-s89614524/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/gullaberg-bed-frame-white-luroey__1488529_pe1003369_s5.jpg",
+    "demoPricePKR": 55000,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "slattum-upholstered-bed-frame-vissle-dark-grey-50571257",
+    "name": "SLATTUM Upholstered bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "SLATTUM upholstered beds reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 139,
+      "depth": 196,
+      "height": 100
+    },
+    "materials": [
+      "73% polyester (min. 90% recycled)",
+      "20% modacrylic",
+      "7% cotton",
+      "100 % polyester",
+      "Polyester wadding",
+      "Steel",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Epoxy/polyester powder coating",
+      "100% polypropylene",
+      "65 % polyester",
+      "26% modacrylic",
+      "9% cotton"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/slattum-upholstered-bed-frame-vissle-dark-grey-50571257/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/slattum-upholstered-bed-frame-vissle-dark-grey__1259335_pe926650_s5.jpg",
+    "demoPricePKR": 57750,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "malm-bed-frame-high-white-luroey-s29006978",
+    "name": "MALM Bed frame, high",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "MALM double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 150,
+      "depth": 199,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Printed and embossed acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Paper",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/malm-bed-frame-high-white-luroey-s29006978/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/malm-bed-frame-high-white-luroey__0749130_pe745499_s5.jpg",
+    "demoPricePKR": 60500,
+    "demoStock": 8,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "neiden-bed-frame-pine-luroey-s79248611",
+    "name": "NEIDEN Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "NEIDEN double beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 139,
+      "depth": 195,
+      "height": 65
+    },
+    "materials": [
+      "Solid pine",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/neiden-bed-frame-pine-luroey-s79248611/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/neiden-bed-frame-pine-luroey__0749131_pe745500_s5.jpg",
+    "demoPricePKR": 63250,
+    "demoStock": 9,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "malm-ottoman-bed-white-30404820",
+    "name": "MALM Ottoman bed",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Beds with storage",
+    "description": "MALM beds with storage reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 150,
+      "depth": 200,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Printed acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (min. 70% recycled)",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Beech veneer",
+      "Adhesive resin as coating",
+      "Paper foil"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/malm-ottoman-bed-white-30404820/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/malm-ottoman-bed-white__0749127_pe745496_s5.jpg",
+    "demoPricePKR": 66000,
+    "demoStock": 10,
+    "tags": [
+      "bedroom",
+      "beds with storage",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "brimnes-bed-frame-w-storage-and-headboard-white-luroey-s59124616",
+    "name": "BRIMNES Bed frame w storage and headboard",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Beds with storage",
+    "description": "BRIMNES beds with storage reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 141,
+      "depth": 224,
+      "height": 111
+    },
+    "materials": [
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Fibreboard",
+      "Printed and embossed acrylic paint",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/brimnes-bed-frame-w-storage-and-headboard-white-luroey-s59124616/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/brimnes-bed-frame-w-storage-and-headboard-white-luroey__1151032_pe884763_s5.jpg",
+    "demoPricePKR": 68750,
+    "demoStock": 11,
+    "tags": [
+      "bedroom",
+      "beds with storage",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey-s49560212",
+    "name": "RAMNEFJÄLL Upholstered bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "RAMNEFJÄLL upholstered beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 144,
+      "depth": 200,
+      "height": 100
+    },
+    "materials": [
+      "Plywood",
+      "Fibreboard",
+      "100% polyester",
+      "Laminated veneer lumber",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "100% polyester (min. 70% recycled)",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% nylon",
+      "71% polyester (min. 90% recycled)",
+      "21% modacrylic",
+      "8% cotton",
+      "100 % polyester (100% recycled)",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey-s49560212/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey__1258172_pe927371_s5.jpg",
+    "demoPricePKR": 71500,
+    "demoStock": 12,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "radmansoe-bed-frame-brown-walnut-effect-luroey-s79598647",
+    "name": "RÅDMANSÖ Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "RÅDMANSÖ double beds reference in brown. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 142,
+      "depth": 210,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/radmansoe-bed-frame-brown-walnut-effect-luroey-s79598647/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/radmansoe-bed-frame-brown-walnut-effect-luroey__1397227_pe967509_s5.jpg",
+    "demoPricePKR": 74250,
+    "demoStock": 13,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
+  },
+  {
+    "id": "vevelstad-bed-frame-white-80506393",
+    "name": "VEVELSTAD Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "VEVELSTAD double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 141,
+      "depth": 197,
+      "height": 27
+    },
+    "materials": [
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "Steel",
+      "Epoxy/polyester powder coating"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/vevelstad-bed-frame-white-80506393/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/vevelstad-bed-frame-white__1035358_pe840534_s5.jpg",
+    "demoPricePKR": 77000,
+    "demoStock": 14,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "idanaes-upholstered-storage-bed-naggen-beige-70588105",
+    "name": "IDANÄS Upholstered storage bed",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "IDANÄS upholstered beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 160,
+      "depth": 223,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Laminated veneer lumber",
+      "Plywood",
+      "Solid wood",
+      "Fibreboard",
+      "Solid pine",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Polyester wadding",
+      "Solid oak",
+      "Clear acrylic lacquer",
+      "Plastic foil",
+      "Paper foil",
+      "100 % polyester",
+      "65 % polyester",
+      "26% modacrylic",
+      "9% cotton",
+      "100% polypropylene",
+      "Polyamide plastic",
+      "76% polyester (min. 90% recycled)",
+      "18% modacrylic",
+      "6% cotton"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/idanaes-upholstered-storage-bed-naggen-beige-70588105/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/idanaes-upholstered-storage-bed-naggen-beige__1322816_pe942270_s5.jpg",
+    "demoPricePKR": 79750,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "stjaernoe-bed-frame-white-luroey-s79563365",
+    "name": "STJÄRNÖ Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "STJÄRNÖ double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 143,
+      "depth": 199,
+      "height": 135
+    },
+    "materials": [
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/stjaernoe-bed-frame-white-luroey-s79563365/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/stjaernoe-bed-frame-white-luroey__1298098_pe936071_s5.jpg",
+    "demoPricePKR": 82500,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "malm-bed-frame-high-white-luroey-s49009947",
+    "name": "MALM Bed frame, high",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "MALM single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 107,
+      "depth": 199,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Printed and embossed acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Paper",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/malm-bed-frame-high-white-luroey-s49009947/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/malm-bed-frame-high-white-luroey__0637620_pe704551_s5.jpg",
+    "demoPricePKR": 85250,
+    "demoStock": 8,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "neiden-bed-frame-pine-luroey-s99248605",
+    "name": "NEIDEN Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "NEIDEN single beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 195,
+      "height": 65
+    },
+    "materials": [
+      "Solid pine",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/neiden-bed-frame-pine-luroey-s99248605/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/neiden-bed-frame-pine-luroey__0749132_pe745501_s5.jpg",
+    "demoPricePKR": 88000,
+    "demoStock": 9,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "brimnes-bed-frame-with-storage-white-luroey-s29006940",
+    "name": "BRIMNES Bed frame with storage",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Beds with storage",
+    "description": "BRIMNES beds with storage reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 141,
+      "depth": 196,
+      "height": 47
+    },
+    "materials": [
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Fibreboard",
+      "Printed and embossed acrylic paint",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/brimnes-bed-frame-with-storage-white-luroey-s29006940/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/brimnes-bed-frame-with-storage-white-luroey__1151024_pe884762_s5.jpg",
+    "demoPricePKR": 90750,
+    "demoStock": 10,
+    "tags": [
+      "bedroom",
+      "beds with storage",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "storklinta-bed-frame-white-60615557",
+    "name": "STORKLINTA Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "STORKLINTA single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 144,
+      "depth": 199,
+      "height": 101
+    },
+    "materials": [
+      "Laminated veneer lumber",
+      "Particleboard",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/storklinta-bed-frame-white-60615557/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/storklinta-bed-frame-white__1542234_pe1018340_s5.jpg",
+    "demoPricePKR": 93500,
+    "demoStock": 11,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "idanaes-bed-frame-dark-brown-luroey-s49390069",
+    "name": "IDANÄS Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "IDANÄS double beds reference in brown. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 162,
+      "depth": 207,
+      "height": 101
+    },
+    "materials": [
+      "Galvanized steel",
+      "Solid pine",
+      "Stain",
+      "Clear acrylic lacquer",
+      "Particleboard",
+      "Beech veneer",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/idanaes-bed-frame-dark-brown-luroey-s49390069/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/idanaes-bed-frame-dark-brown-luroey__0916066_pe784942_s5.jpg",
+    "demoPricePKR": 96250,
+    "demoStock": 12,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "fagelfjaellet-bed-frame-off-white-60607171",
+    "name": "FÅGELFJÄLLET Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "FÅGELFJÄLLET double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 162,
+      "depth": 207,
+      "height": 101
+    },
+    "materials": [
+      "Fibreboard",
+      "Paper foil",
+      "Plastic edging",
+      "Particleboard",
+      "Laminated veneer lumber"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/fagelfjaellet-bed-frame-off-white-60607171/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/fagelfjaellet-bed-frame-off-white__1508988_pe1009638_s5.jpg",
+    "demoPricePKR": 99000,
+    "demoStock": 13,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "vihals-bed-frame-white-luroey-s39581842",
+    "name": "VIHALS Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "VIHALS double beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 141,
+      "depth": 196,
+      "height": 66
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Laminated veneer lumber",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/vihals-bed-frame-white-luroey-s39581842/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/vihals-bed-frame-white-luroey__1447006_pe988915_s5.jpg",
+    "demoPricePKR": 101750,
+    "demoStock": 14,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "idanaes-bed-frame-dark-brown-luroey-s09390066",
+    "name": "IDANÄS Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "IDANÄS double beds reference in brown. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 144,
+      "depth": 199,
+      "height": 116
+    },
+    "materials": [
+      "Galvanized steel",
+      "Solid pine",
+      "Stain",
+      "Clear acrylic lacquer",
+      "Particleboard",
+      "Beech veneer",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/idanaes-bed-frame-dark-brown-luroey-s09390066/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/idanaes-bed-frame-dark-brown-luroey__0916066_pe784942_s5.jpg",
+    "demoPricePKR": 104500,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kleppstad-bed-frame-white-vissle-beige-40492675",
+    "name": "KLEPPSTAD Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "KLEPPSTAD double beds reference in beige, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 141,
+      "depth": 197,
+      "height": 86
+    },
+    "materials": [
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "100% polyester",
+      "PET plastic",
+      "73% polyester (min. 90% recycled)",
+      "20% modacrylic",
+      "7% cotton",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100% polypropylene"
+    ],
+    "colors": [
+      "beige, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kleppstad-bed-frame-white-vissle-beige-40492675/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kleppstad-bed-frame-white-vissle-beige__1035340_pe840527_s5.jpg",
+    "demoPricePKR": 107250,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kivik-2-seat-sofa-tallmyra-medium-grey-s79500472",
+    "name": "KIVIK 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "KIVIK 2 seater sofas reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 190,
+      "depth": 95,
+      "height": 83
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Solid wood",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100% polypropylene",
+      "Steel",
+      "100 % polyester (100% recycled)",
+      "78% cotton",
+      "22 % polyester (100% recycled)"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-2-seat-sofa-tallmyra-medium-grey-s79500472/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-2-seat-sofa-tallmyra-medium-grey__1577002_pe1032886_s5.jpg",
+    "demoPricePKR": 65000,
+    "demoStock": 6,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-kilanda-light-beige-s09509027",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "71% polyester (min. 90% recycled)",
+      "21% modacrylic",
+      "8% cotton",
+      "100% polyester"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-kilanda-light-beige-s09509027/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-kilanda-light-beige__1577714_pe1033461_s5.jpg",
+    "demoPricePKR": 67750,
+    "demoStock": 7,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-karlshov-beige-multicolour-s39509021",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in multicolour. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% polyester"
+    ],
+    "colors": [
+      "multicolour"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-karlshov-beige-multicolour-s39509021/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-karlshov-beige-multicolour__1194837_pe902083_s5.jpg",
+    "demoPricePKR": 70500,
+    "demoStock": 8,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-hakebo-dark-grey-s59509015",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "58 % polyester (100% recycled)",
+      "32% modacrylic",
+      "10% cotton",
+      "100% polyester"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-hakebo-dark-grey-s59509015/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-hakebo-dark-grey__1577718_pe1033462_s5.jpg",
+    "demoPricePKR": 73250,
+    "demoStock": 9,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-hakebo-grey-green-s99509018",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in green. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "58 % polyester (100% recycled)",
+      "32% modacrylic",
+      "10% cotton",
+      "100% polyester"
+    ],
+    "colors": [
+      "green"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-hakebo-grey-green-s99509018/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-hakebo-grey-green__1577713_pe1033460_s5.jpg",
+    "demoPricePKR": 76000,
+    "demoStock": 10,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-mangbyn-brown-multicolour-s59620729",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% polyester"
+    ],
+    "colors": [
+      "Mångbyn brown",
+      "multicolour"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-mangbyn-brown-multicolour-s59620729/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-mangbyn-brown-multicolour__1545762_pe1019852_s5.jpg",
+    "demoPricePKR": 78750,
+    "demoStock": 11,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-blekinge-white-s89628677",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% polyester"
+    ],
+    "colors": [
+      "Blekinge white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-blekinge-white-s89628677/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-blekinge-white__0818535_pe774466_s5.jpg",
+    "demoPricePKR": 81500,
+    "demoStock": 12,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-3-seat-sofa-alhamn-deep-orange-red-s99628709",
+    "name": "EKTORP 3-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "3 seater sofas",
+    "description": "EKTORP 3 seater sofas reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 218,
+      "depth": 88,
+      "height": 88
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% polyester",
+      "71% polyester (min. 90% recycled)",
+      "22% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "Alhamn deep orange-red"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-3-seat-sofa-alhamn-deep-orange-red-s99628709/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-3-seat-sofa-alhamn-deep-orange-red__1546682_pe1020058_s5.jpg",
+    "demoPricePKR": 84250,
+    "demoStock": 13,
+    "tags": [
+      "living",
+      "3 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "valnaes-3-seat-sofa-alhamn-dark-yellow-brown-s79615331",
+    "name": "VALNÄS 3-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "3 seater sofas",
+    "description": "VALNÄS 3 seater sofas reference in brown, yellow. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 246,
+      "depth": 94,
+      "height": 90
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Solid wood",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Steel",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester (100% recycled)",
+      "Solid oak",
+      "Clear acrylic lacquer",
+      "Aluminium",
+      "Anodized",
+      "Polypropylene plastic",
+      "71% polyester (min. 90% recycled)",
+      "22% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "brown, yellow"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-3-seat-sofa-alhamn-dark-yellow-brown-s79615331/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-3-seat-sofa-alhamn-dark-yellow-brown__1576538_pe1032520_s5.jpg",
+    "demoPricePKR": 87000,
+    "demoStock": 14,
+    "tags": [
+      "living",
+      "3 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "valnaes-3-seat-sofa-alhamn-dark-grey-blue-s19615334",
+    "name": "VALNÄS 3-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "3 seater sofas",
+    "description": "VALNÄS 3 seater sofas reference in blue. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 246,
+      "depth": 94,
+      "height": 90
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Solid wood",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Steel",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester (100% recycled)",
+      "Solid oak",
+      "Clear acrylic lacquer",
+      "Aluminium",
+      "Anodized",
+      "Polypropylene plastic",
+      "71% polyester (min. 90% recycled)",
+      "22% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "blue"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-3-seat-sofa-alhamn-dark-grey-blue-s19615334/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-3-seat-sofa-alhamn-dark-grey-blue__1576542_pe1032524_s5.jpg",
+    "demoPricePKR": 89750,
+    "demoStock": 6,
+    "tags": [
+      "living",
+      "3 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kivik-3-seat-sofa-with-chaise-longue-tibbleby-beige-grey-s59440587",
+    "name": "KIVIK 3-seat sofa with chaise longue",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "Chaise sofas",
+    "description": "KIVIK chaise sofas reference in beige, grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 280,
+      "depth": 163,
+      "height": 83
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Solid wood",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "Felt liner",
+      "100% polypropylene",
+      "Steel",
+      "Polypropylene plastic",
+      "Laminated veneer lumber",
+      "100 % polyester (100% recycled)",
+      "67% polyester (min. 90% recycled)",
+      "24% modacrylic",
+      "9% cotton"
+    ],
+    "colors": [
+      "beige, grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-with-chaise-longue-tibbleby-beige-grey-s59440587/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-with-chaise-longue-tibbleby-beige-grey__1577304_pe1033080_s5.jpg",
+    "demoPricePKR": 92500,
+    "demoStock": 7,
+    "tags": [
+      "living",
+      "chaise sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kivik-3-seat-sofa-with-chaise-longue-tallmyra-dark-green-s79500486",
+    "name": "KIVIK 3-seat sofa with chaise longue",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "Chaise sofas",
+    "description": "KIVIK chaise sofas reference in green. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 246,
+      "depth": 94,
+      "height": 83
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Solid wood",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100% polypropylene",
+      "Steel",
+      "100 % polyester (100% recycled)",
+      "Felt liner",
+      "Polypropylene plastic",
+      "78% cotton",
+      "22 % polyester (100% recycled)"
+    ],
+    "colors": [
+      "green"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-with-chaise-longue-tallmyra-dark-green-s79500486/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-with-chaise-longue-tallmyra-dark-green__1577094_pe1032933_s5.jpg",
+    "demoPricePKR": 95250,
+    "demoStock": 8,
+    "tags": [
+      "living",
+      "chaise sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "valnaes-3-seat-sofa-knaebaeck-light-beige-s49615337",
+    "name": "VALNÄS 3-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "3 seater sofas",
+    "description": "VALNÄS 3 seater sofas reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 246,
+      "depth": 94,
+      "height": 90
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Solid wood",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Steel",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester (100% recycled)",
+      "Solid oak",
+      "Clear acrylic lacquer",
+      "Aluminium",
+      "Anodized",
+      "Polypropylene plastic",
+      "76% cotton",
+      "24 % polyester (100% recycled)"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/valnaes-3-seat-sofa-knaebaeck-light-beige-s49615337/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/valnaes-3-seat-sofa-knaebaeck-light-beige__1576545_pe1032527_s5.jpg",
+    "demoPricePKR": 98000,
+    "demoStock": 9,
+    "tags": [
+      "living",
+      "3 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ektorp-2-seat-sofa-alhamn-dark-grey-blue-s49628684",
+    "name": "EKTORP 2-seat sofa",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "2 seater sofas",
+    "description": "EKTORP 2 seater sofas reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 179,
+      "depth": 88,
+      "height": 90
+    },
+    "materials": [
+      "Plywood",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Solid wood",
+      "Fibreboard",
+      "100 % polyester (100% recycled)",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100 % polyester - hollow fibre (100% recycled)",
+      "100% cotton",
+      "Polypropylene plastic",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% polyester",
+      "71% polyester (min. 90% recycled)",
+      "22% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "Alhamn dark grey-blue"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ektorp-2-seat-sofa-alhamn-dark-grey-blue-s49628684/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ektorp-2-seat-sofa-alhamn-dark-grey-blue__1546718_pe1020089_s5.jpg",
+    "demoPricePKR": 100750,
+    "demoStock": 10,
+    "tags": [
+      "living",
+      "2 seater sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kivik-3-seat-sofa-with-chaise-longue-kelinge-grey-turquoise-s69443057",
+    "name": "KIVIK 3-seat sofa with chaise longue",
+    "brand": "IKEA",
+    "category": "living",
+    "subcategory": "Chaise sofas",
+    "description": "KIVIK chaise sofas reference in turquoise. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 280,
+      "depth": 163,
+      "height": 83
+    },
+    "materials": [
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Particleboard",
+      "Plywood",
+      "Laminated veneer lumber",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Solid wood",
+      "Highly resilient polyurethane foam (cold foam) 35 kg/cu.m.",
+      "100% polypropylene",
+      "Steel",
+      "100 % polyester (100% recycled)",
+      "Felt liner",
+      "Polypropylene plastic",
+      "66.5 % polyester (100% recycled)",
+      "25% modacrylic",
+      "8.5% cotton"
+    ],
+    "colors": [
+      "turquoise"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kivik-3-seat-sofa-with-chaise-longue-kelinge-grey-turquoise-s69443057/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kivik-3-seat-sofa-with-chaise-longue-kelinge-grey-turquoise__1577276_pe1033069_s5.jpg",
+    "demoPricePKR": 103500,
+    "demoStock": 11,
+    "tags": [
+      "living",
+      "chaise sofas",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "raskog-norrava-trolley-with-lid-beige-yellow-s39580767",
+    "name": "RÅSKOG / NORRÅVA Trolley with lid",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Kitchen islands & trolleys",
+    "description": "RÅSKOG kitchen islands & trolleys reference in yellow. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 45,
+      "depth": 35,
+      "height": 77
+    },
+    "materials": [
+      "Steel",
+      "Epoxy powder coating",
+      "Bamboo",
+      "Clear polyurethane/acrylic lacquer"
+    ],
+    "colors": [
+      "yellow"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/raskog-norrava-trolley-with-lid-beige-yellow-s39580767/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/raskog-norrava-trolley-with-lid-beige-yellow__1380100_pe961611_s5.jpg",
+    "demoPricePKR": 8500,
+    "demoStock": 6,
+    "tags": [
+      "kitchen",
+      "kitchen islands & trolleys",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "hultarp-rail-polished-brass-colour-50448776",
+    "name": "HULTARP Rail",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "HULTARP wall organisers reference in yellow. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 1.6,
+      "depth": 60,
+      "height": 80
+    },
+    "materials": [
+      "Steel",
+      "Nickel-plated",
+      "Metallized"
+    ],
+    "colors": [
+      "yellow"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/hultarp-rail-polished-brass-colour-50448776/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/hultarp-rail-polished-brass-colour__0941879_pe795829_s5.jpg",
+    "demoPricePKR": 11250,
+    "demoStock": 7,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
+  },
+  {
+    "id": "bekvaem-spice-rack-aspen-20487175",
+    "name": "BEKVÄM Spice rack",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "BEKVÄM wall organisers reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 40,
+      "depth": 10,
+      "height": 9
+    },
+    "materials": [
+      "Solid aspen"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/bekvaem-spice-rack-aspen-20487175/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/bekvaem-spice-rack-aspen__0993240_pe814904_s5.jpg",
+    "demoPricePKR": 14000,
+    "demoStock": 8,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "grundtal-wall-shelf-stainless-steel-20341569",
+    "name": "GRUNDTAL Wall shelf",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "GRUNDTAL wall organisers reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 60,
+      "depth": 27,
+      "height": 20
+    },
+    "materials": [
+      "Stainless steel"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/grundtal-wall-shelf-stainless-steel-20341569/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/grundtal-wall-shelf-stainless-steel__0481408_pe619588_s5.jpg",
+    "demoPricePKR": 16750,
+    "demoStock": 9,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "tornviken-wall-shelf-off-white-80393517",
+    "name": "TORNVIKEN Wall shelf",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Kitchen shelves",
+    "description": "TORNVIKEN kitchen shelves reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 50,
+      "depth": 30,
+      "height": 24
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Steel",
+      "Nickel-plated"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tornviken-wall-shelf-off-white-80393517/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tornviken-wall-shelf-off-white__0734304_pe739421_s5.jpg",
+    "demoPricePKR": 19500,
+    "demoStock": 10,
+    "tags": [
+      "kitchen",
+      "kitchen shelves",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "tornviken-wall-shelf-off-white-60391661",
+    "name": "TORNVIKEN Wall shelf",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Kitchen shelves",
+    "description": "TORNVIKEN kitchen shelves reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 120,
+      "depth": 30,
+      "height": 24
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Steel",
+      "Nickel-plated",
+      "Galvanized"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tornviken-wall-shelf-off-white-60391661/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tornviken-wall-shelf-off-white__0734302_pe739423_s5.jpg",
+    "demoPricePKR": 22250,
+    "demoStock": 11,
+    "tags": [
+      "kitchen",
+      "kitchen shelves",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "hultarp-rail-black-00448769",
+    "name": "HULTARP Rail",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "HULTARP wall organisers reference in black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 1.6,
+      "depth": 60,
+      "height": 80
+    },
+    "materials": [
+      "Steel",
+      "Powder coating"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/hultarp-rail-black-00448769/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/hultarp-rail-black__0941870_pe795789_s5.jpg",
+    "demoPricePKR": 25000,
+    "demoStock": 12,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
+  },
+  {
+    "id": "tornviken-wall-shelf-off-white-20398099",
+    "name": "TORNVIKEN Wall shelf",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Kitchen shelves",
+    "description": "TORNVIKEN kitchen shelves reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 60,
+      "depth": 30.0,
+      "height": 100
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Particleboard",
+      "Plastic edging"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tornviken-wall-shelf-off-white-20398099/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tornviken-wall-shelf-off-white__0734319_pe739434_s5.jpg",
+    "demoPricePKR": 27750,
+    "demoStock": 13,
+    "tags": [
+      "kitchen",
+      "kitchen shelves",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "palycke-clip-on-basket-00534432",
+    "name": "PÅLYCKE Clip-on basket 36x26x14 cm",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "PÅLYCKE wall organisers reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 26,
+      "depth": 36,
+      "height": 14
+    },
+    "materials": [
+      "Steel",
+      "Powder coating",
+      "EVA plastic"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/palycke-clip-on-basket-00534432/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/palycke-clip-on-basket__1094044_pe863299_s5.jpg",
+    "demoPricePKR": 30500,
+    "demoStock": 14,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "hultarp-hook-black-10444445",
+    "name": "HULTARP Hook",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "HULTARP wall organisers reference in black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 1.8,
+      "depth": 5,
+      "height": 7
+    },
+    "materials": [
+      "Steel",
+      "Powder coating"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/hultarp-hook-black-10444445/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/hultarp-hook-black__0941598_pe795584_s5.jpg",
+    "demoPricePKR": 33250,
+    "demoStock": 6,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "hultarp-hook-nickel-plated-50448837",
+    "name": "HULTARP Hook",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "HULTARP wall organisers reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 1.8,
+      "depth": 5,
+      "height": 7
+    },
+    "materials": [
+      "Steel",
+      "Nickel-plated",
+      "Clear lacquer"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/hultarp-hook-nickel-plated-50448837/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/hultarp-hook-nickel-plated__0941599_pe795585_s5.jpg",
+    "demoPricePKR": 36000,
+    "demoStock": 7,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kungsfors-rail-stainless-steel-40334916",
+    "name": "KUNGSFORS Rail",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Wall organisers",
+    "description": "KUNGSFORS wall organisers reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 1.3,
+      "depth": 56,
+      "height": 80
+    },
+    "materials": [
+      "Stainless steel"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kungsfors-rail-stainless-steel-40334916/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kungsfors-rail-stainless-steel__0712553_pe728909_s5.jpg",
+    "demoPricePKR": 38750,
+    "demoStock": 8,
+    "tags": [
+      "kitchen",
+      "wall organisers",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "height"
+    ]
+  },
+  {
+    "id": "sunnersta-container-blue-grey-30606050",
+    "name": "SUNNERSTA Container",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Accessories for SUNNERSTA",
+    "description": "SUNNERSTA accessories for sunnersta reference in blue, grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 12,
+      "depth": 11,
+      "height": 13
+    },
+    "materials": [
+      "Polypropylene plastic"
+    ],
+    "colors": [
+      "blue, grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/sunnersta-container-blue-grey-30606050/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/sunnersta-container-blue-grey__1391342_pe965754_s5.jpg",
+    "demoPricePKR": 41500,
+    "demoStock": 9,
+    "tags": [
+      "kitchen",
+      "accessories for sunnersta",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "sunnersta-container-white-50303735",
+    "name": "SUNNERSTA Container",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Accessories for SUNNERSTA",
+    "description": "SUNNERSTA accessories for sunnersta reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 12,
+      "depth": 11,
+      "height": 13
+    },
+    "materials": [
+      "Polypropylene plastic"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/sunnersta-container-white-50303735/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/sunnersta-container-white__0409165_pe601916_s5.jpg",
+    "demoPricePKR": 44250,
+    "demoStock": 10,
+    "tags": [
+      "kitchen",
+      "accessories for sunnersta",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "sunnersta-container-beige-10606065",
+    "name": "SUNNERSTA Container",
+    "brand": "IKEA",
+    "category": "kitchen",
+    "subcategory": "Accessories for SUNNERSTA",
+    "description": "SUNNERSTA accessories for sunnersta reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 12,
+      "depth": 11,
+      "height": 13
+    },
+    "materials": [
+      "Polypropylene plastic"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/sunnersta-container-beige-10606065/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/sunnersta-container-beige__1391339_pe965753_s5.jpg",
+    "demoPricePKR": 47000,
+    "demoStock": 11,
+    "tags": [
+      "kitchen",
+      "accessories for sunnersta",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "lagkapten-adils-desk-white-black-s29416763",
+    "name": "LAGKAPTEN / ADILS Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Table bar combinations",
+    "description": "LAGKAPTEN table bar combinations reference in black, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 60,
+      "depth": 120,
+      "height": 73
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (min. 70% recycled)",
+      "Particleboard",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Polypropylene plastic"
+    ],
+    "colors": [
+      "black, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/lagkapten-adils-desk-white-black-s29416763/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/lagkapten-adils-desk-white-black__0977230_pe813473_s5.jpg",
+    "demoPricePKR": 15000,
+    "demoStock": 6,
+    "tags": [
+      "office",
+      "table bar combinations",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-walnut-veneer-black-s89528140",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in brown, black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 80,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Walnut veneer",
+      "Clear lacquer",
+      "Clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "brown, black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-walnut-veneer-black-s89528140/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-walnut-veneer-black__1206052_pe907370_s5.jpg",
+    "demoPricePKR": 17750,
+    "demoStock": 7,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-walnut-veneer-black-s89528055",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in brown, black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 60,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Walnut veneer",
+      "Clear lacquer",
+      "Clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "brown, black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-walnut-veneer-black-s89528055/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-walnut-veneer-black__1206040_pe907360_s5.jpg",
+    "demoPricePKR": 20500,
+    "demoStock": 8,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-white-s99513954",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 60,
+      "height": 73
+    },
+    "materials": [
+      "Particleboard",
+      "Melamine foil",
+      "Acrylic paint",
+      "Plastic edging",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-white-s99513954/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-white__1206032_pe907353_s5.jpg",
+    "demoPricePKR": 23250,
+    "demoStock": 9,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-black-stained-ash-veneer-black-s29528044",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 60,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Ash veneer",
+      "Stain",
+      "Clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-black-stained-ash-veneer-black-s29528044/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-black-stained-ash-veneer-black__1206036_pe907356_s5.jpg",
+    "demoPricePKR": 26000,
+    "demoStock": 10,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-oak-veneer-white-s99528130",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in beige, brown, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 80,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Oak veneer",
+      "Tinted clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "beige, brown, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-oak-veneer-white-s99528130/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-oak-veneer-white__1206049_pe907369_s5.jpg",
+    "demoPricePKR": 28750,
+    "demoStock": 11,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-oak-veneer-black-s79528051",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in beige, brown, black. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 60,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Oak veneer",
+      "Tinted clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "beige, brown, black"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-oak-veneer-black-s79528051/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-oak-veneer-black__1206038_pe907358_s5.jpg",
+    "demoPricePKR": 31500,
+    "demoStock": 12,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "laengdhopp-pull-out-desk-white-30587080",
+    "name": "LÄNGDHOPP Pull-out desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Home office desks",
+    "description": "LÄNGDHOPP home office desks reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 90,
+      "depth": 71,
+      "height": 87
+    },
+    "materials": [
+      "Particle- and fibreboard with honeycomb paper filling (100% recycled paper)",
+      "Particleboard",
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging",
+      "Paper foil",
+      "Steel",
+      "Epoxy/polyester powder coating"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/laengdhopp-pull-out-desk-white-30587080/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/laengdhopp-pull-out-desk-white__1503658_pe1007941_s5.jpg",
+    "demoPricePKR": 34250,
+    "demoStock": 13,
+    "tags": [
+      "office",
+      "home office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mittzon-desk-oak-veneer-white-s39528053",
+    "name": "MITTZON Desk",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "MITTZON office desks",
+    "description": "MITTZON mittzon office desks reference in beige, brown, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 140,
+      "depth": 60,
+      "height": 85
+    },
+    "materials": [
+      "Particleboard",
+      "Oak veneer",
+      "Tinted clear acrylic lacquer",
+      "Paper foil",
+      "Felt",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Fibreboard",
+      "Pigmented powder coating"
+    ],
+    "colors": [
+      "beige, brown, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mittzon-desk-oak-veneer-white-s39528053/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mittzon-desk-oak-veneer-white__1206039_pe907359_s5.jpg",
+    "demoPricePKR": 37000,
+    "demoStock": 14,
+    "tags": [
+      "office",
+      "mittzon office desks",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kolon-floor-protector-44881100",
+    "name": "KOLON Floor protector 120x100 cm",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Desk organisers & accessories",
+    "description": "KOLON desk organisers & accessories reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 120,
+      "depth": 100,
+      "height": 91
+    },
+    "materials": [
+      "PET plastic",
+      "Polyurethane plastic"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kolon-floor-protector-44881100/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kolon-floor-protector__0292207_pe425129_s5.jpg",
+    "demoPricePKR": 39750,
+    "demoStock": 6,
+    "tags": [
+      "office",
+      "desk organisers & accessories",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "mullsjoe-swivel-chair-graesnaes-dark-grey-70576584",
+    "name": "MULLSJÖ Swivel chair",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Home office chairs",
+    "description": "MULLSJÖ home office chairs reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 67,
+      "depth": 67,
+      "height": 91
+    },
+    "materials": [
+      "74 % polyester",
+      "19",
+      "6% modacrylic",
+      "6",
+      "4% cotton",
+      "Polypropylene plastic",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Polyurethane foam",
+      "ABS plastic",
+      "100 % polyester",
+      "60% rubber",
+      "40 % polyester",
+      "100% nylon",
+      "100% polyester"
+    ],
+    "colors": [
+      "Gräsnäs dark grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/mullsjoe-swivel-chair-graesnaes-dark-grey-70576584/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/mullsjoe-swivel-chair-graesnaes-dark-grey__1376248_pe960428_s5.jpg",
+    "demoPricePKR": 42500,
+    "demoStock": 7,
+    "tags": [
+      "office",
+      "home office chairs",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "oerfjaell-swivel-chair-white-vissle-dark-blue-s99501098",
+    "name": "ÖRFJÄLL Swivel chair",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Home office chairs",
+    "description": "ÖRFJÄLL home office chairs reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 68,
+      "depth": 68,
+      "height": 93
+    },
+    "materials": [
+      "Steel",
+      "Epoxy powder coating",
+      "Polypropylene plastic",
+      "Epoxy/polyester powder coating",
+      "Reinforced polypropylene plastic",
+      "Layer-glued wood veneer",
+      "Polyurethane foam 35 kg/cu.m.",
+      "Polyurethane foam 30 kg/cu.m.",
+      "100 % polyester",
+      "100% polypropylene",
+      "73 % polyester",
+      "20% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "white",
+      "Vissle dark blue"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/oerfjaell-swivel-chair-white-vissle-dark-blue-s99501098/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/oerfjaell-swivel-chair-white-vissle-dark-blue__1153112_pe885596_s5.jpg",
+    "demoPricePKR": 45250,
+    "demoStock": 8,
+    "tags": [
+      "office",
+      "home office chairs",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "oerfjaell-swivel-chair-white-vissle-light-grey-s09416014",
+    "name": "ÖRFJÄLL Swivel chair",
+    "brand": "IKEA",
+    "category": "office",
+    "subcategory": "Home office chairs",
+    "description": "ÖRFJÄLL home office chairs reference in grey, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 68,
+      "depth": 68,
+      "height": 93
+    },
+    "materials": [
+      "Steel",
+      "Epoxy powder coating",
+      "Polypropylene plastic",
+      "Epoxy/polyester powder coating",
+      "Reinforced polypropylene plastic",
+      "Layer-glued wood veneer",
+      "Polyurethane foam 35 kg/cu.m.",
+      "Polyurethane foam 30 kg/cu.m.",
+      "100 % polyester",
+      "100% polypropylene",
+      "73% polyester (min. 90% recycled)",
+      "20% modacrylic",
+      "7% cotton"
+    ],
+    "colors": [
+      "grey, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/oerfjaell-swivel-chair-white-vissle-light-grey-s09416014/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/oerfjaell-swivel-chair-white-vissle-light-grey__0978008_pe813981_s5.jpg",
+    "demoPricePKR": 48000,
+    "demoStock": 9,
+    "tags": [
+      "office",
+      "home office chairs",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "tonstad-bed-frame-oak-veneer-loenset-s39577717",
+    "name": "TONSTAD Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "TONSTAD double beds reference in brown. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 144,
+      "depth": 199,
+      "height": 116
+    },
+    "materials": [
+      "Particle- and fibreboard with honeycomb paper filling (100% recycled paper)",
+      "Oak veneer",
+      "Clear acrylic lacquer",
+      "Paper edging",
+      "Paper foil",
+      "Particleboard",
+      "Solid wood",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100% polypropylene",
+      "Thermoplastic elastomer",
+      "Plywood"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tonstad-bed-frame-oak-veneer-loenset-s39577717/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tonstad-bed-frame-oak-veneer-loenset__1385644_pe963600_s5.jpg",
+    "demoPricePKR": 55000,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "taernkullen-upholstered-bed-frame-tibbleby-beige-grey-luroey-s69564351",
+    "name": "TÄRNKULLEN Upholstered bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "TÄRNKULLEN double beds reference in beige, grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 154,
+      "depth": 199,
+      "height": 112
+    },
+    "materials": [
+      "67% polyester (min. 90% recycled)",
+      "24% modacrylic",
+      "9% cotton",
+      "100% polyester (min. 70% recycled)",
+      "100 % polyester (100% recycled)",
+      "100% polypropylene",
+      "Laminated veneer lumber",
+      "Fibreboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "Solid wood",
+      "Oak veneer",
+      "Clear acrylic lacquer",
+      "Polyamide plastic",
+      "Steel",
+      "Galvanized",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "beige, grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/taernkullen-upholstered-bed-frame-tibbleby-beige-grey-luroey-s69564351/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/taernkullen-upholstered-bed-frame-tibbleby-beige-grey-luroey__1323491_pe942718_s5.jpg",
+    "demoPricePKR": 57750,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "idanaes-upholstered-ottoman-bed-naggen-beige-40590949",
+    "name": "IDANÄS Upholstered ottoman bed",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "IDANÄS upholstered beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 160,
+      "depth": 224,
+      "height": 101
+    },
+    "materials": [
+      "Plywood",
+      "Fibreboard",
+      "Laminated veneer lumber",
+      "Particleboard",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Polyester wadding",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Adhesive resin as coating",
+      "100% polypropylene",
+      "100 % polyester",
+      "65 % polyester",
+      "26% modacrylic",
+      "9% cotton",
+      "Polyamide plastic",
+      "76% polyester (min. 90% recycled)",
+      "18% modacrylic",
+      "6% cotton"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/idanaes-upholstered-ottoman-bed-naggen-beige-40590949/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/idanaes-upholstered-ottoman-bed-naggen-beige__1322778_pe942242_s5.jpg",
+    "demoPricePKR": 60500,
+    "demoStock": 8,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "tonstad-bed-frame-oak-veneer-loenset-s99577719",
+    "name": "TONSTAD Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Double beds",
+    "description": "TONSTAD double beds reference in brown. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 160,
+      "depth": 209,
+      "height": 116
+    },
+    "materials": [
+      "Particle- and fibreboard with honeycomb paper filling (100% recycled paper)",
+      "Oak veneer",
+      "Clear acrylic lacquer",
+      "Paper edging",
+      "Paper foil",
+      "Particleboard",
+      "Solid wood",
+      "Galvanized steel",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100% polypropylene",
+      "Thermoplastic elastomer",
+      "Plywood"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tonstad-bed-frame-oak-veneer-loenset-s99577719/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tonstad-bed-frame-oak-veneer-loenset__1385644_pe963600_s5.jpg",
+    "demoPricePKR": 63250,
+    "demoStock": 9,
+    "tags": [
+      "bedroom",
+      "double beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "tarva-bed-frame-white-stained-luroey-s09553992",
+    "name": "TARVA Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "TARVA single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 99,
+      "depth": 199,
+      "height": 100
+    },
+    "materials": [
+      "Solid pine",
+      "Stain",
+      "Clear acrylic lacquer",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/tarva-bed-frame-white-stained-luroey-s09553992/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/tarva-bed-frame-white-stained-luroey__1273539_pe930095_s5.jpg",
+    "demoPricePKR": 55000,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "slattum-upholstered-bed-frame-vissle-dark-grey-90578737",
+    "name": "SLATTUM Upholstered bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "SLATTUM upholstered beds reference in grey. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 94,
+      "depth": 196,
+      "height": 100
+    },
+    "materials": [
+      "100% polyester (min. 90% recycled)",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "73% polyester (min. 90% recycled)",
+      "20% modacrylic",
+      "7% cotton",
+      "65% polyester (min. 90% recycled)",
+      "26% modacrylic",
+      "9% cotton",
+      "100 % polyester",
+      "Polyester wadding",
+      "Steel",
+      "Polyurethane foam 30 kg/cu.m.",
+      "Particleboard",
+      "Epoxy/polyester powder coating",
+      "100% polypropylene",
+      "65 % polyester"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/slattum-upholstered-bed-frame-vissle-dark-grey-90578737/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/slattum-upholstered-bed-frame-vissle-dark-grey__1259336_pe926649_s5.jpg",
+    "demoPricePKR": 57750,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "gullaberg-bed-frame-white-80608103",
+    "name": "GULLABERG Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "GULLABERG single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 101,
+      "depth": 198,
+      "height": 113
+    },
+    "materials": [
+      "Solid wood",
+      "Acrylic paint",
+      "Fibreboard",
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Adhesive"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/gullaberg-bed-frame-white-80608103/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/gullaberg-bed-frame-white__1488525_pe1003366_s5.jpg",
+    "demoPricePKR": 60500,
+    "demoStock": 8,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "stjaernoe-bed-frame-white-luroey-s39563367",
+    "name": "STJÄRNÖ Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "STJÄRNÖ single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 98,
+      "depth": 199,
+      "height": 118
+    },
+    "materials": [
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/stjaernoe-bed-frame-white-luroey-s39563367/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/stjaernoe-bed-frame-white-luroey__1298068_pe936041_s5.jpg",
+    "demoPricePKR": 63250,
+    "demoStock": 9,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "vihals-bed-frame-white-30602429",
+    "name": "VIHALS Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "VIHALS single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 196,
+      "height": 66
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (100% recycled)"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/vihals-bed-frame-white-30602429/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/vihals-bed-frame-white__1446112_pe988552_s5.jpg",
+    "demoPricePKR": 66000,
+    "demoStock": 10,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "hemnes-day-bed-frame-with-3-drawers-white-90349326",
+    "name": "HEMNES Day-bed frame with 3 drawers",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Guest beds & day beds",
+    "description": "HEMNES guest beds & day beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 89,
+      "depth": 209,
+      "height": 83
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Polyester paint",
+      "Solid pine",
+      "Particleboard",
+      "Melamine foil",
+      "Plastic foil"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/hemnes-day-bed-frame-with-3-drawers-white-90349326/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/hemnes-day-bed-frame-with-3-drawers-white__1180454_pe896328_s5.jpg",
+    "demoPricePKR": 68750,
+    "demoStock": 11,
+    "tags": [
+      "bedroom",
+      "guest beds & day beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey-s59560216",
+    "name": "RAMNEFJÄLL Upholstered bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Upholstered beds",
+    "description": "RAMNEFJÄLL upholstered beds reference in beige. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 104,
+      "depth": 200,
+      "height": 100
+    },
+    "materials": [
+      "Plywood",
+      "Fibreboard",
+      "100% polyester",
+      "Laminated veneer lumber",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "100% polyester (min. 70% recycled)",
+      "68 % viscose",
+      "32 % polyester (100% recycled)",
+      "100% nylon",
+      "71% polyester (min. 90% recycled)",
+      "21% modacrylic",
+      "8% cotton",
+      "100 % polyester (100% recycled)",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey-s59560216/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey__1258168_pe927358_s5.jpg",
+    "demoPricePKR": 71500,
+    "demoStock": 12,
+    "tags": [
+      "bedroom",
+      "upholstered beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "slaekt-bed-frame-w-storage-slatted-bedbase-white-s29291956",
+    "name": "SLÄKT Bed frame w storage+slatted bedbase",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Children's single beds",
+    "description": "SLÄKT children's single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 206,
+      "height": 89
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Plastic foil",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/slaekt-bed-frame-w-storage-slatted-bedbase-white-s29291956/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/slaekt-bed-frame-w-storage-slatted-bedbase-white__0648346_pe704865_s5.jpg",
+    "demoPricePKR": 74250,
+    "demoStock": 13,
+    "tags": [
+      "bedroom",
+      "children's single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "malm-ottoman-bed-white-40493043",
+    "name": "MALM Ottoman bed",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Beds with storage",
+    "description": "MALM beds with storage reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 105,
+      "depth": 200,
+      "height": 118
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Printed acrylic paint",
+      "Plastic edging",
+      "Honeycomb structure paper filling (min. 70% recycled)",
+      "Steel",
+      "Epoxy/polyester powder coating",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Beech veneer",
+      "Adhesive resin as coating",
+      "Paper foil"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/malm-ottoman-bed-white-40493043/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/malm-ottoman-bed-white__0764898_pe753384_s5.jpg",
+    "demoPricePKR": 77000,
+    "demoStock": 14,
+    "tags": [
+      "bedroom",
+      "beds with storage",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "storklinta-bed-frame-white-90615551",
+    "name": "STORKLINTA Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "STORKLINTA single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 99,
+      "depth": 199,
+      "height": 101
+    },
+    "materials": [
+      "Particleboard",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Fibreboard",
+      "Acrylic paint",
+      "Plastic edging",
+      "Laminated veneer lumber"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/storklinta-bed-frame-white-90615551/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/storklinta-bed-frame-white__1542239_pe1018345_s5.jpg",
+    "demoPricePKR": 79750,
+    "demoStock": 6,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "vihals-day-bed-frame-with-storage-white-s89571586",
+    "name": "VIHALS Day-bed frame with storage",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Guest beds & day beds",
+    "description": "VIHALS guest beds & day beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 160,
+      "depth": 210,
+      "height": 100
+    },
+    "materials": [
+      "Particleboard",
+      "Fibreboard",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Acrylic paint",
+      "Plastic edging",
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "100 % polyester",
+      "Melamine foil",
+      "Plastic foil",
+      "Paper foil",
+      "Paper edging"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/vihals-day-bed-frame-with-storage-white-s89571586/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/vihals-day-bed-frame-with-storage-white__1426644_pe979884_s5.jpg",
+    "demoPricePKR": 82500,
+    "demoStock": 7,
+    "tags": [
+      "bedroom",
+      "guest beds & day beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "brimnes-day-bed-frame-with-2-drawers-white-00228705",
+    "name": "BRIMNES Day-bed frame with 2 drawers",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Guest beds & day beds",
+    "description": "BRIMNES guest beds & day beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 87,
+      "depth": 205,
+      "height": 58
+    },
+    "materials": [
+      "Particleboard",
+      "Paper foil",
+      "Plastic edging",
+      "Fibreboard",
+      "Solid pine",
+      "Plastic foil",
+      "Acrylic paint"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/brimnes-day-bed-frame-with-2-drawers-white-00228705/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg",
+    "demoPricePKR": 85250,
+    "demoStock": 8,
+    "tags": [
+      "bedroom",
+      "guest beds & day beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "vevelstad-bed-frame-white-60518274",
+    "name": "VEVELSTAD Bed frame",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "VEVELSTAD single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 196,
+      "height": 27
+    },
+    "materials": [
+      "Layer-glued wood veneer",
+      "Adhesive resin as coating",
+      "Steel",
+      "Epoxy/polyester powder coating"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/vevelstad-bed-frame-white-60518274/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/vevelstad-bed-frame-white__1035360_pe840536_s5.jpg",
+    "demoPricePKR": 88000,
+    "demoStock": 9,
+    "tags": [
+      "bedroom",
+      "single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "slaekt-bed-frame-with-underbed-and-storage-white-s89227731",
+    "name": "SLÄKT Bed frame with underbed and storage",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Children's single beds",
+    "description": "SLÄKT children's single beds reference in white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 206,
+      "height": 101
+    },
+    "materials": [
+      "Fibreboard",
+      "Acrylic paint",
+      "Melamine foil",
+      "Particleboard",
+      "Plastic edging",
+      "Paper foil",
+      "Plastic foil",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Adhesive resin as coating",
+      "100 % polyester",
+      "Honeycomb structure paper filling (100% recycled)"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/slaekt-bed-frame-with-underbed-and-storage-white-s89227731/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/slaekt-bed-frame-with-underbed-and-storage-white__0637775_pe698535_s5.jpg",
+    "demoPricePKR": 90750,
+    "demoStock": 10,
+    "tags": [
+      "bedroom",
+      "children's single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "kura-reversible-bed-white-pine-80253809",
+    "name": "KURA Reversible bed",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Children's single beds",
+    "description": "KURA children's single beds reference in beige, white. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 99,
+      "depth": 209,
+      "height": 116
+    },
+    "materials": [
+      "Solid pine",
+      "Adhesive",
+      "Clear acrylic lacquer",
+      "Fibreboard",
+      "Acrylic paint",
+      "Paper foil"
+    ],
+    "colors": [
+      "beige, white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/kura-reversible-bed-white-pine-80253809/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/kura-reversible-bed-white-pine__0636268_pe697768_s5.jpg",
+    "demoPricePKR": 93500,
+    "demoStock": 11,
+    "tags": [
+      "bedroom",
+      "children's single beds",
+      "manufacturer reference"
+    ],
+    "style": "Scandinavian"
+  },
+  {
+    "id": "klippuggla-bed-frame-with-storage-white-s19627346",
+    "name": "KLIPPUGGLA Bed frame with storage",
+    "brand": "IKEA",
+    "category": "bedroom",
+    "subcategory": "Single beds",
+    "description": "KLIPPUGGLA single beds reference in the pictured finish. View the manufacturer source for assembly, care and product details.",
+    "dimensions": {
+      "width": 96,
+      "depth": 206,
+      "height": 89
+    },
+    "materials": [
+      "Particleboard",
+      "Honeycomb structure paper filling (100% recycled)",
+      "Fibreboard",
+      "Plastic edging",
+      "Acrylic paint",
+      "Solid pine",
+      "Adhesive",
+      "Paper foil",
+      "Melamine foil",
+      "Layer-glued wood veneer",
+      "Birch veneer",
+      "Adhesive resin as coating",
+      "100 % polyester"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://www.ikea.com/gb/en/p/klippuggla-bed-frame-with-storage-white-s19627346/",
+    "referenceImage": "https://www.ikea.com/gb/en/images/products/klippuggla-bed-frame-with-storage-white__1507239_pe1009172_s5.jpg",
+    "demoPricePKR": 96250,
+    "demoStock": 12,
+    "tags": [
+      "bedroom",
+      "single beds",
       "manufacturer reference"
     ],
     "style": "Scandinavian"

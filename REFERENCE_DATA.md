@@ -542,3 +542,8 @@ The catalogue is checked into `src/data/catalogue.json` and works locally withou
 - [FÅGELFJÄLLET Chest of 6 drawers — blue](https://www.ikea.com/gb/en/p/fagelfjaellet-chest-of-6-drawers-dark-grey-blue-80611638/)
 - [KRYLBO Swivel chair — beige](https://www.ikea.com/gb/en/p/krylbo-swivel-chair-tonerud-dark-beige-90573589/)
 - [GLOSTAD 3-seat sofa with chaise longue — grey](https://www.ikea.com/gb/en/p/glostad-3-seat-sofa-with-chaise-longue-knisa-dark-grey-s89578601/)
+
+
+## Catalogue expansion — 25 October 2026
+
+83 additional official product references were imported: 40 beds, 15 sofas, 15 kitchen items and 13 office pieces. The catalogue now has 600 records. Missing measurements were supplemented from named assembled-product measurements, excluding package sizes. Thirteen products retain explicitly marked estimates in `dimensionEstimates`; these are planning values and must not be represented as verified manufacturer dimensions. Original sourced dimensions were preserved. New source URLs are recorded in `src/data/catalogue.json` and the import report is `src/data/catalogue-expansion-report.json`. This update supersedes the earlier statement that missing dimensions always remain null.

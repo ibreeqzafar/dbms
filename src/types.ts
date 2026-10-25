@@ -1,5 +1,5 @@
 export type Room='living'|'bedroom'|'office'|'dining'|'kitchen';
-export type Product={active?:boolean;id:string;name:string;brand:string;category:Room;subcategory:string;description:string;dimensions:{width:number|null;depth:number|null;height:number|null};materials:string[];colors:string[];sourceUrl:string;referenceImage:string|null;demoPricePKR:number;demoStock:number;tags:string[];style:string};
+export type Product={active?:boolean;id:string;name:string;brand:string;category:Room;subcategory:string;description:string;dimensions:{width:number|null;depth:number|null;height:number|null};dimensionEstimates?:Array<'width'|'depth'|'height'>;materials:string[];colors:string[];sourceUrl:string;referenceImage:string|null;demoPricePKR:number;demoStock:number;tags:string[];style:string};
 export type CartLine={productId:string;quantity:number;variant:string};
 export type Profile={id:string;name:string;email:string;role:'customer'|'administrator';demo:boolean};
 export type Order={id:string;ownerId:string;createdAt:string;status:'demo-confirmed';total:number;key:string;lines:{product:Product;quantity:number;variant:string;unitPrice:number}[]};

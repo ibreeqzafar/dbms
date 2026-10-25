@@ -2,7 +2,7 @@ import {supabase} from './supabase';
 export const checkoutEnabled=import.meta.env.VITE_ORDER_SUBMISSION_ENABLED==='true';
 import type {CartLine} from '../types';
 export type CustomerDetails={name:string;phone:string;city:string;address:string;notes:string};
-export type StoreOrder={id:string;owner_id:string;customer_name:string;phone:string;city:string;delivery_address:string;payment_method:'cod'|'online';payment_state:'unpaid'|'paid';order_state:'received'|'processing'|'dispatched'|'delivered'|'cancelled';total_paisa:number;delivery_paisa:number|null;carrier:string;tracking_number:string;created_at:string;snapshot:{productId:string;name:string;variant:string;quantity:number;unitPricePaisa:number}[]};
+export type StoreOrder={id:string;owner_id:string;customer_name:string;phone:string;city:string;delivery_address:string;payment_method:'cod'|'online';payment_state:'unpaid'|'paid';order_state:'received'|'processing'|'dispatched'|'delivered'|'cancelled';total_paisa:number;delivery_paisa:number|null;carrier:string;tracking_number:string;created_at:string;updated_at:string;notes:string;snapshot:{productId:string;name:string;variant:string;quantity:number;unitPricePaisa:number}[]};
 export async function submitOrder(lines:CartLine[],customer:CustomerDetails,method:'cod'|'online',total:number){
  if(!checkoutEnabled||!supabase)throw Error('Checkout is temporarily unavailable. Please try again later.');
  const payload=JSON.stringify({lines,customer,method,total});

@@ -2,7 +2,7 @@ import {useEffect,useRef,useState} from 'react';
 import type {ReactNode} from 'react';
 import {Link} from 'react-router-dom';
 import type {DesignerAccess as Access} from '../lib/designer-access';
-export default function DesignerAccess({access,busy,loading,onGuest,accountForm,error}:{access:Access|null;busy:boolean;loading:boolean;onGuest:()=>Promise<boolean>;accountForm:ReactNode;error:string}){
+export default function DesignerAccess({access,busy,loading,onGuest,accountForm,error,onAuthenticated}:{access:Access|null;busy:boolean;loading:boolean;onGuest:()=>Promise<boolean>;accountForm:(onAuthenticated:()=>Promise<void>)=>ReactNode;error:string;onAuthenticated:()=>Promise<void>}){
  const dialog=useRef<HTMLDialogElement>(null);
  const [guestChosen,setGuestChosen]=useState(false),[register,setRegister]=useState(false);
  const needsChoice=!access?.registered&&!guestChosen;
@@ -18,7 +18,7 @@ export default function DesignerAccess({access,busy,loading,onGuest,accountForm,
   <dialog ref={dialog} className="designer-access-dialog" aria-labelledby="designer-access-title" aria-describedby="designer-access-description" onCancel={e=>e.preventDefault()} onClose={e=>{const modal=e.currentTarget;queueMicrotask(()=>{if(needsChoice&&modal.isConnected&&!modal.open)modal.showModal()})}}>
    <span className="eyebrow">ESSYRA DESIGN STUDIO</span><h2 id="designer-access-title">Make room for <em>your ideas.</em></h2>
    <p id="designer-access-description">Create an account for more designer access and privately saved designs, or explore with 3 guest generations every 24 hours. The refill timer starts with your first successful generation.</p>
-   {register&&<><button type="button" className="text-button" onClick={()=>setRegister(false)}>Back to access options</button>{accountForm}</>}
+   {register&&<><button type="button" className="text-button" onClick={()=>setRegister(false)}>Back to access options</button>{accountForm(async()=>{await onAuthenticated();setGuestChosen(true)})}</>}
    {!register&&<button autoFocus className="btn full" disabled={loading||busy} onClick={()=>setRegister(true)}>Register or sign in</button>}
    <button className="btn secondary full" disabled={loading||busy} onClick={async()=>{if(await onGuest())setGuestChosen(true)}}>{loading?'Checking your access...':busy?'Starting guest mode...':access?`Continue as guest - ${access.remaining} remaining`:'Continue as guest - 3 free generations'}</button>
    {error&&<p className="error" role="alert">{error}</p>}

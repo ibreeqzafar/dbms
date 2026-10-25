@@ -1,6 +1,6 @@
 # Safepay activation
 
-The storefront has prepared COD ordering and a Safepay payment path. The owner chose to keep migration 202610190003 prepared without running it. Do not apply it without renewed authorisation. `VITE_ORDER_SUBMISSION_ENABLED` defaults to false; only set it true after the migration has been authorised and installed. Online payment stays disabled until the merchant connection is configured and verified.
+The owner approved activating migration 202610190003 and cash-on-delivery ordering on 25 October 2026. The production frontend enables order submission after the database migration succeeds. Online payment remains disabled until the merchant connection is configured and verified.
 
 1. In Supabase → Edge Functions → Secrets, enter `SAFEPAY_API_KEY`, `SAFEPAY_SECRET_KEY`, `SAFEPAY_WEBHOOK_SECRET` and `SAFEPAY_ENVIRONMENT=production`. Use keys belonging to the ESSYRA merchant. Never put secret keys in chat, frontend environment variables or the repository.
 2. Deploy `store-payments`. Its gateway JWT check is off because Safepay webhooks do not have a Supabase JWT; customer actions still verify Supabase identity, ownership and active profile internally. Webhook actions require Safepay HMAC verification and an authoritative server-side tracker lookup.
