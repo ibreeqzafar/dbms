@@ -15,3 +15,8 @@ Connect a transactional/marketing email provider you control and verify the send
 A future sender must query current consent and the active profile at send time, using only `marketing_opt_in=true`, `email_verified=true`, and `profiles.active=true`. Respect provider suppression lists, bounces, complaints and delivery limits. Include a working unsubscribe link in every marketing email. Do not send a campaign until that link and the delivery integration have been implemented and verified. Account unsubscribe is already available, but is not a substitute for an unsubscribe link in each email.
 
 Customer marketing messages should announce real products, offers or sales with accurate terms. The site currently does not send any campaigns.
+
+
+## Registration policy — 25 October 2026
+
+The owner approved disabling sign-up email confirmation. Successful new registrations receive a session and continue immediately. Password-reset emails still prove ownership of the mailbox. Supabase auto-confirms email records with this setting off, so `email_verified` reflects the Auth record and must not be treated as proof of mailbox ownership for marketing. Before activating campaigns, implement a separate subscription confirmation and suppression/unsubscribe handling. No campaign sender is currently active.

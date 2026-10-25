@@ -1,3 +1,7 @@
+# Cash-on-delivery project decision
+
+On 25 October 2026 the owner selected COD only for this practice project. Online merchant onboarding and Safepay activation are out of scope. Customer checkout and support offer only COD; onlinePaymentsEnabled remains false. The following previous integration notes are retained only for a future, separately authorised implementation.
+
 # Safepay activation
 
 The owner approved activating migration 202610190003 and cash-on-delivery ordering on 25 October 2026. The production frontend enables order submission after the database migration succeeds. Online payment remains disabled until the merchant connection is configured and verified.

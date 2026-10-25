@@ -11,7 +11,7 @@ export default function DesignerAccess({access,busy,loading,onGuest,accountForm,
   if(needsChoice){if(!modal.open)modal.showModal();const previous=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{modal.close();document.body.style.overflow=previous}}
   modal.close();
  },[needsChoice]);
- if(access?.registered)return <section className="designer-access compact" aria-label="Designer account access"><div><span className="eyebrow">YOUR DESIGNER ACCESS</span><p>Signed in with a verified email. Explore recommendations and save your favourite designs.</p></div><Link className="text-link" to="/account">Your account</Link></section>;
+ if(access?.registered)return <section className="designer-access compact" aria-label="Designer account access"><div><span className="eyebrow">YOUR DESIGNER ACCESS</span><p>Signed in to your ESSYRA account. Explore recommendations and save your favourite designs.</p></div><Link className="text-link" to="/account">Your account</Link></section>;
  const exhausted=access?.remaining===0;
  const refill=access?.resetsAt?new Intl.DateTimeFormat('en-PK',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Karachi'}).format(new Date(access.resetsAt)):null;
  return <>
@@ -22,9 +22,9 @@ export default function DesignerAccess({access,busy,loading,onGuest,accountForm,
    {!register&&<button autoFocus className="btn full" disabled={loading||busy} onClick={()=>setRegister(true)}>Register or sign in</button>}
    <button className="btn secondary full" disabled={loading||busy} onClick={async()=>{if(await onGuest())setGuestChosen(true)}}>{loading?'Checking your access...':busy?'Starting guest mode...':access?`Continue as guest - ${access.remaining} remaining`:'Continue as guest - 3 free generations'}</button>
    {error&&<p className="error" role="alert">{error}</p>}
-   <small>{refill&&<>Full guest refill: {refill} (Pakistan time).<br/></>}Email verification is required for registered designer access. Guest access does not require a password.</small>
+   <small>{refill&&<>Full guest refill: {refill} (Pakistan time).<br/></>}Use an email and password, or continue as a guest without a password.</small>
    <Link className="text-link" to="/collection">Back to the collection</Link>
   </dialog>
-  <section className={'designer-access '+(exhausted?'exhausted':'')} aria-label="Designer guest access"><div><span className="eyebrow">YOUR DESIGNER ACCESS</span><h2>{exhausted?'Your next chapter starts here.':'Your space, your way.'}</h2><p>{exhausted?'You have used your 3 guest generations. Register and verify your email to continue, or wait for your 24-hour refill.':access?`${access.remaining} of 3 guest generations remaining. Your full allowance refills 24 hours after your first successful generation.`:'Choose your access to begin.'}</p><small>{refill&&<>Full guest refill: {refill} (Pakistan time).<br/></>}Recommendations use your furniture preferences. The room canvas is an illustrative overlay; AI image generation will be available when the rendering service is connected.</small></div><button className="btn" onClick={()=>{setRegister(true);setGuestChosen(false)}}>Register or sign in</button></section>
+  <section className={'designer-access '+(exhausted?'exhausted':'')} aria-label="Designer guest access"><div><span className="eyebrow">YOUR DESIGNER ACCESS</span><h2>{exhausted?'Your next chapter starts here.':'Your space, your way.'}</h2><p>{exhausted?'You have used your 3 guest generations. Register or sign in to continue, or wait for your 24-hour refill.':access?`${access.remaining} of 3 guest generations remaining. Your full allowance refills 24 hours after your first successful generation.`:'Choose your access to begin.'}</p><small>{refill&&<>Full guest refill: {refill} (Pakistan time).<br/></>}Recommendations use your furniture preferences. The room canvas is an illustrative overlay; AI image generation will be available when the rendering service is connected.</small></div><button className="btn" onClick={()=>{setRegister(true);setGuestChosen(false)}}>Register or sign in</button></section>
  </>;
 }
