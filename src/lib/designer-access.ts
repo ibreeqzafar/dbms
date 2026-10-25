@@ -1,5 +1,5 @@
 import {supabase,requireSession} from './supabase';
-export type DesignerAccess={registered:boolean;used:number;remaining:number|null};
+export type DesignerAccess={registered:boolean;used:number;remaining:number|null;resetsAt?:string|null};
 export async function loadDesignerAccess():Promise<DesignerAccess|null>{
  if(!supabase)return null;
  const {data:{session}}=await supabase.auth.getSession();

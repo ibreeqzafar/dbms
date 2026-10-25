@@ -42,3 +42,19 @@ body{background:var(--paper);color:var(--ink)}
 .designer-access>div:first-child{max-width:660px}.designer-access h2{font-size:clamp(27px,3vw,40px);margin:8px 0 12px}.designer-access p{margin:8px 0;line-height:1.6}.designer-access small{display:block;line-height:1.6;opacity:.8}.designer-access-actions{display:flex;flex-direction:column;align-items:stretch;gap:14px;min-width:260px}.designer-access-actions .btn{text-align:center;justify-content:center}.designer-access.compact{padding:20px 28px}.password-field{margin-bottom:20px}.password-field>label{display:block;margin-bottom:8px}.password-actions{justify-content:space-between;gap:12px}.password-actions>button{min-height:44px}.password-field small{display:block;line-height:1.6}.designer-access.exhausted{border-width:2px}
 @media(max-width:700px){.designer-access{flex-direction:column;align-items:stretch;padding:22px;gap:20px}.designer-access-actions{min-width:0}.password-actions{flex-wrap:wrap}.designer-access.compact{padding:20px}}
 .email-confirmation{padding:20px;border:1px solid currentColor;margin:20px 0}.email-confirmation h2{font-size:28px;margin-bottom:12px}.email-confirmation strong{overflow-wrap:anywhere}.email-confirmation p{line-height:1.6}
+/* The studio asks for access without moving the visitor away from their room. */
+.designer-access-dialog{width:min(540px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:clamp(24px,5vw,40px);margin:auto;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);box-shadow:0 24px 100px #0005}
+.designer-access-dialog::backdrop{background:#111b16b8;backdrop-filter:blur(6px)}
+.designer-access-dialog>h2{font-size:clamp(32px,6vw,44px);line-height:1.12;margin:18px 0}
+.designer-access-dialog>p{line-height:1.65;margin:16px 0 24px}
+.designer-access-dialog>.btn{margin:8px 0;justify-content:center;min-height:48px}
+.designer-access-dialog>small{display:block;line-height:1.6;color:var(--muted);margin:16px 0}
+.designer-access-dialog>.text-link{display:inline-flex;min-height:44px;align-items:center}
+.studio-account-embedded .account-signin{display:block;margin:16px 0;background:transparent}
+.studio-account-embedded .account-visual{display:none}
+.studio-account-embedded .account-form{padding:0;max-width:none}
+.studio-account-embedded .account-form>h2{font-size:30px;margin:16px 0}
+.studio-account-embedded .account-form input:not([type=checkbox]){width:100%;min-width:0}
+.studio-account-embedded .button-row{flex-wrap:wrap}
+.designer-access-dialog :focus-visible{outline:2px solid currentColor;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.designer-access-dialog{scroll-behavior:auto}}

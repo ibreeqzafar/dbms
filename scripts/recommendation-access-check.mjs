@@ -8,6 +8,7 @@ create table public.profiles(id uuid primary key references auth.users on delete
 create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
 grant usage on schema public,auth to anon,authenticated,service_role;grant execute on function auth.uid() to authenticated;`);
 await db.exec(await readFile('supabase/migrations/202610240005_recommendation_access.sql','utf8'));
+await db.exec(await readFile('supabase/migrations/202610250006_guest_daily_refill.sql','utf8'));
 const guest='11111111-1111-4111-a111-111111111111',customer='22222222-2222-4222-a222-222222222222',unverified='33333333-3333-4333-a333-333333333333';
 await db.exec(`insert into auth.users values('${guest}',null,true),('${customer}',now(),false),('${unverified}',null,false);insert into public.profiles(id) select id from auth.users;`);
 const key=n=>`aaaaaaaa-aaaa-4aaa-aaaa-${String(n).padStart(12,'0')}`;
@@ -24,6 +25,16 @@ await db.exec(`reset role;select set_config('request.jwt.claim.sub','${guest}',f
 assert.equal((await db.query('select public.recommendation_access() as access')).rows[0].access.remaining,0);
 assert.equal((await db.query('select * from public.recommendation_generations')).rows.length,3);
 await denied(generate(guest,5));await denied(`insert into public.recommendation_generations(owner_id,request_key,input,results) values('${guest}','${key(6)}','{}','[]')`);await denied('delete from public.recommendation_generations');
+// Test the exact refill boundary without waiting a day.
+await db.exec(`reset role;update public.guest_recommendation_windows set started_at=now()-interval '23 hours 59 minutes' where owner_id='${guest}';update public.recommendation_generations set created_at=now()-interval '23 hours 59 minutes' where owner_id='${guest}';set role authenticated;`);
+assert.equal((await db.query('select public.recommendation_access() as access')).rows[0].access.remaining,0);
+await db.exec(`reset role;update public.guest_recommendation_windows set started_at=now()-interval '24 hours' where owner_id='${guest}';update public.recommendation_generations set created_at=now()-interval '24 hours' where owner_id='${guest}';set role authenticated;`);
+assert.equal((await db.query('select public.recommendation_access() as access')).rows[0].access.remaining,3);
+await db.exec('reset role;set role service_role');
+assert.equal((await db.query(generate(guest,3))).rows[0].result.remaining,3);
+assert.equal((await db.query(generate(guest,8,'[]'))).rows[0].result.remaining,3);
+for(let n=9;n<=11;n++)assert.equal((await db.query(generate(guest,n))).rows[0].result.remaining,11-n);
+await denied(generate(guest,12));
 await db.exec(`reset role;update public.profiles set active=false where id='${guest}';set role service_role;`);await denied(generate(guest,7));
 await db.exec('reset role;set role anon');await denied('select public.recommendation_access()');await denied('select * from public.recommendation_generations');
-console.log('Passed: three guest generations, fourth denied, retry idempotency, conflicting keys, empty results use no allowance, verified customers continue, unverified accounts denied, private history, direct-write denial and disabled-account denial.');await db.close();
+console.log('Passed: exact 24-hour refill, 23h59m no refill, old retry no new charge, three guest generations, fourth denied, retry idempotency, conflicting keys, empty results use no allowance, verified customers continue, unverified accounts denied, private history, direct-write denial and disabled-account denial.');await db.close();
