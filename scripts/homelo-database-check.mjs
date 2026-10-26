@@ -1,7 +1,6 @@
 import {PGlite} from '@electric-sql/pglite';
 import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {execFileSync} from 'node:child_process';
 const db=new PGlite();
 await db.exec(`create role anon;create role authenticated;create role service_role bypassrls;create schema auth;create schema storage;create schema extensions;
 create table auth.users(id uuid primary key,raw_user_meta_data jsonb default '{}');
@@ -15,8 +14,12 @@ grant usage on schema auth,storage to anon,authenticated,service_role;grant exec
 const migration=(await readFile('supabase/migrations/202610190001_core.sql','utf8')).replace('create extension if not exists pgcrypto with schema extensions;','');
 await db.exec(migration);await db.exec(await readFile('supabase/migrations/202610190002_media_and_operations.sql','utf8'));await db.exec(await readFile('supabase/migrations/202610190003_store_checkout.sql','utf8'));console.log('Migrations parsed and applied in PostgreSQL.');
 
-const baselineSeed=execFileSync('git',['show','HEAD:supabase/seed.sql'],{encoding:'utf8',maxBuffer:8*1024*1024});
-await db.exec(baselineSeed);
+await db.exec(await readFile('supabase/seed.sql','utf8'));
+// Reset only this disposable in-memory test fixture to the pre-import 600 rows.
+await db.exec(`delete from public.search_update_events where product_id in(select id from public.products where source_url like 'https://homelo.pk/%');
+delete from public.product_media where variant_id in(select id from public.variants where product_id in(select id from public.products where source_url like 'https://homelo.pk/%'));
+delete from public.variants where product_id in(select id from public.products where source_url like 'https://homelo.pk/%');
+delete from public.products where source_url like 'https://homelo.pk/%';`);
 const before=(await db.query('select slug,demo_price_paisa from public.products')).rows;
 assert.equal(before.length,600);
 const catalogueMigration=await readFile('supabase/migrations/202610260008_homelo_catalogue.sql','utf8');
