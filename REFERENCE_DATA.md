@@ -547,3 +547,10 @@ The catalogue is checked into `src/data/catalogue.json` and works locally withou
 ## Catalogue expansion — 25 October 2026
 
 83 additional official product references were imported: 40 beds, 15 sofas, 15 kitchen items and 13 office pieces. The catalogue now has 600 records. Missing measurements were supplemented from named assembled-product measurements, excluding package sizes. Thirteen products retain explicitly marked estimates in `dimensionEstimates`; these are planning values and must not be represented as verified manufacturer dimensions. Original sourced dimensions were preserved. New source URLs are recorded in `src/data/catalogue.json` and the import report is `src/data/catalogue-expansion-report.json`. This update supersedes the earlier statement that missing dimensions always remain null.
+
+
+## Homelo catalogue addition — 26 October 2026
+
+150 distinct public product references from https://homelo.pk were added to the original 600 entries. The source URL and source product/variant IDs are retained in src/data/homelo-import-report.json. PKR prices refer to the first listed configuration; that configuration is shown on product pages when applicable. Image URLs remain on the source Shopify CDN, and all 150 returned image responses during verification. No ownership or resale authorization is inferred from public availability. Storefront branding follows the existing ESSYRA concept presentation.
+
+29 products had all three dimensions available as labelled text. The remaining 121 include explicitly marked estimated axes; these cannot establish a verified room fit. Materials come from source text; missing material details are identified as unspecified. Stock quantities are independent synthetic catalogue stock, not the supplier inventory. Supplier advance-payment, warranty and delivery promises were not copied. The import migration adds records without changing existing prices, inventory or orders and is safe to rerun.

@@ -22,3 +22,7 @@ Official guide: https://supabase.com/docs/guides/auth/social-login/auth-google
 ## Activation status
 
 Google provider availability was confirmed through Supabase public Auth settings on 25 October 2026. The production frontend enables Continue with Google. OAuth returns through /account and restores a validated local destination for checkout and the embedded designer. Client secrets remain exclusively in Supabase settings. A successful customer Google login still needs to be verified in the browser.
+
+## Account-page diagnostics — 26 October 2026
+
+Account loading now waits for Auth SDK initialization and server-verified user/profile loading before showing the login form. OAuth errors in either query parameters or fragments are captured before the SDK consumes them and displayed without reflecting provider secrets or authorization codes. Profile-loading failures provide a retry action. Ordinary Google sign-in no longer leaves an unnecessary homepage return flag; explicit checkout and designer return destinations remain validated local paths. A signed-in browser session alone is not proof of a fresh Google login. Repeat the customer Google sign-in and verify the callback after publishing.

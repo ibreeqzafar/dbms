@@ -10,3 +10,6 @@ src/data/catalogue-import-progress.json
 
 *-desktop.png
 *-mobile.png
+
+scripts/.homelo-reference-cache/
+scripts/homelo-fetch-check.txt

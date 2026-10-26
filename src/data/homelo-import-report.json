@@ -1,0 +1,1683 @@
+{
+  "retrievedAt": "2026-10-25",
+  "importedAt": "2026-10-26",
+  "source": "https://homelo.pk/products.json?limit=250&page=1",
+  "added": 150,
+  "total": 750,
+  "byGroup": {
+    "beds": 33,
+    "sofas": 25,
+    "kitchen": 14,
+    "office": 15,
+    "dining": 20,
+    "storage": 20,
+    "chairs": 10,
+    "tables": 13
+  },
+  "dimensionsEstimated": 121,
+  "notes": "Source PKR prices for the first configuration. ESSYRA stock is synthetic, not supplier inventory. Missing measurements use explicitly marked estimates. Descriptions are original short summaries. No supplier delivery or warranty promises are copied.",
+  "products": [
+    {
+      "slug": "square-bubble-boucle-bed",
+      "sourceUrl": "https://homelo.pk/products/square-bubble-boucle-bed",
+      "sourceProductId": 15442144067869,
+      "sourceVariantId": 67731651264797,
+      "configuration": "Bed only",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "bubble-plush-tufted-bed",
+      "sourceUrl": "https://homelo.pk/products/bubble-plush-tufted-bed",
+      "sourceProductId": 10359294066973,
+      "sourceVariantId": 52789869150493,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "slidell-curved-headboard-bed",
+      "sourceUrl": "https://homelo.pk/products/slidell-curved-headboard-bed",
+      "sourceProductId": 10355403129117,
+      "sourceVariantId": 52777195667741,
+      "configuration": "Bed Only",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "zarelle-bed",
+      "sourceUrl": "https://homelo.pk/products/zarelle-bed",
+      "sourceProductId": 10212072161565,
+      "sourceVariantId": 51621708955933,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "rome-king-bed",
+      "sourceUrl": "https://homelo.pk/products/rome-king-bed",
+      "sourceProductId": 10196311900445,
+      "sourceVariantId": 51721750315293,
+      "configuration": "Only bed",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "ondina-curvaceous-soft-bed",
+      "sourceUrl": "https://homelo.pk/products/ondina-curvaceous-soft-bed",
+      "sourceProductId": 10151202685213,
+      "sourceVariantId": 51114705322269,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "ottavia-sculptural-pillow-flute-bed",
+      "sourceUrl": "https://homelo.pk/products/ottavia-sculptural-pillow-flute-bed",
+      "sourceProductId": 10151182893341,
+      "sourceVariantId": 51114659610909,
+      "configuration": "Queen / Bed Only",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "haven-wingback-cocoon-bed",
+      "sourceUrl": "https://homelo.pk/products/haven-wingback-cocoon-bed",
+      "sourceProductId": 10151180271901,
+      "sourceVariantId": 51114644504861,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "velluto-pebble-contour-velvet-bed",
+      "sourceUrl": "https://homelo.pk/products/velluto-pebble-contour-velvet-bed",
+      "sourceProductId": 10151176569117,
+      "sourceVariantId": 51114623336733,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "aura-cloud-frame-boucle-bed",
+      "sourceUrl": "https://homelo.pk/products/aura-cloud-frame-boucle-bed",
+      "sourceProductId": 10151175323933,
+      "sourceVariantId": 51114618093853,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "solstice-bubble-wave-bed",
+      "sourceUrl": "https://homelo.pk/products/solstice-bubble-wave-bed",
+      "sourceProductId": 10151173783837,
+      "sourceVariantId": 51114612359453,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "lucas-block-tufted-cloud-bed",
+      "sourceUrl": "https://homelo.pk/products/lucas-block-tufted-cloud-bed",
+      "sourceProductId": 10151171817757,
+      "sourceVariantId": 51114607280413,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "cirrus-oversized-bubble-bed",
+      "sourceUrl": "https://homelo.pk/products/cirrus-oversized-bubble-bed",
+      "sourceProductId": 10151170244893,
+      "sourceVariantId": 51114603086109,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "dune-scalloped-upholstered-bed",
+      "sourceUrl": "https://homelo.pk/products/dune-scalloped-upholstered-bed",
+      "sourceProductId": 10151169360157,
+      "sourceVariantId": 51114600661277,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "zen-pebble-modular-wrap-around-bed",
+      "sourceUrl": "https://homelo.pk/products/zen-pebble-modular-wrap-around-bed",
+      "sourceProductId": 10151166345501,
+      "sourceVariantId": 51114577101085,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "alpine-split-bed",
+      "sourceUrl": "https://homelo.pk/products/alpine-split-bed",
+      "sourceProductId": 10151165231389,
+      "sourceVariantId": 51114569105693,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "the-pebble-bed",
+      "sourceUrl": "https://homelo.pk/products/the-pebble-bed",
+      "sourceProductId": 10151066763549,
+      "sourceVariantId": 51114455269661,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "velvet-muse-sculptural-wave-bed",
+      "sourceUrl": "https://homelo.pk/products/velvet-muse-sculptural-wave-bed",
+      "sourceProductId": 10151061061917,
+      "sourceVariantId": 51114461397277,
+      "configuration": "Bed Only / King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "horizon-dual-texture-boucle-bed",
+      "sourceUrl": "https://homelo.pk/products/horizon-dual-texture-boucle-bed",
+      "sourceProductId": 10151059751197,
+      "sourceVariantId": 51114413162781,
+      "configuration": "King / Only Bed",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "sienna-modular-bed",
+      "sourceUrl": "https://homelo.pk/products/sienna-modular-bed",
+      "sourceProductId": 10151057096989,
+      "sourceVariantId": 51114400678173,
+      "configuration": "King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "aurelius-tiered-boucle-bed",
+      "sourceUrl": "https://homelo.pk/products/aurelius-tiered-boucle-bed",
+      "sourceProductId": 10151055819037,
+      "sourceVariantId": 51114390847773,
+      "configuration": "Only Bed / King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "luna-curved-bed",
+      "sourceUrl": "https://homelo.pk/products/luna-curved-bed",
+      "sourceProductId": 10151054770461,
+      "sourceVariantId": 51114383606045,
+      "configuration": "King / Only Bed",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "milano-class-bed-set-with-ottomans-modern-side-tables",
+      "sourceUrl": "https://homelo.pk/products/milano-class-bed-set-with-ottomans-modern-side-tables",
+      "sourceProductId": 10117416223005,
+      "sourceVariantId": 50982546473245,
+      "configuration": "Bed Only / King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "double-back-bed-luxury-boucle-bed-set",
+      "sourceUrl": "https://homelo.pk/products/double-back-bed-luxury-boucle-bed-set",
+      "sourceProductId": 10110743216413,
+      "sourceVariantId": 50962300633373,
+      "configuration": "Bed Only / King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "nova-glow-bed-led-upholstered-luxury-bed-set",
+      "sourceUrl": "https://homelo.pk/products/nova-glow-bed-led-upholstered-luxury-bed-set",
+      "sourceProductId": 10110708220189,
+      "sourceVariantId": 50962260590877,
+      "configuration": "Bed only / King",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "belvik-bed-king-size",
+      "sourceUrl": "https://homelo.pk/products/belvik-bed-king-size",
+      "sourceProductId": 10094597275933,
+      "sourceVariantId": 50890111746333,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "tavin-bed-king-size",
+      "sourceUrl": "https://homelo.pk/products/tavin-bed-king-size",
+      "sourceProductId": 10094593540381,
+      "sourceVariantId": 50890049782045,
+      "configuration": null,
+      "dimensionEstimates": [
+        "height"
+      ]
+    },
+    {
+      "slug": "carno-bed",
+      "sourceUrl": "https://homelo.pk/products/carno-bed",
+      "sourceProductId": 10092355256605,
+      "sourceVariantId": 50879436718365,
+      "configuration": "Boucle",
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "little-dreamer-bed",
+      "sourceUrl": "https://homelo.pk/products/little-dreamer-bed",
+      "sourceProductId": 9912189714717,
+      "sourceVariantId": 50191010332957,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "cozy-cloud-bed",
+      "sourceUrl": "https://homelo.pk/products/cozy-cloud-bed",
+      "sourceProductId": 9912201019677,
+      "sourceVariantId": 50191024128285,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "hi-kid-bed",
+      "sourceUrl": "https://homelo.pk/products/hi-kid-bed",
+      "sourceProductId": 9912179851549,
+      "sourceVariantId": 50190994964765,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "serenity-bed",
+      "sourceUrl": "https://homelo.pk/products/serenity-bed",
+      "sourceProductId": 9912169857309,
+      "sourceVariantId": 50192425582877,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "golden-root-bed-set",
+      "sourceUrl": "https://homelo.pk/products/golden-root-bed-set",
+      "sourceProductId": 9904562667805,
+      "sourceVariantId": 50170966442269,
+      "configuration": "Bed Only",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "cloud-sofa-6-seater-l-shaped",
+      "sourceUrl": "https://homelo.pk/products/cloud-sofa-6-seater-l-shaped",
+      "sourceProductId": 10377305456925,
+      "sourceVariantId": 52857320079645,
+      "configuration": "6 seater",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "cloud-plus-sofa",
+      "sourceUrl": "https://homelo.pk/products/cloud-plus-sofa",
+      "sourceProductId": 10231892607261,
+      "sourceVariantId": 51890640847133,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "lowe-l-shaped-boucle-sofa-with-table",
+      "sourceUrl": "https://homelo.pk/products/lowe-l-shaped-boucle-sofa-with-table",
+      "sourceProductId": 10216000782621,
+      "sourceVariantId": 51806051533085,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "slidell-curved-modern-boucle-living-room-set-luxury-3-piece-sofa",
+      "sourceUrl": "https://homelo.pk/products/slidell-curved-modern-boucle-living-room-set-luxury-3-piece-sofa",
+      "sourceProductId": 10174178033949,
+      "sourceVariantId": 51203631448349,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "luke-sofa-2-seater",
+      "sourceUrl": "https://homelo.pk/products/luke-sofa-2-seater",
+      "sourceProductId": 10169579798813,
+      "sourceVariantId": 51190894330141,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "kate-white-sofa",
+      "sourceUrl": "https://homelo.pk/products/kate-white-sofa",
+      "sourceProductId": 10114225176861,
+      "sourceVariantId": 50973219684637,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "roco-sofa-6-seater",
+      "sourceUrl": "https://homelo.pk/products/roco-sofa-6-seater",
+      "sourceProductId": 10098557714717,
+      "sourceVariantId": 50913508688157,
+      "configuration": "Single Seater / Boucle",
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "leon-sofa-modern-modular-design",
+      "sourceUrl": "https://homelo.pk/products/leon-sofa-modern-modular-design",
+      "sourceProductId": 10083360604445,
+      "sourceVariantId": 50831581315357,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "sanvy-sofa-cum-bed",
+      "sourceUrl": "https://homelo.pk/products/sanvy-sofa-cum-bed",
+      "sourceProductId": 10080744440093,
+      "sourceVariantId": 50818817261853,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "crumble-sofa-seater-l-shaped",
+      "sourceUrl": "https://homelo.pk/products/crumble-sofa-seater-l-shaped",
+      "sourceProductId": 10055789117725,
+      "sourceVariantId": 50704866312477,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "pumpkin-boucle-sofa-7-seater",
+      "sourceUrl": "https://homelo.pk/products/pumpkin-boucle-sofa-7-seater",
+      "sourceProductId": 10050180350237,
+      "sourceVariantId": 50685652107549,
+      "configuration": "Single Seater",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "raimes-sofa",
+      "sourceUrl": "https://homelo.pk/products/raimes-sofa",
+      "sourceProductId": 9941185265949,
+      "sourceVariantId": 50265082134813,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "arch-bubble-sofa",
+      "sourceUrl": "https://homelo.pk/products/arch-bubble-sofa",
+      "sourceProductId": 9938962022685,
+      "sourceVariantId": 50255942615325,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "olive-green-bubbles-sofa-set",
+      "sourceUrl": "https://homelo.pk/products/olive-green-bubbles-sofa-set",
+      "sourceProductId": 9988147020061,
+      "sourceVariantId": 50470003245341,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "broohah-sofa",
+      "sourceUrl": "https://homelo.pk/products/broohah-sofa",
+      "sourceProductId": 9941159444765,
+      "sourceVariantId": 50264991105309,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "suede-sofa",
+      "sourceUrl": "https://homelo.pk/products/suede-sofa",
+      "sourceProductId": 9937390731549,
+      "sourceVariantId": 50251941544221,
+      "configuration": "2 Seater: 48 L | 36 H | 30 W (inches)",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "3-seater-sofa",
+      "sourceUrl": "https://homelo.pk/products/3-seater-sofa",
+      "sourceProductId": 9937413865757,
+      "sourceVariantId": 50251980865821,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "6-seater-l-shape-polyester-sofa-set",
+      "sourceUrl": "https://homelo.pk/products/6-seater-l-shape-polyester-sofa-set",
+      "sourceProductId": 9942678372637,
+      "sourceVariantId": 50500496720157,
+      "configuration": "Velvet",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "tan-l-shaped-luxury-sofa",
+      "sourceUrl": "https://homelo.pk/products/tan-l-shaped-luxury-sofa",
+      "sourceProductId": 9942696067357,
+      "sourceVariantId": 50271649726749,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "beige-velvet-sectional-sofa",
+      "sourceUrl": "https://homelo.pk/products/beige-velvet-sectional-sofa",
+      "sourceProductId": 9942688104733,
+      "sourceVariantId": 50271628919069,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "rowena-sofa",
+      "sourceUrl": "https://homelo.pk/products/rowena-sofa",
+      "sourceProductId": 9921702068509,
+      "sourceVariantId": 50217471443229,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "sage-sofa",
+      "sourceUrl": "https://homelo.pk/products/sage-sofa",
+      "sourceProductId": 9914454802717,
+      "sourceVariantId": 50967871521053,
+      "configuration": "4 Seater",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "gambrills-sofa",
+      "sourceUrl": "https://homelo.pk/products/gambrills-sofa",
+      "sourceProductId": 9925196054813,
+      "sourceVariantId": 50225169236253,
+      "configuration": "Blue",
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "velurian-mustard-sofa",
+      "sourceUrl": "https://homelo.pk/products/velurian-mustard-sofa",
+      "sourceProductId": 9904869966109,
+      "sourceVariantId": 50172391751965,
+      "configuration": "3 S",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "doce-sofa",
+      "sourceUrl": "https://homelo.pk/products/doce-sofa",
+      "sourceProductId": 9904852402461,
+      "sourceVariantId": 50172371927325,
+      "configuration": "1 S",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "raya-cabinet",
+      "sourceUrl": "https://homelo.pk/products/raya-cabinet",
+      "sourceProductId": 10375013007645,
+      "sourceVariantId": 52850065834269,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "rowan-kitchen-island",
+      "sourceUrl": "https://homelo.pk/products/rowan-kitchen-island",
+      "sourceProductId": 10374718030109,
+      "sourceVariantId": 52849151607069,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "willow-kitchen-island",
+      "sourceUrl": "https://homelo.pk/products/willow-kitchen-island",
+      "sourceProductId": 10374701515037,
+      "sourceVariantId": 52849089085725,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "sienna-kitchen-island",
+      "sourceUrl": "https://homelo.pk/products/sienna-kitchen-island",
+      "sourceProductId": 10374670287133,
+      "sourceVariantId": 52848959357213,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "marlow-kitchen-island",
+      "sourceUrl": "https://homelo.pk/products/marlow-kitchen-island",
+      "sourceProductId": 10374471844125,
+      "sourceVariantId": 52848503816477,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "oakley-kitchen-island",
+      "sourceUrl": "https://homelo.pk/products/oakley-kitchen-island",
+      "sourceProductId": 10374283591965,
+      "sourceVariantId": 52847689007389,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "mysen-cabinet",
+      "sourceUrl": "https://homelo.pk/products/mysen-cabinet",
+      "sourceProductId": 9906206998813,
+      "sourceVariantId": 50177819705629,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "dinner-wagon",
+      "sourceUrl": "https://homelo.pk/products/dinner-wagon",
+      "sourceProductId": 9906275975453,
+      "sourceVariantId": 50177974894877,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "homfa-rattan-cabinet",
+      "sourceUrl": "https://homelo.pk/products/homfa-rattan-cabinet",
+      "sourceProductId": 9906334597405,
+      "sourceVariantId": 50183007174941,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "bar-stool-3",
+      "sourceUrl": "https://homelo.pk/products/bar-stool-3",
+      "sourceProductId": 9903598240029,
+      "sourceVariantId": 50166711288093,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "bar-stool-2",
+      "sourceUrl": "https://homelo.pk/products/bar-stool-2",
+      "sourceProductId": 9903582511389,
+      "sourceVariantId": 50166688514333,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "bar-stool-1",
+      "sourceUrl": "https://homelo.pk/products/bar-stool-1",
+      "sourceProductId": 9903575630109,
+      "sourceVariantId": 50166649913629,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "bar-stool",
+      "sourceUrl": "https://homelo.pk/products/bar-stool",
+      "sourceProductId": 9903107473693,
+      "sourceVariantId": 50165105688861,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "kitchen-cabinet",
+      "sourceUrl": "https://homelo.pk/products/kitchen-cabinet",
+      "sourceProductId": 9903051374877,
+      "sourceVariantId": 50164972552477,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "elwood-classic-desk",
+      "sourceUrl": "https://homelo.pk/products/elwood-classic-desk",
+      "sourceProductId": 10415630385437,
+      "sourceVariantId": 53019243643165,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "aurelius-executive-desk",
+      "sourceUrl": "https://homelo.pk/products/aurelius-executive-desk",
+      "sourceProductId": 10185906651421,
+      "sourceVariantId": 51254268952861,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "inkwell-book-shelve",
+      "sourceUrl": "https://homelo.pk/products/inkwell-book-shelve",
+      "sourceProductId": 9923849158941,
+      "sourceVariantId": 50222090649885,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "emize-book-shelve",
+      "sourceUrl": "https://homelo.pk/products/emize-book-shelve",
+      "sourceProductId": 9923906797853,
+      "sourceVariantId": 50222200979741,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "slug": "paulica-book-shelve",
+      "sourceUrl": "https://homelo.pk/products/paulica-book-shelve",
+      "sourceProductId": 9923968729373,
+      "sourceVariantId": 50229185184029,
+      "configuration": "Single",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "oakley-book-shelve",
+      "sourceUrl": "https://homelo.pk/products/oakley-book-shelve",
+      "sourceProductId": 9923975938333,
+      "sourceVariantId": 50222298202397,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "vista-book-shelf",
+      "sourceUrl": "https://homelo.pk/products/vista-book-shelf",
+      "sourceProductId": 9923980656925,
+      "sourceVariantId": 50222304428317,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "lykos-studytable",
+      "sourceUrl": "https://homelo.pk/products/lykos-studytable",
+      "sourceProductId": 9915222262045,
+      "sourceVariantId": 50201418072349,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "crescent-study-table",
+      "sourceUrl": "https://homelo.pk/products/crescent-study-table",
+      "sourceProductId": 9915225440541,
+      "sourceVariantId": 50201426362653,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "calm-cove-study-table",
+      "sourceUrl": "https://homelo.pk/products/calm-cove-study-table",
+      "sourceProductId": 9915242217757,
+      "sourceVariantId": 50201455132957,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "apex-desk",
+      "sourceUrl": "https://homelo.pk/products/apex-desk",
+      "sourceProductId": 9915292582173,
+      "sourceVariantId": 50683426996509,
+      "configuration": "L 5ft",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "paragon-desk",
+      "sourceUrl": "https://homelo.pk/products/paragon-desk",
+      "sourceProductId": 9915297333533,
+      "sourceVariantId": 50201555501341,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "oakwood-desk",
+      "sourceUrl": "https://homelo.pk/products/oakwood-desk",
+      "sourceProductId": 9915310375197,
+      "sourceVariantId": 50201597280541,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "house-shaped-bookshelf",
+      "sourceUrl": "https://homelo.pk/products/house-shaped-bookshelf",
+      "sourceProductId": 9909153005853,
+      "sourceVariantId": 50184662384925,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "momo-table-chair",
+      "sourceUrl": "https://homelo.pk/products/momo-table-chair",
+      "sourceProductId": 9908997718301,
+      "sourceVariantId": 50192408314141,
+      "configuration": "Only table",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "soren-dining-chair",
+      "sourceUrl": "https://homelo.pk/products/soren-dining-chair",
+      "sourceProductId": 10415672623389,
+      "sourceVariantId": 53019299447069,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "olive-arc-outdoor-dining-set",
+      "sourceUrl": "https://homelo.pk/products/olive-arc-outdoor-dining-set",
+      "sourceProductId": 10388423049501,
+      "sourceVariantId": 52905960538397,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "nord-fluted-round-dining-table-4-boucle-chair-seater",
+      "sourceUrl": "https://homelo.pk/products/nord-fluted-round-dining-table-4-boucle-chair-seater",
+      "sourceProductId": 10357114208541,
+      "sourceVariantId": 52781546406173,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth"
+      ]
+    },
+    {
+      "slug": "untitled-aug18_19-44-21",
+      "sourceUrl": "https://homelo.pk/products/untitled-aug18_19-44-21",
+      "sourceProductId": 10357040152861,
+      "sourceVariantId": 52781083754781,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "royal-cane-luxe-dining",
+      "sourceUrl": "https://homelo.pk/products/royal-cane-luxe-dining",
+      "sourceProductId": 10181469733149,
+      "sourceVariantId": 51229105881373,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "luna-crest-dining-set",
+      "sourceUrl": "https://homelo.pk/products/luna-crest-dining-set",
+      "sourceProductId": 10134781526301,
+      "sourceVariantId": 51047436124445,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "nordic-haven-dining-set",
+      "sourceUrl": "https://homelo.pk/products/nordic-haven-dining-set",
+      "sourceProductId": 10134743056669,
+      "sourceVariantId": 51047385399581,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "oslo-dining-table-modern-design",
+      "sourceUrl": "https://homelo.pk/products/oslo-dining-table-modern-design",
+      "sourceProductId": 10130873024797,
+      "sourceVariantId": 51036996632861,
+      "configuration": "8-Seater",
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "aristo-sheesham-dining-set",
+      "sourceUrl": "https://homelo.pk/products/aristo-sheesham-dining-set",
+      "sourceProductId": 10117375951133,
+      "sourceVariantId": 50982453510429,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "dyrin-dining-table-6-seater",
+      "sourceUrl": "https://homelo.pk/products/dyrin-dining-table-6-seater",
+      "sourceProductId": 10095198142749,
+      "sourceVariantId": 50893197705501,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "havix-modern-4-seater-dining-table-set",
+      "sourceUrl": "https://homelo.pk/products/havix-modern-4-seater-dining-table-set",
+      "sourceProductId": 10095190507805,
+      "sourceVariantId": 50893083345181,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "dineo-dining-table",
+      "sourceUrl": "https://homelo.pk/products/dineo-dining-table",
+      "sourceProductId": 9915199586589,
+      "sourceVariantId": 50201366528285,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "nexus-dining-table",
+      "sourceUrl": "https://homelo.pk/products/nexus-dining-table",
+      "sourceProductId": 9915180876061,
+      "sourceVariantId": 50201341755677,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "draper-dining-table",
+      "sourceUrl": "https://homelo.pk/products/draper-dining-table",
+      "sourceProductId": 9915177435421,
+      "sourceVariantId": 50201322225949,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "eastwood-dining-table",
+      "sourceUrl": "https://homelo.pk/products/eastwood-dining-table",
+      "sourceProductId": 9915175534877,
+      "sourceVariantId": 50201309643037,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "the-aura-table",
+      "sourceUrl": "https://homelo.pk/products/the-aura-table",
+      "sourceProductId": 9915172716829,
+      "sourceVariantId": 50201293553949,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "loft-dining-table",
+      "sourceUrl": "https://homelo.pk/products/loft-dining-table",
+      "sourceProductId": 9915171406109,
+      "sourceVariantId": 50201290703133,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "yoco-dinning-set",
+      "sourceUrl": "https://homelo.pk/products/yoco-dinning-set",
+      "sourceProductId": 9914577223965,
+      "sourceVariantId": 50581458092317,
+      "configuration": "Boucle",
+      "dimensionEstimates": [
+        "depth"
+      ]
+    },
+    {
+      "slug": "modern-oasis",
+      "sourceUrl": "https://homelo.pk/products/modern-oasis",
+      "sourceProductId": 9914568081693,
+      "sourceVariantId": 50198360097053,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "elegance-dining-table-set",
+      "sourceUrl": "https://homelo.pk/products/elegance-dining-table-set",
+      "sourceProductId": 9881746637085,
+      "sourceVariantId": 50097105043741,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "ochre-console-contemporary-elegant-storage",
+      "sourceUrl": "https://homelo.pk/products/ochre-console-contemporary-elegant-storage",
+      "sourceProductId": 10391236509981,
+      "sourceVariantId": 52916733280541,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "untitled-sep6_14-26-16",
+      "sourceUrl": "https://homelo.pk/products/untitled-sep6_14-26-16",
+      "sourceProductId": 10378562765085,
+      "sourceVariantId": 52862001348893,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "vanta-shoerack",
+      "sourceUrl": "https://homelo.pk/products/vanta-shoerack",
+      "sourceProductId": 10378098868509,
+      "sourceVariantId": 52860179448093,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "aevery-changing-dresser",
+      "sourceUrl": "https://homelo.pk/products/aevery-changing-dresser",
+      "sourceProductId": 10373086183709,
+      "sourceVariantId": 52843770741021,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "lumi-changing-dresser",
+      "sourceUrl": "https://homelo.pk/products/lumi-changing-dresser",
+      "sourceProductId": 10372937154845,
+      "sourceVariantId": 52843186454813,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "elio-changing-table",
+      "sourceUrl": "https://homelo.pk/products/elio-changing-table",
+      "sourceProductId": 10372916412701,
+      "sourceVariantId": 52843107352861,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "alba-changing-dresser",
+      "sourceUrl": "https://homelo.pk/products/alba-changing-dresser",
+      "sourceProductId": 10372905599261,
+      "sourceVariantId": 52843039129885,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "ellay-sideboard",
+      "sourceUrl": "https://homelo.pk/products/ellay-sideboard",
+      "sourceProductId": 10259442794781,
+      "sourceVariantId": 51985930256669,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "domique",
+      "sourceUrl": "https://homelo.pk/products/domique",
+      "sourceProductId": 10185667084573,
+      "sourceVariantId": 51253826322717,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "hallway-shoerack",
+      "sourceUrl": "https://homelo.pk/products/hallway-shoerack",
+      "sourceProductId": 10184993177885,
+      "sourceVariantId": 51250596118813,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "untitled-may5_18-12",
+      "sourceUrl": "https://homelo.pk/products/untitled-may5_18-12",
+      "sourceProductId": 10184946286877,
+      "sourceVariantId": 51250463473949,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "crimson-arc-sideboard",
+      "sourceUrl": "https://homelo.pk/products/crimson-arc-sideboard",
+      "sourceProductId": 10184937701661,
+      "sourceVariantId": 51250415534365,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "lismore-shoe-rack",
+      "sourceUrl": "https://homelo.pk/products/lismore-shoe-rack",
+      "sourceProductId": 9929819259165,
+      "sourceVariantId": 50236081209629,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "rexford-shoe-rack",
+      "sourceUrl": "https://homelo.pk/products/rexford-shoe-rack",
+      "sourceProductId": 9929808019741,
+      "sourceVariantId": 50236069282077,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "laraley-shoe-rack",
+      "sourceUrl": "https://homelo.pk/products/laraley-shoe-rack",
+      "sourceProductId": 9929756803357,
+      "sourceVariantId": 50236000567581,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "kaspen-shoe-rack",
+      "sourceUrl": "https://homelo.pk/products/kaspen-shoe-rack",
+      "sourceProductId": 9929746186525,
+      "sourceVariantId": 50235987329309,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "koushi-grid-door-shoe-cabinet",
+      "sourceUrl": "https://homelo.pk/products/koushi-grid-door-shoe-cabinet",
+      "sourceProductId": 10151238172957,
+      "sourceVariantId": 51114738745629,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "untitled-mar3_21-11",
+      "sourceUrl": "https://homelo.pk/products/untitled-mar3_21-11",
+      "sourceProductId": 10119117865245,
+      "sourceVariantId": 50989858291997,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "caprio-media-console",
+      "sourceUrl": "https://homelo.pk/products/caprio-media-console",
+      "sourceProductId": 10106414596381,
+      "sourceVariantId": 50950618972445,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "teakwood-cane-media-console",
+      "sourceUrl": "https://homelo.pk/products/teakwood-cane-media-console",
+      "sourceProductId": 10069649686813,
+      "sourceVariantId": 50742894985501,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width"
+      ]
+    },
+    {
+      "slug": "arden-curve-bench",
+      "sourceUrl": "https://homelo.pk/products/arden-curve-bench",
+      "sourceProductId": 10415447802141,
+      "sourceVariantId": 53018808516893,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "rowan-leather-accent-bench",
+      "sourceUrl": "https://homelo.pk/products/rowan-leather-accent-bench",
+      "sourceProductId": 10415489909021,
+      "sourceVariantId": 53018910523677,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "marlow-swivel-chair",
+      "sourceUrl": "https://homelo.pk/products/marlow-swivel-chair",
+      "sourceProductId": 10415593718045,
+      "sourceVariantId": 53019197341981,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "aron-accent-bench",
+      "sourceUrl": "https://homelo.pk/products/aron-accent-bench",
+      "sourceProductId": 10415416934685,
+      "sourceVariantId": 53018766508317,
+      "configuration": null,
+      "dimensionEstimates": [
+        "height"
+      ]
+    },
+    {
+      "slug": "orin-outdoor-iron-glider-chair",
+      "sourceUrl": "https://homelo.pk/products/orin-outdoor-iron-glider-chair",
+      "sourceProductId": 10378555621661,
+      "sourceVariantId": 52861972250909,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "slug": "sora-bench",
+      "sourceUrl": "https://homelo.pk/products/sora-bench",
+      "sourceProductId": 10378236068125,
+      "sourceVariantId": 52861172580637,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth"
+      ]
+    },
+    {
+      "slug": "luxe-haven-bench-modern-upholstered-bedroom-bench",
+      "sourceUrl": "https://homelo.pk/products/luxe-haven-bench-modern-upholstered-bedroom-bench",
+      "sourceProductId": 10145047347485,
+      "sourceVariantId": 51094876061981,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "orvin-chair",
+      "sourceUrl": "https://homelo.pk/products/orvin-chair",
+      "sourceProductId": 10105350455581,
+      "sourceVariantId": 50943007424797,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "ovira-chairs-modern-accent-chair-set-of-3",
+      "sourceUrl": "https://homelo.pk/products/ovira-chairs-modern-accent-chair-set-of-3",
+      "sourceProductId": 10080745980189,
+      "sourceVariantId": 50818834792733,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "sienna-chair",
+      "sourceUrl": "https://homelo.pk/products/sienna-chair",
+      "sourceProductId": 9921630273821,
+      "sourceVariantId": 50217381626141,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "dark-espresso-coffee-table",
+      "sourceUrl": "https://homelo.pk/products/dark-espresso-coffee-table",
+      "sourceProductId": 10415707521309,
+      "sourceVariantId": 53019336016157,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "modo-nesting-tables",
+      "sourceUrl": "https://homelo.pk/products/modo-nesting-tables",
+      "sourceProductId": 10415758180637,
+      "sourceVariantId": 53019389690141,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "noma-marble-coffee-table",
+      "sourceUrl": "https://homelo.pk/products/noma-marble-coffee-table",
+      "sourceProductId": 10415769813277,
+      "sourceVariantId": 53019443364125,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "elara-outdoor-iron-sidetable",
+      "sourceUrl": "https://homelo.pk/products/elara-outdoor-iron-sidetable",
+      "sourceProductId": 10378557423901,
+      "sourceVariantId": 52861995516189,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "liora-nightstand",
+      "sourceUrl": "https://homelo.pk/products/liora-nightstand",
+      "sourceProductId": 10378094346525,
+      "sourceVariantId": 52860172992797,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "untitled-apr30_17-15",
+      "sourceUrl": "https://homelo.pk/products/untitled-apr30_17-15",
+      "sourceProductId": 10180003070237,
+      "sourceVariantId": 51225008636189,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "untitled-apr29_18-24",
+      "sourceUrl": "https://homelo.pk/products/untitled-apr29_18-24",
+      "sourceProductId": 10179119284509,
+      "sourceVariantId": 51222109487389,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "luxecurve-table",
+      "sourceUrl": "https://homelo.pk/products/luxecurve-table",
+      "sourceProductId": 10179964109085,
+      "sourceVariantId": 51224853479709,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "hexa-core-table",
+      "sourceUrl": "https://homelo.pk/products/hexa-core-table",
+      "sourceProductId": 10145789378845,
+      "sourceVariantId": 51097114083613,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "trio-table-cloud-shape-coffee-table",
+      "sourceUrl": "https://homelo.pk/products/trio-table-cloud-shape-coffee-table",
+      "sourceProductId": 10128305324317,
+      "sourceVariantId": 51029887484189,
+      "configuration": null,
+      "dimensionEstimates": []
+    },
+    {
+      "slug": "untitled-feb15_18-30",
+      "sourceUrl": "https://homelo.pk/products/untitled-feb15_18-30",
+      "sourceProductId": 10106182074653,
+      "sourceVariantId": 50948802543901,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "fresca-coffee-table",
+      "sourceUrl": "https://homelo.pk/products/fresca-coffee-table",
+      "sourceProductId": 9942597632285,
+      "sourceVariantId": 50271418024221,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    },
+    {
+      "slug": "waveform-coffee-table",
+      "sourceUrl": "https://homelo.pk/products/waveform-coffee-table",
+      "sourceProductId": 9942568141085,
+      "sourceVariantId": 50271366283549,
+      "configuration": null,
+      "dimensionEstimates": [
+        "width",
+        "depth",
+        "height"
+      ]
+    }
+  ]
+}

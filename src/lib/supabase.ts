@@ -1,4 +1,7 @@
 import {createClient} from '@supabase/supabase-js';
+import {oauthReturnError} from './auth-navigation';
+// Capture callback errors before the Auth SDK consumes the URL fragment.
+export const initialAuthError=oauthReturnError(location.search,location.hash);
 const url=import.meta.env.VITE_SUPABASE_URL,key=import.meta.env.VITE_SUPABASE_ANON_KEY;
 export const supabase=url&&key&&import.meta.env.VITE_SUPABASE_ENABLED==='true'?createClient(url,key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
 export const connected=!!supabase;
