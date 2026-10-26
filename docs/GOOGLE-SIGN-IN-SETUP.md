@@ -26,3 +26,9 @@ Google provider availability was confirmed through Supabase public Auth settings
 ## Account-page diagnostics — 26 October 2026
 
 Account loading now waits for Auth SDK initialization and server-verified user/profile loading before showing the login form. OAuth errors in either query parameters or fragments are captured before the SDK consumes them and displayed without reflecting provider secrets or authorization codes. Profile-loading failures provide a retry action. Ordinary Google sign-in no longer leaves an unnecessary homepage return flag; explicit checkout and designer return destinations remain validated local paths. A signed-in browser session alone is not proof of a fresh Google login. Repeat the customer Google sign-in and verify the callback after publishing.
+
+## Confirmed provider failure — 26 October 2026
+
+Supabase Auth logs report Google oauth2 invalid_client: The provided client secret is invalid. The Google Cloud ESSYRA Website client ID matches Supabase, and its origin and callback URLs match the website and Supabase callback. Replace the secret directly in the secure Google/Supabase settings; never copy it into chat, source, or diagnostics. A fresh Google sign-in must be retested after replacement.
+
+Email provider and new-user signups are enabled, and confirmation is not required. These settings alone do not prove a successful customer registration or validate any supplied password. The exact email/password error is still needed for account-specific diagnosis. No password was changed and no new recovery email was sent during this audit.
