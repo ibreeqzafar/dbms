@@ -26753,5 +26753,2298 @@
       "depth",
       "height"
     ]
+  },
+  {
+    "id": "evoa-mirror",
+    "name": "Evoa Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Evoa Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF",
+      "Glass"
+    ],
+    "colors": [
+      "blue"
+    ],
+    "sourceUrl": "https://homelo.pk/products/evoa-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/il_1588xN.8198928497_igyc.webp?v=1790261374&width=1000",
+    "demoPricePKR": 24000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "blob-mirror-modern-freeform-wall-mirror",
+    "name": "Blob Mirror | Modern Freeform Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Blob Mirror | Modern Freeform Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "red"
+    ],
+    "sourceUrl": "https://homelo.pk/products/blob-mirror-modern-freeform-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Blob_Mirror_Freeform_Modern_Artistic.jpg?v=1765608981&width=1000",
+    "demoPricePKR": 20000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "30 by 30",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "trafalgar-dome-mirror-modern-floor-mirror",
+    "name": "Trafalgar Dome Mirror | Modern Floor Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Trafalgar Dome Mirror | Modern Floor Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 177.8
+    },
+    "materials": [
+      "MDF",
+      "Metal",
+      "Glass"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/trafalgar-dome-mirror-modern-floor-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Trafalgar_Dome_Mirror_Arched_Tall_Elegant.jpg?v=1765870149&width=1000",
+    "demoPricePKR": 24000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth"
+    ]
+  },
+  {
+    "id": "nereus-mirror",
+    "name": "Nereus Mirror | Modern Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Nereus Mirror | Modern Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "golden oak"
+    ],
+    "sourceUrl": "https://homelo.pk/products/nereus-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/products/1310954627039d4e8b80ecc38553e21b.jpg?v=1754480177&width=1000",
+    "demoPricePKR": 8999.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "virgil-mirror-full-length-floor-mirror",
+    "name": "Virgil Mirror | Full-Length Floor Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Virgil Mirror | Full-Length Floor Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 170
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/virgil-mirror-full-length-floor-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Virgil_Mirror_Asymmetrical_Modern_Statement.jpg?v=1765447286&width=1000",
+    "demoPricePKR": 24000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "bala-mirror-1",
+    "name": "Kelly Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Kelly Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "walnut"
+    ],
+    "sourceUrl": "https://homelo.pk/products/bala-mirror-1",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-31at12.45.47_7cd39e2f.jpg?v=1754479536&width=1000",
+    "demoPricePKR": 16000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "32\"L * 24w",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "tall-frame-mirror",
+    "name": "Tall Frame Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Tall Frame Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 170
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/tall-frame-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/6584B555-48E4-4336-89DC-D3734E6CDD02.png?v=1754479538&width=1000",
+    "demoPricePKR": 21000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "20x57\" / 50x145cm",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "cloud-shaped-mirror-asymmetrical-floor-design",
+    "name": "Cloud Shaped Mirror - Asymmetrical Floor Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Cloud Shaped Mirror - Asymmetrical Floor Design. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 170
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/cloud-shaped-mirror-asymmetrical-floor-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/cloud-shaped-mirror-72x30.jpg?v=1765263522&width=1000",
+    "demoPricePKR": 33000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "White / 72\" by 36\"",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "ondo-mirror",
+    "name": "Ondo Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Ondo Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Oak"
+    ],
+    "colors": [
+      "natural"
+    ],
+    "sourceUrl": "https://homelo.pk/products/ondo-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-31at12.04.08_d59b7620.jpg?v=1754479540&width=1000",
+    "demoPricePKR": 20000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "amorph-wall-mirror-modern-design",
+    "name": "Amorph Wall Mirror – Modern Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Amorph Wall Mirror – Modern Design. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/amorph-wall-mirror-modern-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/amorph-asymmetrical-wall-mirror-30x24..jpg?v=1764661019&width=1000",
+    "demoPricePKR": 7500.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "Black",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "pebble-mirror-modern-wall-mirror",
+    "name": "Pebble Mirror | Modern Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Pebble Mirror | Modern Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/pebble-mirror-modern-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Pebble_Mirror_Modern_Asymmetric_Artistic.jpg?v=1765266520&width=1000",
+    "demoPricePKR": 9000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "kepez-mirror-irregular-asymmetrical-wall-mirror",
+    "name": "Kepez Mirror - Irregular Asymmetrical Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Kepez Mirror - Irregular Asymmetrical Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/kepez-mirror-irregular-asymmetrical-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/kepez-irregular-wall-mirror-modern-asymmetrical.jpg?v=1764574634&width=1000",
+    "demoPricePKR": 9500.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "30 H* 30 W / Black",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "zen-mirror-modern-wall-mirror",
+    "name": "Zen Mirror | Modern Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Zen Mirror | Modern Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/zen-mirror-modern-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Zen_Mirror_Elegant_Modern_Timeless.jpg?v=1765609994&width=1000",
+    "demoPricePKR": 20000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "triangular-mirror-modern-design",
+    "name": "Triangular Mirror - Modern Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Triangular Mirror - Modern Design. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/triangular-mirror-modern-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/triangular-window-pane-mirror-25x15.jpg?v=1764585064&width=1000",
+    "demoPricePKR": 14000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "ornica-mirror-curved-wall-mirror",
+    "name": "Ornica Mirror | Curved Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Ornica Mirror | Curved Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF",
+      "Glass"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/ornica-mirror-curved-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Ornica_Mirror_Organic_Curved_Modern.jpg?v=1765447797&width=1000",
+    "demoPricePKR": 9500.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "hexa-penta-mirror",
+    "name": "Hexa Penta Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Hexa Penta Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/hexa-penta-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/D4F614C8-0F20-4303-B4E1-FE2C66C29953.jpg?v=1754479559&width=1000",
+    "demoPricePKR": 16000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "curvy-standing-mirror-with-full-length-design",
+    "name": "Curvy Standing Mirror with Full-Length Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Curvy Standing Mirror with Full-Length Design. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 170
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "dark brown"
+    ],
+    "sourceUrl": "https://homelo.pk/products/curvy-standing-mirror-with-full-length-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/curvy-standing-mirror.png?v=1780322160&width=1000",
+    "demoPricePKR": 16000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "swirl-mirror",
+    "name": "Swirl Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Swirl Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 147.3,
+      "depth": 4,
+      "height": 88.9
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/swirl-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/22998F17-91CF-435C-AFDF-D5D5974A11C6.jpg?v=1754479613&width=1000",
+    "demoPricePKR": 24500.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "depth"
+    ]
+  },
+  {
+    "id": "solico-mirror",
+    "name": "Solico Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Solico Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 121.9,
+      "depth": 4,
+      "height": 121.9
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/solico-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/F70AE7DB-D5D3-4A71-AD8C-82A882B234FA.webp?v=1754479626&width=1000",
+    "demoPricePKR": 22000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "depth"
+    ]
+  },
+  {
+    "id": "daffodil-mirror-upholstered-wall-mirror",
+    "name": "Daffodil Mirror | Upholstered Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Daffodil Mirror | Upholstered Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Velvet",
+      "Glass"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/daffodil-mirror-upholstered-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Daffodil_premium_velvet_upholstered_full-length_wall_mirror_72_by_42_inches_for_luxury_interiors..jpg?v=1765610360&width=1000",
+    "demoPricePKR": 38000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "arch-haven-mirror-modern-wall-mirror",
+    "name": "Arch Haven Mirror | Modern Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Arch Haven Mirror | Modern Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/arch-haven-mirror-modern-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Arch_Haven_Mirror_Arched_Bold_Architectural.png?v=1765351362&width=1000",
+    "demoPricePKR": 18000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "harlow-mirror-round-wall-mounted-mirror",
+    "name": "Harlow Mirror | Round Wall-Mounted Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Harlow Mirror | Round Wall-Mounted Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF",
+      "Glass"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/harlow-mirror-round-wall-mounted-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/CAE245AD-E106-4BBD-B2F7-91596FB217DB.jpg?v=1754479773&width=1000",
+    "demoPricePKR": 4000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "18 by 18 Inches",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "leaf-mirror-modern-decorative-wall-accent",
+    "name": "Leaf Mirror - Modern Decorative Wall Accent",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Leaf Mirror - Modern Decorative Wall Accent. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/leaf-mirror-modern-decorative-wall-accent",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/leaf-mirror-mdf-36x24-modern-wall-decor.jpg?v=1764588762&width=1000",
+    "demoPricePKR": 10000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "wano-mirror-modern-vertical-design",
+    "name": "Wano Mirror - Modern Vertical Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Wano Mirror - Modern Vertical Design. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 177.8,
+      "depth": 76.2,
+      "height": 177.8
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/wano-mirror-modern-vertical-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/wano-mirror-mdf-70x30.jpg?v=1764916800&width=1000",
+    "demoPricePKR": 25499.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "big-arc-mirror-led-backlit-arched-wall-mirror",
+    "name": "Big Arc Mirror | LED Backlit Arched Wall Mirror",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Mirrors",
+    "description": "Big Arc Mirror | LED Backlit Arched Wall Mirror. Mirrors for a considered bedroom space.",
+    "dimensions": {
+      "width": 65,
+      "depth": 4,
+      "height": 90
+    },
+    "materials": [
+      "Metal"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/big-arc-mirror-led-backlit-arched-wall-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Big_Arc_Mirror_Arched_LED_Grand.jpg?v=1765608367&width=1000",
+    "demoPricePKR": 42000.0,
+    "demoStock": 8,
+    "tags": [
+      "mirrors",
+      "mirrors",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "navene-vanity",
+    "name": "NAVENE Vanity + Modern Mirror Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "NAVENE Vanity + Modern Mirror Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 91.4,
+      "depth": 25.4,
+      "height": 91.4
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/navene-vanity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsNavene_vanity_with_mirror_floating_wall_vanity_modern_minimalist_vanity_laminated_MDF_vanity_bedroom_vanity_table_vanity_with_drawers_contemporary_vanity_furniture_sleek_floating_dressing_table_sAppImage2025-08-07at11.24.11_4d8df31c.jpg?v=1761720599&width=1000",
+    "demoPricePKR": 14500.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "Vanity"
+  },
+  {
+    "id": "sleek-vanity",
+    "name": "Sleek Vanity + Elegant Makeup Mirror Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Sleek Vanity + Elegant Makeup Mirror Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/sleek-vanity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Sleek_vanity_elegant_makeup_mirror_modern_minimalist_vanity_compact_vanity_table_functional_beauty_accessory_bedroom_vanity_mirror_dressing_room_vanity_table_space-saving_vanity_high-quality_vanity_furniture_stylish_vanity_setup.jpg?v=1761720108&width=1000",
+    "demoPricePKR": 37000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "halo-vanity",
+    "name": "Halo Vanity + Mirror | Floating Walnut Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Halo Vanity + Mirror | Floating Walnut Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 12.7,
+      "depth": 30.5,
+      "height": 30.5
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/halo-vanity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Halo_vanity_with_mirror_floating_wall-mounted_vanity_walnut_vanity_table_modern_minimalist_vanity_two_drawers_vanity_storage_bedroom_vanity_furniture_contemporary_vanity_table_personalized_vanity_setup_sleek_vanity_shelf_compact_wall_va.jpg?v=1761720988&width=1000",
+    "demoPricePKR": 26000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "amocho-vanity-mirror",
+    "name": "AMOCHO Vanity + Mirror | Adjustable Modern Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "AMOCHO Vanity + Mirror | Adjustable Modern Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Glass"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/amocho-vanity-mirror",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Amocho_vanity_with_mirror_adjustable_vanity_table_modern_minimalist_vanity_high-quality_glass_mirror_vanity_bedroom_vanity_table_customizable_vanity_setup_sleek_wall-mounted_vanity_functional_makeup_vanity_studio_vanity_furniture_contem.jpg?v=1761719678&width=1000",
+    "demoPricePKR": 27000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "whimsy-wall-vanity-modern-minimalist-design",
+    "name": "Whimsy Wall Vanity - Modern Minimalist Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Whimsy Wall Vanity - Modern Minimalist Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "light oak"
+    ],
+    "sourceUrl": "https://homelo.pk/products/whimsy-wall-vanity-modern-minimalist-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Whimsy_wall_vanity_modern_minimalist_vanity_irregular_mirror_vanity_wooden_shelf_wall_vanity_floating_vanity_table_compact_vanity_for_bedroom_office_vanity_storage_contemporary_vanity_furniture_functional_wall-mounted_vanity_serene_deco.jpg?v=1761284257&width=1000",
+    "demoPricePKR": 24000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "36 inches",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "emke-vanity-mirror-wall-mounted-design",
+    "name": "EMKE Vanity + Mirror — Wall Mounted Design",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "EMKE Vanity + Mirror — Wall Mounted Design. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/emke-vanity-mirror-wall-mounted-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Emke_vanity_with_mirror_wall-mounted_vanity_modern_makeup_table_space-saving_vanity_large_mirror_vanity_ultra-white_lens_mirror_minimalist_bedroom_furniture_contemporary_vanity_table_floating_vanity_storage_high-definition_mirror_vanity.jpg?v=1761284031&width=1000",
+    "demoPricePKR": 27000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "glamour-station-dresser",
+    "name": "Glamour Station Dresser",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Glamour Station Dresser. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/glamour-station-dresser",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-30at12.31.08_8c4be6d6.jpg?v=1754479551&width=1000",
+    "demoPricePKR": 75000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "eva-dresser",
+    "name": "Eva Dresser",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Eva Dresser. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "MDF",
+      "Steel",
+      "Metal",
+      "Rattan / cane"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/eva-dresser",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-30at12.02.46_1830868f_1a3bbbbb-4d57-4b1a-82ac-57af5c8f6c7c.jpg?v=1754479552&width=1000",
+    "demoPricePKR": 60000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "bloom-vanity",
+    "name": "Bloom Vanity",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Bloom Vanity. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/bloom-vanity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-30at11.28.30_53ce6d22.jpg?v=1754479555&width=1000",
+    "demoPricePKR": 60000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "shuvon-vanity",
+    "name": "Shuvon Vanity",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Dressing tables & vanities",
+    "description": "Shuvon Vanity. Dressing tables & vanities for a considered bedroom space.",
+    "dimensions": {
+      "width": 110,
+      "depth": 45,
+      "height": 140
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/shuvon-vanity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-30at11.21.21_6fb53280.jpg?v=1754479556&width=1000",
+    "demoPricePKR": 60000.0,
+    "demoStock": 8,
+    "tags": [
+      "vanities",
+      "dressing tables & vanities",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "danaisa-shoe-rack",
+    "name": "Denny Shoe Rack Bench",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway & shoe storage",
+    "description": "Denny Shoe Rack Bench. Entryway & shoe storage for a considered living space.",
+    "dimensions": {
+      "width": 100,
+      "depth": 35,
+      "height": 85
+    },
+    "materials": [
+      "MDF",
+      "Rattan / cane"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/danaisa-shoe-rack",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-08-08at12.10.56_3c0b09fd.jpg?v=1754637279&width=1000",
+    "demoPricePKR": 42000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway & shoe storage",
+      "mid-century modern"
+    ],
+    "style": "Mid-century modern",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "ophelia-console-rustic-brown-wood-finish",
+    "name": "OPHELIA Console - Rustic Brown Wood Finish",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "OPHELIA Console - Rustic Brown Wood Finish. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 167.6,
+      "depth": 45.7,
+      "height": 86.4
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/ophelia-console-rustic-brown-wood-finish",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Ophelia_Console_Rustic_Wood_Console_Farmhouse_Furniture_Modern_Rustic_Table_Luxury_Console_Living_Room_Furniture_Behind_Sofa_Table_Entryway_Console_Wood_Grain_Finish_Modern_Farmhouse_Decor_Natural_Wood_Table_Functional_Console_Timeless_Design_In.jpg?v=1761220211&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "aurum-console-with-ample-storage-drawers",
+    "name": "AURUM Console with Ample Storage Drawers",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "AURUM Console with Ample Storage Drawers. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 150.0,
+      "depth": 35.0,
+      "height": 81.0
+    },
+    "materials": [
+      "Solid wood"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/aurum-console-with-ample-storage-drawers",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-08-09at11.07.52_6c2b8e46.jpg?v=1754719734&width=1000",
+    "demoPricePKR": 70000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "walnut-console-timeless-wooden-design",
+    "name": "WALNUT Console - Timeless Wooden Design",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "WALNUT Console - Timeless Wooden Design. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 120,
+      "depth": 35,
+      "height": 80
+    },
+    "materials": [
+      "MDF",
+      "Solid wood"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/walnut-console-timeless-wooden-design",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-08-09at11.26.53_d7a11282.jpg?v=1754720981&width=1000",
+    "demoPricePKR": 38000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "homary-console-table-elegant-modern-simplicity",
+    "name": "HOMARY Console Table - Elegant Modern Simplicity",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "HOMARY Console Table - Elegant Modern Simplicity. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 120,
+      "depth": 35,
+      "height": 80
+    },
+    "materials": [
+      "Solid wood"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/homary-console-table-elegant-modern-simplicity",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Homary_Console_Wood_Console_Table_Sustainable_Furniture_FSC_Certified_Wood_Modern_Console_Design_Luxury_Console_Table_Contemporary_Decor_Functional_Furniture_Eco-Friendly_Furniture_Home_Office_Console_Entryway_Furniture_Minimalist_Furniture_Desi.jpg?v=1761220549&width=1000",
+    "demoPricePKR": 52000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "credenza-console-with-curved-cabinets-brass-accents",
+    "name": "Credenza Console with Curved Cabinets & Brass Accents",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "Credenza Console with Curved Cabinets & Brass Accents. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 91.4,
+      "depth": 152.4,
+      "height": 91.4
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/credenza-console-with-curved-cabinets-brass-accents",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-08-05at11.09.35_701d742b.jpg?v=1754479511&width=1000",
+    "demoPricePKR": 70000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "henry-console-elegant-hallway-statement",
+    "name": "Henry Console Elegant Hallway Statement",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway & shoe storage",
+    "description": "Henry Console Elegant Hallway Statement. Entryway & shoe storage for a considered living space.",
+    "dimensions": {
+      "width": 100,
+      "depth": 35,
+      "height": 85
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/henry-console-elegant-hallway-statement",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Henry_Elegant_Hallway_Statement_Console.jpg?v=1771399901&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway & shoe storage",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "kirk-console",
+    "name": "Kirk Console | Contemporary Hallway Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway & shoe storage",
+    "description": "Kirk Console | Contemporary Hallway Console. Entryway & shoe storage for a considered living space.",
+    "dimensions": {
+      "width": 100,
+      "depth": 72.4,
+      "height": 72.4
+    },
+    "materials": [
+      "MDF",
+      "Solid wood"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/kirk-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/761DAD05-7F86-448C-8B75-0AFD366879D8.jpg?v=1754479638&width=1000",
+    "demoPricePKR": 70000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway & shoe storage",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "console-shoe-rack",
+    "name": "Console Shoe Rack",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway & shoe storage",
+    "description": "Console Shoe Rack. Entryway & shoe storage for a considered living space.",
+    "dimensions": {
+      "width": 100,
+      "depth": 91.4,
+      "height": 91.4
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/console-shoe-rack",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/75C7C9E2-028F-4B48-9137-07779D43F43E.jpg?v=1754479642&width=1000",
+    "demoPricePKR": 46000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway & shoe storage",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "configuration": "Width 48 inches",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "anicsun-elegant-modern-console",
+    "name": "Anicsun Elegant Modern Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "Anicsun Elegant Modern Console. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 120,
+      "depth": 55.9,
+      "height": 182.9
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/anicsun-elegant-modern-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Anicsun_Elegant_Modern_Console_Table.jpg?v=1771495895&width=1000",
+    "demoPricePKR": 52000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "mimic-elegant-modern-console",
+    "name": "Mimic Elegant Modern Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway consoles",
+    "description": "Mimic Elegant Modern Console. Entryway consoles for a considered living space.",
+    "dimensions": {
+      "width": 66.0,
+      "depth": 127.0,
+      "height": 66.0
+    },
+    "materials": [
+      "MDF",
+      "Solid wood"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/mimic-elegant-modern-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/Mimic_Elegant_Modern_Console_Table.jpg?v=1771496565&width=1000",
+    "demoPricePKR": 42000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "suloo-shoe-rack",
+    "name": "Suloo Shoe Rack with Polished Duco Finish",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Entryway & shoe storage",
+    "description": "Suloo Shoe Rack with Polished Duco Finish. Entryway & shoe storage for a considered living space.",
+    "dimensions": {
+      "width": 100,
+      "depth": 35,
+      "height": 85
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/suloo-shoe-rack",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/IMG-2057.jpg?v=1754479700&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "entryway",
+      "entryway & shoe storage",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "serene-slumber-bench",
+    "name": "Serene Slumber Bench",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "Serene Slumber Bench. Benches for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 45,
+      "height": 48
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/serene-slumber-bench",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsApp_Image_2025-07-28_at_11.25.00_5794adfb.jpg?v=1754479577&width=1000",
+    "demoPricePKR": 38000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "rolph-bench",
+    "name": "Rolph Storage Bench",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "Rolph Storage Bench. Benches for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 45,
+      "height": 48
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/rolph-bench",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-28at11.47.13_c0eeeb78.jpg?v=1754479575&width=1000",
+    "demoPricePKR": 45000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "mid-century modern"
+    ],
+    "style": "Mid-century modern",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "kayra-bench",
+    "name": "Kayra Bench",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "Kayra Bench. Benches for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 45,
+      "height": 48
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/kayra-bench",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-28at11.59.43_7a37dd1f.jpg?v=1754479574&width=1000",
+    "demoPricePKR": 50000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "logan-bench",
+    "name": "Logan Velvet Upholstered Bench",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "Logan Velvet Upholstered Bench. Benches for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 50.8,
+      "height": 50.8
+    },
+    "materials": [
+      "Velvet",
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/logan-bench",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/223ED6EA-2C6E-4654-BDE9-4F9113D7725C.webp?v=1754479859&width=1000",
+    "demoPricePKR": 35000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "the-jane-bench",
+    "name": "The Jane Luxury Bench with Marble Top",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "The Jane Luxury Bench with Marble Top. Benches for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 182.9,
+      "height": 55.9
+    },
+    "materials": [
+      "Leather",
+      "Metal",
+      "Marble",
+      "Foam"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/the-jane-bench",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/DEA803EC-C2B8-4595-BD03-99AA488D8DDB.jpg?v=1754479959&width=1000",
+    "demoPricePKR": 45000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "untitled-sep8_24-22",
+    "name": "Faux Bench with Metal Frame",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "Benches",
+    "description": "Faux Bench with Metal Frame. Benches for a considered living space.",
+    "dimensions": {
+      "width": 76.2,
+      "depth": 45,
+      "height": 76.2
+    },
+    "materials": [
+      "MDF",
+      "Metal"
+    ],
+    "colors": [
+      "golden"
+    ],
+    "sourceUrl": "https://homelo.pk/products/untitled-sep8_24-22",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/IMG-7486.jpg?v=1754479980&width=1000",
+    "demoPricePKR": 40000.0,
+    "demoStock": 8,
+    "tags": [
+      "benches",
+      "benches",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "depth"
+    ]
+  },
+  {
+    "id": "sofa-chair",
+    "name": "Kids Sofa Chair",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Kids Sofa Chair. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/sofa-chair",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsApp_Image_2025-07-25_at_12.55.51_AM.jpg?v=1754479586&width=1000",
+    "demoPricePKR": 22000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "archibalde-wardrobe",
+    "name": "Archibalde Wardrobe",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Archibalde Wardrobe. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/archibalde-wardrobe",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsApp_Image_2025-07-25_at_12.20.48_AM.jpg?v=1754479587&width=1000",
+    "demoPricePKR": 80000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "retro-wardrobe",
+    "name": "Retro Wardrobe",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Retro Wardrobe. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 183.0,
+      "depth": 45,
+      "height": 183.0
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/retro-wardrobe",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-25at11.47.00_495617c9.jpg?v=1754479588&width=1000",
+    "demoPricePKR": 85000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "depth"
+    ]
+  },
+  {
+    "id": "boori-byron-wardrobe",
+    "name": "Boori Byron Wardrobe",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Boori Byron Wardrobe. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 102.0,
+      "depth": 102.0,
+      "height": 62.0
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "pink"
+    ],
+    "sourceUrl": "https://homelo.pk/products/boori-byron-wardrobe",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-25at11.20.58_8a886c71.jpg?v=1754479589&width=1000",
+    "demoPricePKR": 80000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "boxy-wardrobe",
+    "name": "Boxy Wardrobe",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Boxy Wardrobe. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/boxy-wardrobe",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-25at11.12.05_d5baed9a.jpg?v=1754479591&width=1000",
+    "demoPricePKR": 30000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "night-stand-sidetable",
+    "name": "Night Stand Sidetable",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Night Stand Sidetable. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "pink"
+    ],
+    "sourceUrl": "https://homelo.pk/products/night-stand-sidetable",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/WhatsAppImage2025-07-24at10.42.33_79a06743_930ad95b-940c-4b11-a833-49640d83d5a2.jpg?v=1754479593&width=1000",
+    "demoPricePKR": 28000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "toddle-bed-stylish-kids-bed",
+    "name": "Toddle Bed - Stylish Kids Bed",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Toddle Bed - Stylish Kids Bed. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/toddle-bed-stylish-kids-bed",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/toddle-bed-kids.webp?v=1770196254&width=1000",
+    "demoPricePKR": 85000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "kids-chest",
+    "name": "Kids Chest",
+    "brand": "HOMELO",
+    "category": "bedroom",
+    "subcategory": "Kids' furniture",
+    "description": "Kids Chest. Kids' furniture for a considered bedroom space.",
+    "dimensions": {
+      "width": 80,
+      "depth": 45,
+      "height": 120
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/kids-chest",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/image_9e2fa6a3-64cf-4c0a-9235-31537ff6801e.jpg?v=1754479997&width=1000",
+    "demoPricePKR": 28000.0,
+    "demoStock": 8,
+    "tags": [
+      "kids",
+      "kids' furniture",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "jen-matte-console",
+    "name": "Jen Pro TV Stand",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Jen Pro TV Stand. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 40.6,
+      "depth": 48.3,
+      "height": 48.3
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/jen-matte-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/52794FF9-5501-49B5-8970-0E900D691D66.jpg?v=1754479558&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "leaf-media-console",
+    "name": "Leaf Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Leaf Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 40,
+      "height": 50
+    },
+    "materials": [
+      "Oak"
+    ],
+    "colors": [
+      "brown and black"
+    ],
+    "sourceUrl": "https://homelo.pk/products/leaf-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/IMG-4597.webp?v=1754479699&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "juul-media-console",
+    "name": "Juul Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Juul Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 50.8,
+      "depth": 167.6,
+      "height": 50.8
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/juul-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/2B4517E5-AD68-4EF5-BCC3-DDCBB462C7DF.jpg?v=1754479701&width=1000",
+    "demoPricePKR": 48000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "matrix-media-console",
+    "name": "Matrix Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Matrix Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 40,
+      "height": 50
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/matrix-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/43D54416-439D-4532-9706-910765514B9C.webp?v=1754479844&width=1000",
+    "demoPricePKR": 55000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
+  },
+  {
+    "id": "finnlay-media-console",
+    "name": "Finnlay Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Finnlay Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 165.1,
+      "depth": 38.1,
+      "height": 45.7
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/finnlay-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/268777B6-DCF2-4596-AD72-76D51FAE867E.jpg?v=1754479845&width=1000",
+    "demoPricePKR": 42000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "the-eclipse-media-console",
+    "name": "The Eclipse Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "The Eclipse Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 172.7,
+      "depth": 40.6,
+      "height": 55.9
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/the-eclipse-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/CFCEB557-6B95-42A4-A4E8-4BB468420633.jpg?v=1754479847&width=1000",
+    "demoPricePKR": 46000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary"
+  },
+  {
+    "id": "monic-media-console",
+    "name": "Monic Media Console",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Monic Media Console. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 71.1,
+      "height": 35.6
+    },
+    "materials": [
+      "MDF"
+    ],
+    "colors": [
+      "As pictured"
+    ],
+    "sourceUrl": "https://homelo.pk/products/monic-media-console",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/F984FE22-BD22-4442-BFBA-D581B81DDB69.jpg?v=1754479875&width=1000",
+    "demoPricePKR": 40000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width"
+    ]
+  },
+  {
+    "id": "kodak-tv-stand",
+    "name": "Kodak TV Stand",
+    "brand": "HOMELO",
+    "category": "living",
+    "subcategory": "TV units & media consoles",
+    "description": "Kodak TV Stand. TV units & media consoles for a considered living space.",
+    "dimensions": {
+      "width": 140,
+      "depth": 40,
+      "height": 50
+    },
+    "materials": [
+      "Material not specified"
+    ],
+    "colors": [
+      "white"
+    ],
+    "sourceUrl": "https://homelo.pk/products/kodak-tv-stand",
+    "referenceImage": "https://cdn.shopify.com/s/files/1/0698/6258/8701/files/1ADE7B6F-BD75-46D0-B18B-217C270A7C46.jpg?v=1754479885&width=1000",
+    "demoPricePKR": 35000.0,
+    "demoStock": 8,
+    "tags": [
+      "media",
+      "tv units & media consoles",
+      "contemporary"
+    ],
+    "style": "Contemporary",
+    "dimensionEstimates": [
+      "width",
+      "depth",
+      "height"
+    ]
   }
 ]

@@ -3,6 +3,7 @@ import {Link,NavLink,useLocation} from 'react-router-dom';
 import {ArrowUpRight,ChevronDown,Heart,Menu,Search,ShoppingBag,UserRound,X} from 'lucide-react';
 import {useStore} from '../lib/store';
 import ThemeToggle from './ThemeToggle';
+import {discountPercent} from '../lib/sales';
 import './store-header.css';
 
 type Group={label:string;href:string;links:{label:string;href:string}[]};
@@ -13,12 +14,14 @@ const groups:Group[]=[
  {label:'Dining',href:'/collection?room=dining',links:[{label:'All dining furniture',href:'/collection?room=dining'},{label:'Dining tables',href:'/collection?room=dining&type=tables'},{label:'Dining chairs',href:'/collection?room=dining&type=chairs'}]},
  {label:'Kitchen',href:'/collection?room=kitchen',links:[{label:'All kitchen furniture',href:'/collection?room=kitchen'},{label:'Kitchen tables',href:'/collection?room=kitchen&type=tables'},{label:'Chairs & stools',href:'/collection?room=kitchen&type=chairs'},{label:'Kitchen storage',href:'/collection?room=kitchen&type=storage'}]},
  {label:'Office',href:'/collection?room=office',links:[{label:'All office furniture',href:'/collection?room=office'},{label:'Desks & work tables',href:'/collection?room=office&type=tables'},{label:'Office chairs',href:'/collection?room=office&type=chairs'},{label:'Office storage',href:'/collection?room=office&type=storage'}]},
+ {label:'More collections',href:'/collection',links:[{label:'Mirrors',href:'/collection?type=mirrors'},{label:'Dressing tables & vanities',href:'/collection?type=vanities'},{label:'Entryway & consoles',href:'/collection?type=entryway'},{label:'Benches',href:'/collection?type=benches'},{label:"Kids' furniture",href:'/collection?type=kids'},{label:'TV & media units',href:'/collection?type=media'}]},
 ];
 
 export default function StoreHeader(){
- const {cart,wishlist}=useStore(),location=useLocation();
- const [open,setOpen]=useState<string|null>(null),[drawer,setDrawer]=useState(false),[section,setSection]=useState<'home'|'furniture'>('home');
+ const {cart,wishlist,products,profile}=useStore(),location=useLocation();
+ const [open,setOpen]=useState<string|null>(null),[drawer,setDrawer]=useState(false);
  const root=useRef<HTMLElement>(null),dialog=useRef<HTMLDialogElement>(null),menuButton=useRef<HTMLButtonElement>(null);
+ const maxDiscount=Math.max(0,...products.filter(p=>p.demoStock>0).map(discountPercent));
  const count=cart.reduce((total,line)=>total+line.quantity,0);
  const closeDrawer=()=>{dialog.current?.close();setDrawer(false)};
  useEffect(()=>{setOpen(null);dialog.current?.close();setDrawer(false)},[location.pathname,location.search]);
@@ -32,7 +35,7 @@ export default function StoreHeader(){
   document.addEventListener('pointerdown',dismiss);return()=>document.removeEventListener('pointerdown',dismiss);
  },[]);
  return <>
-  <div className="store-announcement"><span>CONSIDERED FURNITURE. PERSONAL SPACES.</span><Link to="/collection">Discover your next piece <ArrowUpRight size={12}/></Link></div>
+  <div className={"store-announcement "+(maxDiscount?"store-sale-announcement":"")}><span>{maxDiscount?`THE ESSYRA SALE · UP TO ${maxDiscount}% OFF`:"CONSIDERED FURNITURE. PERSONAL SPACES."}</span><Link to={maxDiscount?"/collection?sale=1":"/collection"}>{maxDiscount?"Shop the sale":"Discover your next piece"} <ArrowUpRight size={12}/></Link></div>
   <header className="store-header" ref={root} onKeyDown={e=>{if(e.key==='Escape'){const button=root.current?.querySelector<HTMLButtonElement>('[aria-expanded="true"]');setOpen(null);button?.focus()}}}>
    <div className="store-header-main">
     <button ref={menuButton} className="store-menu-button" onClick={()=>setDrawer(true)} aria-label="Open category menu" aria-haspopup="dialog" aria-expanded={drawer} aria-controls="store-drawer"><Menu size={21}/><span>Menu</span></button>
@@ -41,7 +44,7 @@ export default function StoreHeader(){
    </div>
    <nav className="store-nav" aria-label="Main navigation" onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget as Node))setOpen(null)}}>
     <NavLink to="/" end>Home</NavLink>
-    {groups.map(group=><div className="store-nav-group" key={group.label}>
+    {groups.slice(1).map(group=><div className="store-nav-group" key={group.label}>
      <button aria-expanded={open===group.label} aria-controls={'nav-'+group.label.replaceAll(' ','-')} onClick={()=>setOpen(open===group.label?null:group.label)}>{group.label}<ChevronDown size={13}/></button>
      {open===group.label&&<div className="store-dropdown" id={'nav-'+group.label.replaceAll(' ','-')}><span className="store-dropdown-heading">{group.label}</span>{group.links.map(link=><Link key={link.href} to={link.href} onClick={()=>setOpen(null)}>{link.label}<ArrowUpRight size={13}/></Link>)}</div>}
     </div>)}
@@ -50,12 +53,11 @@ export default function StoreHeader(){
   </header>
   <dialog id="store-drawer" className="store-drawer" ref={dialog} aria-labelledby="store-drawer-title" onCancel={()=>setDrawer(false)} onClose={()=>setDrawer(false)} onClick={e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDrawer()}}}>
    <div className="store-drawer-top"><Link to="/" className="wordmark" id="store-drawer-title" onClick={closeDrawer}>ESSYRA</Link><button className="icon-btn" onClick={closeDrawer} aria-label="Close category menu"><X size={23}/></button></div>
-   <div className="store-drawer-tabs" role="group" aria-label="Browse categories"><button id="browse-home-tab" aria-pressed={section==='home'} aria-controls="browse-panel" onClick={()=>setSection('home')}>Home</button><button id="browse-furniture-tab" aria-pressed={section==='furniture'} aria-controls="browse-panel" onClick={()=>setSection('furniture')}>Furniture</button></div>
-   <div id="browse-panel" role="region" aria-labelledby={section==='home'?'browse-home-tab':'browse-furniture-tab'}>
-    <Link className="store-view-all" to={section==='home'?'/':'/collection'} onClick={closeDrawer}>{section==='home'?'Visit the homepage':'Explore all furniture'}<ArrowUpRight size={16}/></Link>
-    {(section==='home'?groups.slice(1):groups).map(group=><details className="store-accordion" key={section+group.label}><summary>{group.label}<ChevronDown size={16}/></summary><div>{group.links.map(link=><Link key={link.href} to={link.href} onClick={closeDrawer}>{link.label}<ArrowUpRight size={13}/></Link>)}</div></details>)}
+   <nav className="store-drawer-tabs" aria-label="Homepage"><Link className="store-view-all" to="/" onClick={closeDrawer}>Home <ArrowUpRight size={16}/></Link></nav>
+   <div id="browse-panel" role="region" aria-label="Shop by room or collection">
+    {groups.slice(1).map(group=><details className="store-accordion" key={group.label}><summary>{group.label}<ChevronDown size={16}/></summary><div>{group.links.map(link=><Link key={link.href} to={link.href} onClick={closeDrawer}>{link.label}<ArrowUpRight size={13}/></Link>)}</div></details>)}
    </div>
-   <nav className="store-drawer-help" aria-label="Customer care"><Link to="/studio" onClick={closeDrawer}>Design your room <ArrowUpRight size={15}/></Link><Link to="/account" onClick={closeDrawer}>Your account <ArrowUpRight size={15}/></Link><Link to="/contact" onClick={closeDrawer}>Contact us <ArrowUpRight size={15}/></Link><Link to="/policies" onClick={closeDrawer}>Help, delivery & privacy <ArrowUpRight size={15}/></Link></nav>
+   <nav className="store-drawer-help" aria-label="Customer care">{profile?.role==='administrator'&&<Link to="/admin" onClick={closeDrawer}>Store administration <ArrowUpRight size={15}/></Link>}<Link to="/studio" onClick={closeDrawer}>Design your room <ArrowUpRight size={15}/></Link><Link to="/account" onClick={closeDrawer}>Your account <ArrowUpRight size={15}/></Link><Link to="/contact" onClick={closeDrawer}>Contact us <ArrowUpRight size={15}/></Link><Link to="/policies" onClick={closeDrawer}>Help, delivery & privacy <ArrowUpRight size={15}/></Link></nav>
   </dialog>
  </>;
 }

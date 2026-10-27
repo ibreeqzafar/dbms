@@ -13,3 +13,5 @@ src/data/catalogue-import-progress.json
 
 scripts/.homelo-reference-cache/
 scripts/homelo-fetch-check.txt
+
+__pycache__/

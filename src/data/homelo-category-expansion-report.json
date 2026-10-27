@@ -1,0 +1,430 @@
+{
+  "retrievedAt": "2026-10-26",
+  "added": 69,
+  "total": 819,
+  "groups": {
+    "mirrors": 25,
+    "vanities": 10,
+    "entryway": 12,
+    "benches": 6,
+    "kids": 8,
+    "media": 8
+  },
+  "notes": "First source configuration and PKR price. Stock is synthetic for this university project. Missing dimensions are explicitly marked as estimates. No retailer delivery or warranty promises copied.",
+  "products": [
+    {
+      "slug": "evoa-mirror",
+      "sourceProductId": 10415809495325,
+      "sourceVariantId": 53019602354461,
+      "sourceUrl": "https://homelo.pk/products/evoa-mirror"
+    },
+    {
+      "slug": "blob-mirror-modern-freeform-wall-mirror",
+      "sourceProductId": 9904711106845,
+      "sourceVariantId": 50170965000477,
+      "sourceUrl": "https://homelo.pk/products/blob-mirror-modern-freeform-wall-mirror"
+    },
+    {
+      "slug": "trafalgar-dome-mirror-modern-floor-mirror",
+      "sourceProductId": 10044487565597,
+      "sourceVariantId": 50660002300189,
+      "sourceUrl": "https://homelo.pk/products/trafalgar-dome-mirror-modern-floor-mirror"
+    },
+    {
+      "slug": "nereus-mirror",
+      "sourceProductId": 8129400439069,
+      "sourceVariantId": 45405500604701,
+      "sourceUrl": "https://homelo.pk/products/nereus-mirror"
+    },
+    {
+      "slug": "virgil-mirror-full-length-floor-mirror",
+      "sourceProductId": 9918158504221,
+      "sourceVariantId": 50208508936477,
+      "sourceUrl": "https://homelo.pk/products/virgil-mirror-full-length-floor-mirror"
+    },
+    {
+      "slug": "bala-mirror-1",
+      "sourceProductId": 9918166008093,
+      "sourceVariantId": 50208523714845,
+      "sourceUrl": "https://homelo.pk/products/bala-mirror-1"
+    },
+    {
+      "slug": "tall-frame-mirror",
+      "sourceProductId": 9918154604829,
+      "sourceVariantId": 50208470073629,
+      "sourceUrl": "https://homelo.pk/products/tall-frame-mirror"
+    },
+    {
+      "slug": "cloud-shaped-mirror-asymmetrical-floor-design",
+      "sourceProductId": 9918144938269,
+      "sourceVariantId": 50208454508829,
+      "sourceUrl": "https://homelo.pk/products/cloud-shaped-mirror-asymmetrical-floor-design"
+    },
+    {
+      "slug": "ondo-mirror",
+      "sourceProductId": 9918133764381,
+      "sourceVariantId": 50208439042333,
+      "sourceUrl": "https://homelo.pk/products/ondo-mirror"
+    },
+    {
+      "slug": "amorph-wall-mirror-modern-design",
+      "sourceProductId": 9918121443613,
+      "sourceVariantId": 50208421052701,
+      "sourceUrl": "https://homelo.pk/products/amorph-wall-mirror-modern-design"
+    },
+    {
+      "slug": "pebble-mirror-modern-wall-mirror",
+      "sourceProductId": 9918107877661,
+      "sourceVariantId": 50208406012189,
+      "sourceUrl": "https://homelo.pk/products/pebble-mirror-modern-wall-mirror"
+    },
+    {
+      "slug": "kepez-mirror-irregular-asymmetrical-wall-mirror",
+      "sourceProductId": 9918101618973,
+      "sourceVariantId": 50208396706077,
+      "sourceUrl": "https://homelo.pk/products/kepez-mirror-irregular-asymmetrical-wall-mirror"
+    },
+    {
+      "slug": "zen-mirror-modern-wall-mirror",
+      "sourceProductId": 9918087233821,
+      "sourceVariantId": 50208372031773,
+      "sourceUrl": "https://homelo.pk/products/zen-mirror-modern-wall-mirror"
+    },
+    {
+      "slug": "triangular-mirror-modern-design",
+      "sourceProductId": 9918078681373,
+      "sourceVariantId": 50208329072925,
+      "sourceUrl": "https://homelo.pk/products/triangular-mirror-modern-design"
+    },
+    {
+      "slug": "ornica-mirror-curved-wall-mirror",
+      "sourceProductId": 9918062854429,
+      "sourceVariantId": 50208574406941,
+      "sourceUrl": "https://homelo.pk/products/ornica-mirror-curved-wall-mirror"
+    },
+    {
+      "slug": "hexa-penta-mirror",
+      "sourceProductId": 9915896758557,
+      "sourceVariantId": 50203463221533,
+      "sourceUrl": "https://homelo.pk/products/hexa-penta-mirror"
+    },
+    {
+      "slug": "curvy-standing-mirror-with-full-length-design",
+      "sourceProductId": 9904928751901,
+      "sourceVariantId": 50172775858461,
+      "sourceUrl": "https://homelo.pk/products/curvy-standing-mirror-with-full-length-design"
+    },
+    {
+      "slug": "swirl-mirror",
+      "sourceProductId": 9904709665053,
+      "sourceVariantId": 50170959986973,
+      "sourceUrl": "https://homelo.pk/products/swirl-mirror"
+    },
+    {
+      "slug": "solico-mirror",
+      "sourceProductId": 9904708256029,
+      "sourceVariantId": 50170958315805,
+      "sourceUrl": "https://homelo.pk/products/solico-mirror"
+    },
+    {
+      "slug": "daffodil-mirror-upholstered-wall-mirror",
+      "sourceProductId": 9863386235165,
+      "sourceVariantId": 50034981929245,
+      "sourceUrl": "https://homelo.pk/products/daffodil-mirror-upholstered-wall-mirror"
+    },
+    {
+      "slug": "arch-haven-mirror-modern-wall-mirror",
+      "sourceProductId": 9853165928733,
+      "sourceVariantId": 50002387632413,
+      "sourceUrl": "https://homelo.pk/products/arch-haven-mirror-modern-wall-mirror"
+    },
+    {
+      "slug": "harlow-mirror-round-wall-mounted-mirror",
+      "sourceProductId": 9596863906077,
+      "sourceVariantId": 49244858843421,
+      "sourceUrl": "https://homelo.pk/products/harlow-mirror-round-wall-mounted-mirror"
+    },
+    {
+      "slug": "leaf-mirror-modern-decorative-wall-accent",
+      "sourceProductId": 9519452815645,
+      "sourceVariantId": 49043622822173,
+      "sourceUrl": "https://homelo.pk/products/leaf-mirror-modern-decorative-wall-accent"
+    },
+    {
+      "slug": "wano-mirror-modern-vertical-design",
+      "sourceProductId": 8129399849245,
+      "sourceVariantId": 48222965465373,
+      "sourceUrl": "https://homelo.pk/products/wano-mirror-modern-vertical-design"
+    },
+    {
+      "slug": "big-arc-mirror-led-backlit-arched-wall-mirror",
+      "sourceProductId": 9099466080541,
+      "sourceVariantId": 47933122674973,
+      "sourceUrl": "https://homelo.pk/products/big-arc-mirror-led-backlit-arched-wall-mirror"
+    },
+    {
+      "slug": "navene-vanity",
+      "sourceProductId": 9927579468061,
+      "sourceVariantId": 50471607206173,
+      "sourceUrl": "https://homelo.pk/products/navene-vanity"
+    },
+    {
+      "slug": "sleek-vanity",
+      "sourceProductId": 9927578485021,
+      "sourceVariantId": 50231741546781,
+      "sourceUrl": "https://homelo.pk/products/sleek-vanity"
+    },
+    {
+      "slug": "halo-vanity",
+      "sourceProductId": 9927591100701,
+      "sourceVariantId": 50231774839069,
+      "sourceUrl": "https://homelo.pk/products/halo-vanity"
+    },
+    {
+      "slug": "amocho-vanity-mirror",
+      "sourceProductId": 9927571013917,
+      "sourceVariantId": 50231729422621,
+      "sourceUrl": "https://homelo.pk/products/amocho-vanity-mirror"
+    },
+    {
+      "slug": "whimsy-wall-vanity-modern-minimalist-design",
+      "sourceProductId": 9927629177117,
+      "sourceVariantId": 50231818354973,
+      "sourceUrl": "https://homelo.pk/products/whimsy-wall-vanity-modern-minimalist-design"
+    },
+    {
+      "slug": "emke-vanity-mirror-wall-mounted-design",
+      "sourceProductId": 9927673381149,
+      "sourceVariantId": 50231857807645,
+      "sourceUrl": "https://homelo.pk/products/emke-vanity-mirror-wall-mounted-design"
+    },
+    {
+      "slug": "glamour-station-dresser",
+      "sourceProductId": 9916656156957,
+      "sourceVariantId": 50204927263005,
+      "sourceUrl": "https://homelo.pk/products/glamour-station-dresser"
+    },
+    {
+      "slug": "eva-dresser",
+      "sourceProductId": 9916610085149,
+      "sourceVariantId": 50204861923613,
+      "sourceUrl": "https://homelo.pk/products/eva-dresser"
+    },
+    {
+      "slug": "bloom-vanity",
+      "sourceProductId": 9916557132061,
+      "sourceVariantId": 50204785606941,
+      "sourceUrl": "https://homelo.pk/products/bloom-vanity"
+    },
+    {
+      "slug": "shuvon-vanity",
+      "sourceProductId": 9916552380701,
+      "sourceVariantId": 50204779970845,
+      "sourceUrl": "https://homelo.pk/products/shuvon-vanity"
+    },
+    {
+      "slug": "danaisa-shoe-rack",
+      "sourceProductId": 9929843048733,
+      "sourceVariantId": 50236109914397,
+      "sourceUrl": "https://homelo.pk/products/danaisa-shoe-rack"
+    },
+    {
+      "slug": "ophelia-console-rustic-brown-wood-finish",
+      "sourceProductId": 9931775344925,
+      "sourceVariantId": 50240460292381,
+      "sourceUrl": "https://homelo.pk/products/ophelia-console-rustic-brown-wood-finish"
+    },
+    {
+      "slug": "aurum-console-with-ample-storage-drawers",
+      "sourceProductId": 9931793203485,
+      "sourceVariantId": 50240481755421,
+      "sourceUrl": "https://homelo.pk/products/aurum-console-with-ample-storage-drawers"
+    },
+    {
+      "slug": "walnut-console-timeless-wooden-design",
+      "sourceProductId": 9931813552413,
+      "sourceVariantId": 50240515178781,
+      "sourceUrl": "https://homelo.pk/products/walnut-console-timeless-wooden-design"
+    },
+    {
+      "slug": "homary-console-table-elegant-modern-simplicity",
+      "sourceProductId": 9931816173853,
+      "sourceVariantId": 50240518095133,
+      "sourceUrl": "https://homelo.pk/products/homary-console-table-elegant-modern-simplicity"
+    },
+    {
+      "slug": "credenza-console-with-curved-cabinets-brass-accents",
+      "sourceProductId": 9925350228253,
+      "sourceVariantId": 50225474109725,
+      "sourceUrl": "https://homelo.pk/products/credenza-console-with-curved-cabinets-brass-accents"
+    },
+    {
+      "slug": "henry-console-elegant-hallway-statement",
+      "sourceProductId": 9889546404125,
+      "sourceVariantId": 50122237149469,
+      "sourceUrl": "https://homelo.pk/products/henry-console-elegant-hallway-statement"
+    },
+    {
+      "slug": "kirk-console",
+      "sourceProductId": 9888205340957,
+      "sourceVariantId": 50118109528349,
+      "sourceUrl": "https://homelo.pk/products/kirk-console"
+    },
+    {
+      "slug": "console-shoe-rack",
+      "sourceProductId": 9858788065565,
+      "sourceVariantId": 50520158699805,
+      "sourceUrl": "https://homelo.pk/products/console-shoe-rack"
+    },
+    {
+      "slug": "anicsun-elegant-modern-console",
+      "sourceProductId": 9855795790109,
+      "sourceVariantId": 50009590432029,
+      "sourceUrl": "https://homelo.pk/products/anicsun-elegant-modern-console"
+    },
+    {
+      "slug": "mimic-elegant-modern-console",
+      "sourceProductId": 9824472498461,
+      "sourceVariantId": 49906925273373,
+      "sourceUrl": "https://homelo.pk/products/mimic-elegant-modern-console"
+    },
+    {
+      "slug": "suloo-shoe-rack",
+      "sourceProductId": 9736339980573,
+      "sourceVariantId": 49657722994973,
+      "sourceUrl": "https://homelo.pk/products/suloo-shoe-rack"
+    },
+    {
+      "slug": "serene-slumber-bench",
+      "sourceProductId": 9914473382173,
+      "sourceVariantId": 50198225027357,
+      "sourceUrl": "https://homelo.pk/products/serene-slumber-bench"
+    },
+    {
+      "slug": "rolph-bench",
+      "sourceProductId": 9914496680221,
+      "sourceVariantId": 50198271131933,
+      "sourceUrl": "https://homelo.pk/products/rolph-bench"
+    },
+    {
+      "slug": "kayra-bench",
+      "sourceProductId": 9914512736541,
+      "sourceVariantId": 50198288630045,
+      "sourceUrl": "https://homelo.pk/products/kayra-bench"
+    },
+    {
+      "slug": "logan-bench",
+      "sourceProductId": 9517603914013,
+      "sourceVariantId": 49038507901213,
+      "sourceUrl": "https://homelo.pk/products/logan-bench"
+    },
+    {
+      "slug": "the-jane-bench",
+      "sourceProductId": 8936827781405,
+      "sourceVariantId": 47338574577949,
+      "sourceUrl": "https://homelo.pk/products/the-jane-bench"
+    },
+    {
+      "slug": "untitled-sep8_24-22",
+      "sourceProductId": 8641174667549,
+      "sourceVariantId": 46459440300317,
+      "sourceUrl": "https://homelo.pk/products/untitled-sep8_24-22"
+    },
+    {
+      "slug": "sofa-chair",
+      "sourceProductId": 9910712074525,
+      "sourceVariantId": 50187647320349,
+      "sourceUrl": "https://homelo.pk/products/sofa-chair"
+    },
+    {
+      "slug": "archibalde-wardrobe",
+      "sourceProductId": 9910696345885,
+      "sourceVariantId": 50187617075485,
+      "sourceUrl": "https://homelo.pk/products/archibalde-wardrobe"
+    },
+    {
+      "slug": "retro-wardrobe",
+      "sourceProductId": 9910612295965,
+      "sourceVariantId": 50187493998877,
+      "sourceUrl": "https://homelo.pk/products/retro-wardrobe"
+    },
+    {
+      "slug": "boori-byron-wardrobe",
+      "sourceProductId": 9910569140509,
+      "sourceVariantId": 50192418373917,
+      "sourceUrl": "https://homelo.pk/products/boori-byron-wardrobe"
+    },
+    {
+      "slug": "boxy-wardrobe",
+      "sourceProductId": 9910561571101,
+      "sourceVariantId": 50187412013341,
+      "sourceUrl": "https://homelo.pk/products/boxy-wardrobe"
+    },
+    {
+      "slug": "night-stand-sidetable",
+      "sourceProductId": 9910550757661,
+      "sourceVariantId": 50192415392029,
+      "sourceUrl": "https://homelo.pk/products/night-stand-sidetable"
+    },
+    {
+      "slug": "toddle-bed-stylish-kids-bed",
+      "sourceProductId": 9767397589277,
+      "sourceVariantId": 49738007773469,
+      "sourceUrl": "https://homelo.pk/products/toddle-bed-stylish-kids-bed"
+    },
+    {
+      "slug": "kids-chest",
+      "sourceProductId": 8437670641949,
+      "sourceVariantId": 45364687765789,
+      "sourceUrl": "https://homelo.pk/products/kids-chest"
+    },
+    {
+      "slug": "jen-matte-console",
+      "sourceProductId": 9915942764829,
+      "sourceVariantId": 50203539407133,
+      "sourceUrl": "https://homelo.pk/products/jen-matte-console"
+    },
+    {
+      "slug": "leaf-media-console",
+      "sourceProductId": 9736531214621,
+      "sourceVariantId": 49658207568157,
+      "sourceUrl": "https://homelo.pk/products/leaf-media-console"
+    },
+    {
+      "slug": "juul-media-console",
+      "sourceProductId": 9722475118877,
+      "sourceVariantId": 49610886545693,
+      "sourceUrl": "https://homelo.pk/products/juul-media-console"
+    },
+    {
+      "slug": "matrix-media-console",
+      "sourceProductId": 9538128150813,
+      "sourceVariantId": 49086585995549,
+      "sourceUrl": "https://homelo.pk/products/matrix-media-console"
+    },
+    {
+      "slug": "finnlay-media-console",
+      "sourceProductId": 9534433132829,
+      "sourceVariantId": 49077404172573,
+      "sourceUrl": "https://homelo.pk/products/finnlay-media-console"
+    },
+    {
+      "slug": "the-eclipse-media-console",
+      "sourceProductId": 9534374281501,
+      "sourceVariantId": 49077325332765,
+      "sourceUrl": "https://homelo.pk/products/the-eclipse-media-console"
+    },
+    {
+      "slug": "monic-media-console",
+      "sourceProductId": 9515465277725,
+      "sourceVariantId": 49033983852829,
+      "sourceUrl": "https://homelo.pk/products/monic-media-console"
+    },
+    {
+      "slug": "kodak-tv-stand",
+      "sourceProductId": 9487266709789,
+      "sourceVariantId": 49062031458589,
+      "sourceUrl": "https://homelo.pk/products/kodak-tv-stand"
+    }
+  ]
+}

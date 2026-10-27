@@ -73,40 +73,43 @@ def record(p,g):
     if estimates: result['dimensionEstimates']=estimates
     return result
 
-pools=collections.defaultdict(list)
-known={p['id'] for p in baseline}
-for p in raw:
-    g=group(p)
-    if not g or not p.get('images') or not p.get('variants') or float(p['variants'][0]['price'])<=0 or p['handle'] in known: continue
-    pools[g[0]].append((p,g))
-targets={'beds':35,'sofas':25,'kitchen':15,'office':15,'dining':20,'storage':20,'chairs':10,'tables':10}
-selected=[]
-for kind,target in targets.items(): selected.extend(pools[kind][:target])
-selected_ids={p['handle'] for p,g in selected}
-for p in raw:
-    if len(selected)>=150: break
-    g=group(p)
-    if g and p['handle'] not in selected_ids and any(x[0]['handle']==p['handle'] for x in pools[g[0]]): selected.append((p,g));selected_ids.add(p['handle'])
-assert len(selected)==150
-added=[record(p,g) for p,g in selected]
-assert 'square-bubble-boucle-bed' in {p['id'] for p in added}
-assert len({p['id'] for p in baseline+added})==len(baseline)+150
-catalogue_path.write_text(json.dumps(baseline+added,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+def main():
+    pools=collections.defaultdict(list)
+    known={p['id'] for p in baseline}
+    for p in raw:
+        g=group(p)
+        if not g or not p.get('images') or not p.get('variants') or float(p['variants'][0]['price'])<=0 or p['handle'] in known: continue
+        pools[g[0]].append((p,g))
+    targets={'beds':35,'sofas':25,'kitchen':15,'office':15,'dining':20,'storage':20,'chairs':10,'tables':10}
+    selected=[]
+    for kind,target in targets.items(): selected.extend(pools[kind][:target])
+    selected_ids={p['handle'] for p,g in selected}
+    for p in raw:
+        if len(selected)>=150: break
+        g=group(p)
+        if g and p['handle'] not in selected_ids and any(x[0]['handle']==p['handle'] for x in pools[g[0]]): selected.append((p,g));selected_ids.add(p['handle'])
+    assert len(selected)==150
+    added=[record(p,g) for p,g in selected]
+    assert 'square-bubble-boucle-bed' in {p['id'] for p in added}
+    assert len({p['id'] for p in baseline+added})==len(baseline)+150
+    catalogue_path.write_text(json.dumps(baseline+added,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-def uid(s):
-    h=hashlib.sha256(s.encode()).hexdigest();return f'{h[:8]}-{h[8:12]}-4{h[13:16]}-a{h[17:20]}-{h[20:32]}'
-def q(s): return "'"+str(s).replace("'","''")+"'"
-chunks=[]
-for start in range(0,150,30):
-    sql='-- Additive Homelo reference import; existing prices, stock and orders are preserved.\nbegin;\n'
-    for p in added[start:start+30]:
-        pid=uid('product:'+p['id']);color=' / '.join(p['colors']);vid=uid(p['id']+':'+color);d=p['dimensions'];ref={k:v for k,v in p.items() if k not in ['demoPricePKR','demoStock']}
-        sql+=f"insert into public.products(id,slug,category_id,name,brand,reference,source_url,demo_price_paisa) values('{pid}',{q(p['id'])},'{uid('category:'+p['category'])}',{q(p['name'])},'HOMELO',{q(json.dumps(ref,ensure_ascii=False,separators=(',',':')))}::jsonb,{q(p['sourceUrl'])},{round(p['demoPricePKR']*100)}) on conflict(slug) do nothing;\n"
-        sql+=f"insert into public.variants(id,product_id,sku,color,materials,width_cm,depth_cm,height_cm,price_paisa,stock_on_hand) values('{vid}','{pid}',{q('ESS-'+p['id'].upper())},{q(color)},array[{','.join(q(m) for m in p['materials'])}]::text[],{d['width']},{d['depth']},{d['height']},{round(p['demoPricePKR']*100)},8) on conflict(sku) do nothing;\n"
-        sql+=f"insert into public.product_media(id,variant_id,url,alt,source_url) values('{uid('media:'+vid)}','{vid}',{q(p['referenceImage'])},{q('ESSYRA '+p['name']+', '+color)},{q(p['sourceUrl'])}) on conflict(id) do nothing;\n"
-    sql+='commit;\n';chunks.append(sql)
-    (ROOT/f'scripts/homelo-import-{start//30+1}.sql').write_text(sql,encoding='utf-8')
-(ROOT/'supabase/migrations/202610260008_homelo_catalogue.sql').write_text('\n'.join(chunks),encoding='utf-8')
-audit={'retrievedAt':'2026-10-25','importedAt':'2026-10-26','source':'https://homelo.pk/products.json?limit=250&page=1','added':150,'total':len(baseline)+150,'byGroup':dict(collections.Counter(g[0] for p,g in selected)),'dimensionsEstimated':sum(bool(p.get('dimensionEstimates')) for p in added),'notes':'Source PKR prices for the first configuration. ESSYRA stock is synthetic, not supplier inventory. Missing measurements use explicitly marked estimates. Descriptions are original short summaries. No supplier delivery or warranty promises are copied.','products':[{'slug':p['id'],'sourceUrl':p['sourceUrl'],'sourceProductId':source['id'],'sourceVariantId':source['variants'][0]['id'],'configuration':p.get('configuration'),'dimensionEstimates':p.get('dimensionEstimates',[])} for p,(source,g) in zip(added,selected)]}
-(ROOT/'src/data/homelo-import-report.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps({k:audit[k] for k in ['added','total','byGroup','dimensionsEstimated']},indent=2))
+    def uid(s):
+        h=hashlib.sha256(s.encode()).hexdigest();return f'{h[:8]}-{h[8:12]}-4{h[13:16]}-a{h[17:20]}-{h[20:32]}'
+    def q(s): return "'"+str(s).replace("'","''")+"'"
+    chunks=[]
+    for start in range(0,150,30):
+        sql='-- Additive Homelo reference import; existing prices, stock and orders are preserved.\nbegin;\n'
+        for p in added[start:start+30]:
+            pid=uid('product:'+p['id']);color=' / '.join(p['colors']);vid=uid(p['id']+':'+color);d=p['dimensions'];ref={k:v for k,v in p.items() if k not in ['demoPricePKR','demoStock']}
+            sql+=f"insert into public.products(id,slug,category_id,name,brand,reference,source_url,demo_price_paisa) values('{pid}',{q(p['id'])},'{uid('category:'+p['category'])}',{q(p['name'])},'HOMELO',{q(json.dumps(ref,ensure_ascii=False,separators=(',',':')))}::jsonb,{q(p['sourceUrl'])},{round(p['demoPricePKR']*100)}) on conflict(slug) do nothing;\n"
+            sql+=f"insert into public.variants(id,product_id,sku,color,materials,width_cm,depth_cm,height_cm,price_paisa,stock_on_hand) values('{vid}','{pid}',{q('ESS-'+p['id'].upper())},{q(color)},array[{','.join(q(m) for m in p['materials'])}]::text[],{d['width']},{d['depth']},{d['height']},{round(p['demoPricePKR']*100)},8) on conflict(sku) do nothing;\n"
+            sql+=f"insert into public.product_media(id,variant_id,url,alt,source_url) values('{uid('media:'+vid)}','{vid}',{q(p['referenceImage'])},{q('ESSYRA '+p['name']+', '+color)},{q(p['sourceUrl'])}) on conflict(id) do nothing;\n"
+        sql+='commit;\n';chunks.append(sql)
+        (ROOT/f'scripts/homelo-import-{start//30+1}.sql').write_text(sql,encoding='utf-8')
+    (ROOT/'supabase/migrations/202610260008_homelo_catalogue.sql').write_text('\n'.join(chunks),encoding='utf-8')
+    audit={'retrievedAt':'2026-10-25','importedAt':'2026-10-26','source':'https://homelo.pk/products.json?limit=250&page=1','added':150,'total':len(baseline)+150,'byGroup':dict(collections.Counter(g[0] for p,g in selected)),'dimensionsEstimated':sum(bool(p.get('dimensionEstimates')) for p in added),'notes':'Source PKR prices for the first configuration. ESSYRA stock is synthetic, not supplier inventory. Missing measurements use explicitly marked estimates. Descriptions are original short summaries. No supplier delivery or warranty promises are copied.','products':[{'slug':p['id'],'sourceUrl':p['sourceUrl'],'sourceProductId':source['id'],'sourceVariantId':source['variants'][0]['id'],'configuration':p.get('configuration'),'dimensionEstimates':p.get('dimensionEstimates',[])} for p,(source,g) in zip(added,selected)]}
+    (ROOT/'src/data/homelo-import-report.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({k:audit[k] for k in ['added','total','byGroup','dimensionsEstimated']},indent=2))
+
+if __name__=="__main__": main()

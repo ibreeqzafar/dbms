@@ -1,0 +1,4 @@
+export type Crop={left:number;top:number;width:number;height:number};
+export const fullCrop:Crop={left:0,top:0,width:100,height:100};
+export function validCrop(c:Crop):Crop{return {left:Math.max(0,Math.min(90,c.left)),top:Math.max(0,Math.min(90,c.top)),width:Math.max(10,Math.min(100-c.left,c.width)),height:Math.max(10,Math.min(100-c.top,c.height))}}
+export function alphaBounds(data:ArrayLike<number>,width:number,height:number,threshold=24){let left=width,top=height,right=-1,bottom=-1,count=0;for(let y=0;y<height;y++)for(let x=0;x<width;x++)if(data[(y*width+x)*4+3]>threshold){left=Math.min(left,x);top=Math.min(top,y);right=Math.max(right,x);bottom=Math.max(bottom,y);count++}if(count<width*height*.002)return null;const pad=2;return {left:Math.max(0,left-pad),top:Math.max(0,top-pad),right:Math.min(width,right+pad+1),bottom:Math.min(height,bottom+pad+1),coverage:count/(width*height)}}

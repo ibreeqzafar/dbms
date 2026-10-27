@@ -1,0 +1,8 @@
+export function allowedCatalogueImage(value:string){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&((u.hostname==='www.ikea.com'&&u.pathname.startsWith('/'))||(u.hostname==='cdn.shopify.com'&&u.pathname.startsWith('/s/files/1/0698/6258/8701/'))||u.hostname==='m.media-amazon.com'||(u.hostname==='zhehksxuzyxnurmhwylw.supabase.co'&&u.pathname.startsWith('/storage/v1/object/public/')))}catch{return false}}
+export async function fetchCatalogueImage(value:string){
+ let url=value;for(let redirect=0;redirect<4;redirect++){
+  if(!allowedCatalogueImage(url))throw Error('IMAGE_HOST_NOT_ALLOWED');const r=await fetch(url,{redirect:'manual',signal:AbortSignal.timeout(15000)});
+  if(r.status>=300&&r.status<400){const target=r.headers.get('Location');if(!target)throw Error('IMAGE_UNAVAILABLE');url=new URL(target,url).href;continue}
+  if(!r.ok||!['image/jpeg','image/png','image/webp'].includes((r.headers.get('Content-Type')||'').split(';')[0]))throw Error('IMAGE_UNAVAILABLE');const max=15*1024*1024;if(Number(r.headers.get('Content-Length'))>max)throw Error('IMAGE_TOO_LARGE');const reader=r.body?.getReader();if(!reader)throw Error('IMAGE_UNAVAILABLE');let size=0;const chunks:Uint8Array[]=[];for(;;){const {value,done}=await reader.read();if(done)break;size+=value.byteLength;if(size>max){await reader.cancel();throw Error('IMAGE_TOO_LARGE')}chunks.push(value)}const bytes=new Uint8Array(size);let at=0;for(const chunk of chunks){bytes.set(chunk,at);at+=chunk.length}return {bytes,type:r.headers.get('Content-Type')!.split(';')[0]};
+ }throw Error('IMAGE_REDIRECT_LIMIT');
+}
