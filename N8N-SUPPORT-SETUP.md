@@ -2,6 +2,12 @@
 
 This builds a private test workflow first. It is not yet connected to the website. Products stay in Supabase (PostgreSQL); chat memory is a separate feature.
 
+## Selected hosting: free local Community Edition
+
+You selected n8n on your laptop instead of n8n Cloud. The local installation is in the sibling folder `essyra-n8n-local`; its README has start/stop and backup instructions. The local editor is http://localhost:5678, and its owner account is separate from the Cloud trial account. This installation is not subject to the Cloud trial expiry. Laptop uptime, secure website connectivity, model credentials and provider usage limits still apply.
+
+The prepared import is `n8n/essyra-shopping-support.private.json`. It contains the model, session memory, five public read-only tools and a support prompt. It deliberately has no Groq secret and cannot yet access private orders, modify carts, place orders or create complaint tickets. Those integrations remain pending; do not describe the prototype as the completed support service.
+
 ## 1. Create the workflow
 
 In n8n, choose **New workflow**, name it **ESSYRA Support**, and save it. Add **Chat Trigger** (shown as **When chat message received**) and connect it to **AI Agent**. Leave **Make Chat Publicly Available** off while testing.
