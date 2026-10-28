@@ -15,3 +15,9 @@ verify_jwt = false
 # Prepared only: deploy after the checkout migration is authorised and installed.
 [functions.store-payments]
 verify_jwt = false
+
+# Prepared: activate only after the support migration and private worker key are installed.
+[functions.support-agent]
+verify_jwt = false
+[functions.support-worker]
+verify_jwt = false

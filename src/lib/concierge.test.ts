@@ -10,3 +10,5 @@ test('ambiguous names require an exact product choice; chat never submits orders
 test('delivery answers use approved policy and inactive payments are not claimed live',()=>{assert.match(answerSupport('when does it arrive',[],settings).text,/confirmed before dispatch/);assert.match(answerSupport('online payment',[],settings).text,/not being accepted/);assert.equal(answerSupport('my order status',[],settings).orders,true)});
 
 test('budget search excludes pieces above the stated ceiling',()=>{const expensive={...p,id:'chair-high',demoPricePKR:90000};const r=answerSupport('show chair under 30000',[p,expensive],settings);assert.deepEqual(r.products,[p])});
+
+test('bed budget requests exclude bedside furniture and recognise PKR',()=>{const bed={...p,id:'wood-bed',name:'Wood Bed',category:'bedroom' as const,subcategory:'Beds',demoPricePKR:100000};const bedside={...bed,id:'bedside-table',name:'Bedside Table',subcategory:'Bedside tables',demoPricePKR:5000};const expensive={...bed,id:'high-bed',demoPricePKR:200000};const result=answerSupport('Show beds under PKR 150000',[bed,bedside,expensive],settings);assert.deepEqual(result.products,[bed])});

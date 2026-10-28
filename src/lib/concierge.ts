@@ -1,5 +1,6 @@
 import type {Product,Settings} from '../types.ts';
 import {dimensions,money} from './domain.ts';
+import {matchesCategory} from './categories.ts';
 export type SupportReply={text:string;link?:string;label?:string;products?:Product[];quantity?:number;checkout?:boolean;orders?:boolean};
 export function answerSupport(value:string,products:Product[],settings:Settings,contextId?:string):SupportReply{
  const q=value.toLowerCase().trim().replace(/[?!.,]+$/,'');const active=products.filter(p=>p.active!==false),context=active.find(p=>p.id===contextId);
@@ -10,10 +11,11 @@ export function answerSupport(value:string,products:Product[],settings:Settings,
  if(/^(what (is|s) essyra|about essyra|who are you|what can you do|website name)/.test(q))return {text:'ESSYRA is a furniture collection and home-design experience founded by Umamah Ibreeq. I can help with product details, PKR prices, your bag, accounts, ordering information and the room-design studio.'};
  if(/\b(my orders?|order status|track(ing)?|where.*order|payment status)\b/.test(q))return {text:'I can check the orders belonging to your signed-in account.',orders:true};
  const exact=active.filter(p=>q.includes(p.id)||q.includes(p.name.toLowerCase()));
- const stops=new Set('what whats this that the and for can you your have with how much price cost does want order buy add cart bag please show tell about need looking available stock material materials dimension dimensions size colour color finish from under less than are item piece'.split(' '));
+ const stops=new Set('what whats this that the and for can you your have with how much price cost does want order buy add cart bag please show tell about need looking available stock material materials dimension dimensions size colour color finish from under below budget pkr rs rupees less than are item piece'.split(' '));
  const ceiling=Number(q.match(/(?:under|below|up to|budget(?: of)?)\s*(?:pkr|rs\.?)?\s*([0-9,]+)/)?.[1]?.replaceAll(',','')||Infinity);
- const tokens=q.replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(t=>t.length>2&&!/^\d+$/.test(t)&&!stops.has(t));
- const ranked=active.filter(p=>{const hay=(p.name+' '+p.subcategory+' '+p.colors.join(' ')+' '+p.materials.join(' ')).toLowerCase();return p.demoPricePKR<=ceiling&&tokens.length&&tokens.every(t=>hay.includes(t))});
+ const tokens=q.replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(t=>t.length>2&&!/^\d+$/.test(t)&&!stops.has(t)).map(t=>({beds:'bed',sofas:'sofa',chairs:'chair',tables:'table',mirrors:'mirror'} as Record<string,string>)[t]||t);
+ const requestedType=/\bbeds?\b/.test(q)?'beds':/\bsofas?\b/.test(q)?'sofas':/\bchairs?\b/.test(q)?'chairs':/\bmirrors?\b/.test(q)?'mirrors':/\b(tables?|desks?)\b/.test(q)?'tables':'';
+ const ranked=active.filter(p=>{if(requestedType&&!matchesCategory(p,requestedType))return false;const hay=(p.name+' '+p.subcategory+' '+p.category+' '+p.colors.join(' ')+' '+p.materials.join(' ')).toLowerCase();return p.demoPricePKR<=ceiling&&tokens.length&&tokens.every(t=>hay.includes(t))});
  const matches=exact.length?exact:ranked.length?ranked:/\b(this|it|that|current)\b/.test(q)&&context?[context]:[];
  const quantity=Number(q.match(/\b(?:add|buy|order|want|need)\s+(\d+)\b/)?.[1]||1);
  if(matches.length>1)return {text:'I found several matching pieces or finishes. Choose the exact one below so I use the right price and colour.',products:matches.slice(0,4),quantity};

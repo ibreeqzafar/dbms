@@ -1,3 +1,4 @@
+import {upgradeSupportWorkflow} from './upgrade-support-workflow.mjs';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {randomUUID} from 'node:crypto';
 
@@ -41,6 +42,7 @@ tool('Product_Details','Retrieve one product using its exact slug from a previou
 tool('Compare_Products','Retrieve up to three known exact product slugs for a fact-based comparison. Separate slugs with commas. Do not fabricate missing information.', 'products',{select:fields,active:'eq.true',slug:"={{ 'in.(' + $fromAI('slugs', 'Comma-separated exact slugs of up to three products selected for comparison.', 'string').split(',').slice(0,3).map(s=>s.trim().replace(/[^a-z0-9-]/g,'').slice(0,250)).filter(Boolean).join(',') + ')' }}",limit:'3'},1180);
 tool('Store_Policies','Read the saved ESSYRA public delivery, returns, payment and privacy policies. Never invent terms missing from the result.', 'settings',{select:'policies:value->policies',id:'eq.public',limit:'1'},1400);
 const workflow={name:'ESSYRA Shopping and Support — Private Test',nodes,connections,active:false,settings:{executionOrder:'v1',saveDataErrorExecution:'none',saveDataSuccessExecution:'none',saveManualExecutions:false,executionTimeout:90},pinData:{},tags:[]};
+upgradeSupportWorkflow(workflow);
 await mkdir('n8n',{recursive:true});
 await writeFile('n8n/essyra-shopping-support.private.json',JSON.stringify(workflow,null,2)+'\n');
-console.log('Prepared private workflow: '+nodes.length+' nodes, 5 read-only tools, no private credentials.');
+console.log('Prepared portable local workflow: '+nodes.length+' nodes, 5 read-only tools, no private credentials.');
