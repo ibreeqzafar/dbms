@@ -96,6 +96,6 @@ function ConciergeWorkspace(){
  {showSuggestions&&messages.length>1&&<div className="quick-questions">{(latestSuggestions?.length?latestSuggestions:['Current deals','Find furniture','My orders']).map(q=><button key={q} onClick={()=>send(q)} disabled={settings.supportPaused||busy}>{q}</button>)}</div>}
  <form onSubmit={e=>{e.preventDefault();send(question)}}><label className="sr-only" htmlFor="concierge-question">Your support question</label><input id="concierge-question" placeholder="Ask ESSYRA…" ref={input} value={question} onChange={e=>setQuestion(e.target.value)} maxLength={1000} required disabled={settings.supportPaused||busy}/><button className="icon-btn" type="submit" disabled={settings.supportPaused||busy} aria-label="Send question"><Send size={18}/></button></form>
  </>}
- <p className="concierge-note">{settings.supportPaused?'Support is paused. Call 03172197499.':supportAgentEnabled?'AI support uses Groq. Don’t share passwords or payment details. Review every order before submitting.':'Automated store guide · Review every order before submitting'}</p>
+ {settings.supportPaused&&<p className="concierge-note">Support is paused. Call 03172197499 or email <a href="mailto:essyra.furniture@gmail.com">essyra.furniture@gmail.com</a>.</p>}
  </section>}</>;
 }
