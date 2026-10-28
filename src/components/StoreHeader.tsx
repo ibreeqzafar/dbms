@@ -1,6 +1,6 @@
 import {useEffect,useRef,useState} from 'react';
 import {Link,NavLink,useLocation} from 'react-router-dom';
-import {ArrowUpRight,ChevronDown,Heart,Menu,Search,ShoppingBag,UserRound,X} from 'lucide-react';
+import {ArrowUpRight,ChevronDown,Heart,Menu,ShoppingBag,UserRound,X} from 'lucide-react';
 import {useStore} from '../lib/store';
 import ThemeToggle from './ThemeToggle';
 import {discountPercent} from '../lib/sales';
@@ -37,7 +37,7 @@ export default function StoreHeader(){
    <div className="store-header-main">
     <button className="store-menu-button" onClick={e=>openDrawer(e.currentTarget)} aria-label="Open category menu" aria-haspopup="dialog" aria-expanded={drawer} aria-controls="store-drawer"><Menu size={21}/><span>Menu</span></button>
     <Link to="/" className="wordmark store-brand" aria-label="ESSYRA home">ESSYRA<span>FIND THE SOUL OF YOUR PLACE</span></Link>
-    <div className="store-tools"><Link className="store-search" to="/collection" aria-label="Search furniture"><Search size={20}/></Link><ThemeToggle/><Link to="/account" aria-label="Your account"><UserRound size={20}/></Link><Link className="store-wishlist" to="/wishlist" aria-label={`Wishlist, ${wishlist.length} items`}><Heart size={20}/></Link><Link to="/cart" aria-label={`Your bag, ${count} items`}><ShoppingBag size={20}/><span className="store-bag-count">{count}</span></Link></div>
+    <div className="store-tools"><ThemeToggle/><Link to="/account" aria-label="Your account"><UserRound size={20}/></Link><Link className="store-wishlist" to="/wishlist" aria-label={`Wishlist, ${wishlist.length} items`}><Heart size={20}/></Link><Link to="/cart" aria-label={`Your bag, ${count} items`}><ShoppingBag size={20}/><span className="store-bag-count">{count}</span></Link></div>
    </div>
    <nav className="store-nav" aria-label="Main navigation">
     <NavLink to="/" end>Home</NavLink>
