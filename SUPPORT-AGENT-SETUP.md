@@ -6,7 +6,7 @@ The agent runs in the existing local n8n workflow `bpSrmYCuZuC12uAp`, using the 
 
 The local workflow is published to a **loopback-only** webhook. The laptop connector makes outbound HTTPS calls to Supabase to lease temporary chat jobs, sends them to local n8n and returns the answer. There is no public tunnel and no public n8n editor. A separate random worker key authorises queue access. It is not a database service-role key, Groq key or customer token. The laptop receives message text, an opaque session identifier and optional public product slug, without customer email, address or authentication tokens. Groq receives the chat conversation and public tool results.
 
-Authenticated website sessions enqueue and retrieve only their own jobs. Anonymous Supabase guest sessions can ask shopping questions; inactive accounts are denied. Limits are five new requests per minute and sixty per rolling 24 hours per account/guest session. These are application limits, not an assurance against all multi-account abuse. The connector leases work every 15 seconds when idle, so replies can take several seconds. If it is offline or a provider limit is reached, the website offers its standard store guide and contact route.
+Authenticated website sessions enqueue and retrieve only their own jobs. Anonymous Supabase guest sessions can ask shopping questions; inactive accounts are denied. Limits are five new requests per minute and sixty per rolling 24 hours per account/guest session. These are application limits, not an assurance against all multi-account abuse. The connector leases work every eight seconds when idle, so replies can take several seconds. If it is offline or a provider limit is reached, the website offers its standard store guide and contact route.
 
 Temporary jobs expire after 24 hours and are removed by the next worker maintenance pass. While the laptop is off, expired rows may remain stored. n8n success/error/manual execution retention is disabled, and its five-turn test memory is in process memory. It is not a durable multi-worker memory store. Do not use this SQLite laptop installation as a high-traffic service or claim two-month guaranteed uptime.
 
@@ -37,3 +37,11 @@ The published category buttons open the left drawer with the selected category e
 ## Remaining operational requirements
 
 Free Groq quotas and availability can change. Keep the API key in n8n's encrypted credential store and review account limits. Back up local n8n's database together with its encryption configuration privately. The setup files and credential-free workflow export alone cannot restore an encrypted credential if the encryption configuration is lost. The desktop Cloud trial is not part of this integration. No online-payment provider, courier booking service or marketing campaign is enabled by this work.
+
+## Chat and homepage refinement
+
+Greetings and generic furniture browsing reply immediately in the browser; n8n remains the AI agent for detailed questions. Authentication, send and poll stages have separate deadlines within a forty-second overall request limit. A stalled connection falls back to catalogue guidance, and customers can choose Use store guide while waiting.
+
+The welcome view includes real catalogue images and quick prompts. New chat aborts the pending client request, clears the visible conversation and changes its session identifier; server-side temporary jobs still follow the existing retention policy. Settings control suggested questions and larger text. Current deals use saved catalogue sale prices. The public get_store_bestsellers routine returns only active product slugs ranked from paid, delivered orders, never order/customer records or fabricated counts. Empty rankings are stated honestly.
+
+The homepage collection carousel uses existing catalogue images with native links, scrolling, navigation, pause controls and reduced-motion support. It pauses while hovered or keyboard-focused. No reference recordings or Habitt assets are published.
