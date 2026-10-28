@@ -1,3 +1,4 @@
+import {sendNextReviewInvitation} from '../_shared/review-mail.ts';
 import {response,service} from '../_shared/http.ts';
 import {supportInput} from '../_shared/support-input.ts';
 import {normalizeAgentReply} from '../_shared/support-reply.ts';
@@ -10,6 +11,7 @@ Deno.serve(async req=>{
  if(received.length>512||!await equalKey(received,expected))return response({error:'UNAUTHORIZED'},401);
  try{
   const body=await supportInput(req,24000),client=service();
+  if(body.action==='review-emails')return response(await sendNextReviewInvitation());
   if(body.action==='lease'){const {data,error}=await client.rpc('lease_support_chat');if(error)throw error;return response({job:data})}
   if(body.action!=='complete'||! /^[0-9a-f-]{36}$/i.test(body.jobId)||! /^[0-9a-f-]{36}$/i.test(body.leaseToken))return response({error:'INVALID_REQUEST'},422);
   const failed=typeof body.error==='string';const reply=failed?null:normalizeAgentReply(body.reply);

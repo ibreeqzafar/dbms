@@ -11,12 +11,13 @@ import type {StoreOrder} from '../lib/checkout';
 import type {Product} from '../types';
 import AdminMfa from './AdminMfa';
 import AdminOrders from './AdminOrders';
+import AdminTestData from './AdminTestData';
 import AdminNewReference from './AdminNewReference';
 import {CustomerDirectory} from './CustomerRelationships';
 import SupportTickets from './SupportTickets';
 import './admin-dashboard.css';
 
-const sections=[{id:'overview',name:'Overview',icon:LayoutDashboard},{id:'orders',name:'Orders',icon:ShoppingBag},{id:'products',name:'Products & stock',icon:Package},{id:'sales',name:'Sales & offers',icon:Tag},{id:'customers',name:'Customers',icon:Users},{id:'support',name:'Support requests',icon:LockKeyhole},{id:'settings',name:'Store settings',icon:Settings2}] as const;
+const sections=[{id:'overview',name:'Overview',icon:LayoutDashboard},{id:'orders',name:'Orders',icon:ShoppingBag},{id:'products',name:'Products & stock',icon:Package},{id:'sales',name:'Sales & offers',icon:Tag},{id:'customers',name:'Customers',icon:Users},{id:'support',name:'Support requests',icon:LockKeyhole},{id:'test-data',name:'Test data',icon:BarChart3},{id:'settings',name:'Store settings',icon:Settings2}] as const;
 type Section=typeof sections[number]['id'];
 export default function AdminDashboard(){
  const {profile,authLoading}=useStore();
@@ -60,6 +61,7 @@ function VerifiedDashboard(){
  {(section==='products'||section==='sales')&&<ProductManager products={products} salesOnly={section==='sales'} loading={busy||!!error} onRefresh={refresh}/>}
  {section==='customers'&&<CustomerDirectory/>}
  {section==='support'&&<SupportTickets admin/>}
+ {section==='test-data'&&<AdminTestData/>}
  {section==='settings'&&<StoreSettings/>}
  </>}
  <footer className="admin-workspace-footer"><span>ESSYRA · Private store workspace</span><Link to="/contact">Store support <ArrowUpRight size={12}/></Link></footer>
