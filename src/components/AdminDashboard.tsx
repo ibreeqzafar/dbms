@@ -18,7 +18,7 @@ import {CustomerDirectory} from './CustomerRelationships';
 import SupportTickets from './SupportTickets';
 import './admin-dashboard.css';
 
-const sections=[{id:'overview',name:'Overview',icon:LayoutDashboard},{id:'orders',name:'Orders',icon:ShoppingBag},{id:'products',name:'Products & stock',icon:Package},{id:'sales',name:'Sales & offers',icon:Tag},{id:'customers',name:'Customers',icon:Users},{id:'support',name:'Support requests',icon:LockKeyhole},{id:'test-data',name:'Test data',icon:BarChart3},{id:'settings',name:'Store settings',icon:Settings2}] as const;
+const sections=[{id:'overview',name:'Overview',icon:LayoutDashboard},{id:'orders',name:'Orders',icon:ShoppingBag},{id:'products',name:'Products & stock',icon:Package},{id:'sales',name:'Sales & offers',icon:Tag},{id:'customers',name:'Customers',icon:Users},{id:'support',name:'Support requests',icon:LockKeyhole},{id:'test-data',name:'Dataset',icon:BarChart3},{id:'settings',name:'Store settings',icon:Settings2}] as const;
 type Section=typeof sections[number]['id'];
 export default function AdminDashboard(){
  const {profile,authLoading}=useStore();
@@ -28,7 +28,7 @@ export default function AdminDashboard(){
 }
 function VerifiedDashboard(){
  const {profile,signOut,refreshProducts,setNotice}=useStore(),[params,setParams]=useSearchParams();
- const demoData=params.get('data')!=='live';
+ const demoData=params.get('data')!=='live'||params.get('view')==='test-data';
  const demoSection=demoData&&['overview','orders','customers'].includes(params.get('view')||'overview');
  const section:Section=sections.some(s=>s.id===params.get('view'))?params.get('view') as Section:'overview';
  const [verified,setVerified]=useState(false),[checking,setChecking]=useState(true),[revision,setRevision]=useState(0),[days,setDays]=useState('30');
@@ -50,11 +50,11 @@ function VerifiedDashboard(){
  const refresh=()=>{setRevision(n=>n+1);refreshProducts().catch(()=>setNotice('Storefront catalogue refresh failed. Reload before shopping.'))};
  const exportOrders=()=>downloadCsv(`essyra-orders-${days}-days.csv`,[['Order','Date','Customer','City','Status','Payment','Total PKR'],...orders.map(o=>['ESS-'+o.id,o.created_at,o.customer_name,o.city,o.order_state,o.payment_state,(o.total_paisa/100).toFixed(2)])]);
  const navigate=(id:Section)=>setParams({...id==='overview'?{}:{view:id},data:demoData?'demo':'live'});
- const chooseData=(demo:boolean)=>{setParams({...section==='overview'?{}:{view:section},data:demo?'demo':'live'})};
+ const chooseData=(demo:boolean)=>{setParams({...section==='overview'||!demo&&section==='test-data'?{}:{view:section},data:demo?'demo':'live'})};
  return <div className="admin-shell"><aside className="admin-sidebar"><Link className="wordmark" to="/">ESSYRA<span>STORE MANAGEMENT</span></Link><span className="admin-private"><ShieldCheck size={14}/> PRIVATE WORKSPACE</span><nav aria-label="Administration">{sections.map(s=><button key={s.id} aria-current={section===s.id?'page':undefined} onClick={()=>navigate(s.id)}><s.icon size={18}/>{s.name}</button>)}</nav><div className="admin-sidebar-bottom"><Link to="/">View storefront <ArrowUpRight size={15}/></Link><span>{profile?.email}</span><button onClick={signOut}>Sign out</button></div></aside>
  <div className="admin-workspace"><header className="admin-topbar"><div><span className="eyebrow">ESSYRA / ADMINISTRATION</span><h1>{sections.find(s=>s.id===section)?.name}</h1></div><span className="admin-secure"><LockKeyhole size={14}/>{verified?'MFA verified':'Verification required'}</span></header>
  {checking?<p role="status">Checking administrator verification…</p>:!verified?<section className="admin-verification"><ShieldCheck size={28}/><h2>Verify before you manage.</h2><p>Your administrator role is recognised. Complete two-step verification to access customer records, orders and product controls.</p><AdminMfa onVerified={()=>setVerified(true)}/></section>:<>
- <section className="admin-data-mode" aria-label="Dashboard data source"><div><strong>{demoData?'Project demo records':'Live store records'}</strong><p>{demoData?'750 fictional customers and 600 project orders. Product and sale controls update the storefront catalogue.':'Actual registered accounts and submitted customer orders.'}</p></div><div className="button-row"><button className="admin-button" aria-pressed={demoData} onClick={()=>chooseData(true)}>Project demo</button><button className="admin-button" aria-pressed={!demoData} onClick={()=>chooseData(false)}>Live store</button></div></section>
+ <section className="admin-data-mode" aria-label="Dashboard data source"><div><strong>{demoData||section==='test-data'?'Demo environment · Generated records':'Store records'}</strong>{['products','sales'].includes(section)&&<p>Changes here update the storefront catalogue.</p>}</div><div className="button-row"><button className="admin-button" aria-pressed={demoData} onClick={()=>chooseData(true)}>Demo data</button><button className="admin-button" aria-pressed={!demoData} onClick={()=>chooseData(false)}>Store records</button></div></section>
  <div className="admin-toolbar"><p>{busy?'Loading store data…':updated?`Store catalogue updated ${updated}`:'Store data unavailable'}</p><div>{!demoSection&&['overview','orders'].includes(section)&&<><label className="sr-only" htmlFor="report-range">Order report period</label><select id="report-range" value={days} onChange={e=>setDays(e.target.value)}><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last 365 days</option></select></>}<button className="admin-button" onClick={refresh} disabled={busy}><RefreshCw size={15}/> Refresh</button></div></div>
  {error&&!demoSection&&<p className="error" role="alert">{error}</p>}
  {demoSection&&<AdminTestData key={section} initialView={section} standalone={false} refreshKey={revision}/>}
