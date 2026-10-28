@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
-import {chatHref,tableCells,tableDivider} from '../lib/chat-format';
+import {chatHref,chatPlainText,tableCells,tableDivider} from '../lib/chat-format';
 function Inline({text}:{text:string}){
- const pieces=text.split(/(\*\*[^*\n]+\*\*|\[[^\]\n]+\]\([^\s)]+\)|https:\/\/[^\s<>|]+)/g);
+ const pieces=chatPlainText(text).split(/(\*\*[^*\n]+\*\*|\[[^\]\n]+\]\([^\s)]+\)|https:\/\/[^\s<>|]+)/g);
  return <>{pieces.map((piece,i)=>{if(piece.startsWith('**')&&piece.endsWith('**'))return <strong key={i}>{piece.slice(2,-2)}</strong>;const marked=piece.match(/^\[([^\]]+)\]\(([^)]+)\)$/);const value=marked?.[2]||piece.replace(/[.,;)]+$/,'');const href=chatHref(value);if(href&&(marked||piece.startsWith('https://')))return <Link key={i} to={href}>{marked?.[1]||'View '+(href.startsWith('/product/')?'product':href.split('/')[1])}</Link>;return piece})}</>;
 }
 export default function ChatAnswer({text}:{text:string}){

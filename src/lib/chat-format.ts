@@ -4,3 +4,4 @@ export function chatHref(value:string):string|null{
 }
 export function tableCells(line:string){return line.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').slice(0,6).map(s=>s.trim())}
 export function tableDivider(line:string){return /^\|?[\s:|-]+\|?$/.test(line.trim())&&line.includes('---')}
+export function chatPlainText(value:string){return value.replace(/<br\s*\/?>/gi,'\n')}

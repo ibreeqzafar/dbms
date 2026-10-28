@@ -1,3 +1,5 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {chatHref,tableCells,tableDivider} from './chat-format.ts';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {chatHref,chatPlainText,tableCells,tableDivider} from './chat-format.ts';
 test('AI replies can link only to ordinary ESSYRA storefront routes',()=>{assert.equal(chatHref('https://essyra-home.vercel.app/product/zarelle-bed'),'/product/zarelle-bed');for(const href of ['javascript:alert(1)','https://evil.example/product/bed','https://essyra-home.vercel.app.evil.example/cart','/admin','//evil.example/cart','data:text/html,test'])assert.equal(chatHref(href),null);assert.equal(chatHref('/account?returnTo=https://evil.example'),'/account')});
 test('table input remains bounded text rather than executable content',()=>{assert.deepEqual(tableCells('| **Bed** | <script>alert(1)</script> |'),['**Bed**','<script>alert(1)</script>']);assert.equal(tableDivider('| --- | :---: |'),true);assert.equal(tableCells('|a|b|c|d|e|f|g|').length,6)});
+
+test('line-break formatting does not enable arbitrary HTML',()=>{assert.equal(chatPlainText('a<br>b<br/>c<script>bad</script>'),'a\nb\nc<script>bad</script>')});
