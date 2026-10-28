@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4174",
     "build": "node scripts/models.mjs && tsc -b && vite build && node scripts/seo.mjs",
-    "test": "node --experimental-strip-types --test src/lib/domain.test.ts src/lib/concierge.test.ts src/lib/auth-navigation.test.ts src/lib/reviews.test.ts && node scripts/catalogue-check.mjs",
+    "test": "node --experimental-strip-types --test src/lib/domain.test.ts src/lib/concierge.test.ts src/lib/auth-navigation.test.ts src/lib/reviews.test.ts src/lib/async-deadline.test.ts src/lib/chat-format.test.ts && node scripts/catalogue-check.mjs",
     "seed": "node scripts/seed.mjs",
     "test:database": "node scripts/database-check.mjs",
     "test:admin": "node --experimental-strip-types --test src/lib/admin-report.test.ts && node scripts/admin-security-check.mjs",
-    "test:studio": "node --experimental-strip-types --test src/lib/studio-tools.test.ts"
+    "test:studio": "node --experimental-strip-types --test src/lib/studio-tools.test.ts",
+    "test:support": "node --experimental-strip-types --test src/lib/async-deadline.test.ts src/lib/chat-format.test.ts src/lib/support-reply.test.ts && node scripts/support-security-check.mjs && node scripts/support-tickets-check.mjs && node scripts/bestsellers-check.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.0",
