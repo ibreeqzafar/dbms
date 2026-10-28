@@ -30,3 +30,5 @@ Review invitations:
 Tests: npm run test:reviews checks purchase ownership, guest denial, duplicate submissions, rating bounds, private IDs, email leases, test-data counts, admin MFA and isolation from real customer tables.
 
 Brevo implementation reference: https://developers.brevo.com/reference/send-transac-email
+
+Admin usability update: the dashboard defaults to the clearly marked Project demo record mode. Overview, Orders and Customers use the isolated project tables; choose Live store for actual registrations/orders. Catalogue/product/sale controls always update the storefront and the banner states this explicitly. Demo order updates go through manage_project_test_order with admin + MFA checks; they never change actual orders or queue email. Processed project orders can be dispatched or cancelled; dispatched project orders can be delivered. Final states cannot be reopened. The live order report now follows its date filter. Live order rows have a Manage order affordance and explicit cancellation confirmation. Product and sale editors scroll into view and focus their first input; updates have a timeout and success/error feedback.
