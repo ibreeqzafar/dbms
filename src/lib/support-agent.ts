@@ -5,7 +5,7 @@ export const supportAgentEnabled=import.meta.env.VITE_SUPPORT_AGENT_ENABLED==='t
 export async function loadBestsellerSlugs(signal:AbortSignal):Promise<string[]>{
  if(!supabase)throw Error('CATALOGUE_UNAVAILABLE');
  const client=supabase;
- return withDeadline(async request=>{const {data,error}=await client.rpc('get_store_bestsellers').abortSignal(request);if(error)throw error;return (data||[]).map((p:{slug:string})=>p.slug)},signal,8000);
+ return withDeadline(async request=>{const {data,error}=await client.rpc('get_homepage_bestsellers').abortSignal(request);if(error)throw error;return (data||[]).map((p:{slug:string})=>p.slug)},signal,8000);
 }
 export async function askAgent(question:string,conversationId:string,contextSlug:string|undefined,signal:AbortSignal):Promise<AgentReply>{
  if(!supportAgentEnabled||!supabase)throw Error('AGENT_NOT_ENABLED');

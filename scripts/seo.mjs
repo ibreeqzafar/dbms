@@ -1,5 +1,5 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
-const products=JSON.parse(await readFile('src/data/catalogue.json','utf8')).map(p=>({...p,brand:'ESSYRA',description:`${p.name}: ${p.subcategory} in ${p.colors.join(' / ')}. Explore the dimensions, materials and finish to find the right piece for your space.`}));
+const products=JSON.parse(await readFile('src/data/catalogue.json','utf8')).filter(p=>p.active!==false).map(p=>({...p,brand:'ESSYRA',description:`${p.name}: ${p.subcategory} in ${p.colors.join(' / ')}. Explore the dimensions, materials and finish to find the right piece for your space.`}));
 const template=await readFile('dist/index.html','utf8');
 const base=process.env.VITE_SITE_URL||'https://essyra-home.vercel.app';
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');

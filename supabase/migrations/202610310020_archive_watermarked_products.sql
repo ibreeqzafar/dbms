@@ -1,0 +1,9 @@
+begin;
+-- Visually confirmed watermarked photographs. Archive reversibly; retain purchase history.
+with archived as (
+ update public.products set active=false,updated_at=now() where active and slug in ('milano-class-bed-set-with-ottomans-modern-side-tables','double-back-bed-luxury-boucle-bed-set','nova-glow-bed-led-upholstered-luxury-bed-set','belvik-bed-king-size','tavin-bed-king-size','roco-sofa-6-seater','leon-sofa-modern-modular-design','sanvy-sofa-cum-bed','crumble-sofa-seater-l-shaped','pumpkin-boucle-sofa-7-seater','olive-green-bubbles-sofa-set','luna-crest-dining-set','nordic-haven-dining-set','oslo-dining-table-modern-design','aristo-sheesham-dining-set','dyrin-dining-table-6-seater','havix-modern-4-seater-dining-table-set','untitled-mar3_21-11','ovira-chairs-modern-accent-chair-set-of-3','hexa-core-table','trio-table-cloud-shape-coffee-table','kirk-console') returning id,slug
+)
+insert into public.audit_logs(actor_id,action,entity_id,metadata)
+select null,'product-photo-watermark-archived',id,jsonb_build_object('slug',slug,'reason','Visible retailer watermark') from archived;
+commit;
+select count(*) as still_active from public.products where active and slug in ('milano-class-bed-set-with-ottomans-modern-side-tables','double-back-bed-luxury-boucle-bed-set','nova-glow-bed-led-upholstered-luxury-bed-set','belvik-bed-king-size','tavin-bed-king-size','roco-sofa-6-seater','leon-sofa-modern-modular-design','sanvy-sofa-cum-bed','crumble-sofa-seater-l-shaped','pumpkin-boucle-sofa-7-seater','olive-green-bubbles-sofa-set','luna-crest-dining-set','nordic-haven-dining-set','oslo-dining-table-modern-design','aristo-sheesham-dining-set','dyrin-dining-table-6-seater','havix-modern-4-seater-dining-table-set','untitled-mar3_21-11','ovira-chairs-modern-accent-chair-set-of-3','hexa-core-table','trio-table-cloud-shape-coffee-table','kirk-console');

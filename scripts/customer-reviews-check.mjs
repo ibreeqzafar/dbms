@@ -78,4 +78,19 @@ assert.equal((await db.query('select count(*)::int n from audit_logs')).rows[0].
 const dates=(await db.query(`select (private.demo_delivery_due('${simulated}','2026-10-31 19:00+05') at time zone 'Asia/Karachi')::text after_close,(private.demo_delivery_due('${simulated}','2026-10-31 17:59+05') at time zone 'Asia/Karachi')::text near_close`)).rows[0];
 assert.ok(dates.after_close.startsWith('2026-11-01'));assert.ok(dates.near_close.startsWith('2026-11-01'));
 await db.exec('set role authenticated');await assert.rejects(db.exec('select private.simulate_due_deliveries()'),/permission denied/);await db.exec('reset role');
+// Project history can support the storefront without exposing customer or order records.
+await db.exec(await readFile('supabase/migrations/202610310019_project_storefront_history.sql','utf8'));
+await db.exec('set role anon');
+const history=(await db.query('select * from get_project_product_reviews(null)')).rows;
+assert.equal(history.length,500);assert.ok(history.every(r=>r.is_sample===true&&!/test/i.test(r.headline+' '+r.author_label)));
+assert.equal(history[0].email,undefined);assert.equal(history[0].customer_id,undefined);assert.equal(history[0].order_id,undefined);
+assert.ok((await db.query('select * from get_homepage_bestsellers()')).rows.length>0);
+await assert.rejects(db.exec('select * from project_test_customers'),/permission denied/);
+await assert.rejects(db.exec('select * from project_test_orders'),/permission denied/);
+await db.exec('reset role');
+await db.exec("alter table products add column id uuid default gen_random_uuid();alter table products add column updated_at timestamptz default now();insert into products(slug) values('kirk-console')");
+await db.exec(await readFile('supabase/migrations/202610310020_archive_watermarked_products.sql','utf8'));
+assert.equal((await db.query("select active from products where slug='kirk-console'")).rows[0].active,false);
+assert.equal((await db.query("select active from products where slug='bed-a'")).rows[0].active,true);
+assert.equal((await db.query('select count(*)::int n from project_test_orders')).rows[0].n,600);
 await db.close();console.log('Passed local review security: delivered ownership, guests/foreign orders denied, rating bounds, one review/idempotent retry, negative reviews published, public privacy, private email queue, unique delivery invitation and worker lease isolation. No production emails or orders.');

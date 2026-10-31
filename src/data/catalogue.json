@@ -22531,7 +22531,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "double-back-bed-luxury-boucle-bed-set",
@@ -22566,7 +22567,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "nova-glow-bed-led-upholstered-luxury-bed-set",
@@ -22601,7 +22603,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "belvik-bed-king-size",
@@ -22635,7 +22638,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "tavin-bed-king-size",
@@ -22667,7 +22671,8 @@
     "style": "Contemporary",
     "dimensionEstimates": [
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "carno-bed",
@@ -23111,7 +23116,8 @@
       "contemporary"
     ],
     "style": "Contemporary",
-    "configuration": "Single Seater / Boucle"
+    "configuration": "Single Seater / Boucle",
+    "active": false
   },
   {
     "id": "leon-sofa-modern-modular-design",
@@ -23145,7 +23151,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "sanvy-sofa-cum-bed",
@@ -23179,7 +23186,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "crumble-sofa-seater-l-shaped",
@@ -23214,7 +23222,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "pumpkin-boucle-sofa-7-seater",
@@ -23250,7 +23259,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "raimes-sofa",
@@ -23353,7 +23363,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "broohah-sofa",
@@ -24888,7 +24899,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "nordic-haven-dining-set",
@@ -24918,7 +24930,8 @@
       "dining sets",
       "contemporary"
     ],
-    "style": "Contemporary"
+    "style": "Contemporary",
+    "active": false
   },
   {
     "id": "oslo-dining-table-modern-design",
@@ -24953,7 +24966,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "aristo-sheesham-dining-set",
@@ -24989,7 +25003,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "dyrin-dining-table-6-seater",
@@ -25023,7 +25038,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "havix-modern-4-seater-dining-table-set",
@@ -25057,7 +25073,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "dineo-dining-table",
@@ -25951,7 +25968,8 @@
     "style": "Contemporary",
     "dimensionEstimates": [
       "width"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "caprio-media-console",
@@ -26302,7 +26320,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "sienna-chair",
@@ -26621,7 +26640,8 @@
       "width",
       "depth",
       "height"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "trio-table-cloud-shape-coffee-table",
@@ -26650,7 +26670,8 @@
       "coffee tables",
       "contemporary"
     ],
-    "style": "Contemporary"
+    "style": "Contemporary",
+    "active": false
   },
   {
     "id": "untitled-feb15_18-30",
@@ -28198,7 +28219,8 @@
     "style": "Contemporary",
     "dimensionEstimates": [
       "width"
-    ]
+    ],
+    "active": false
   },
   {
     "id": "console-shoe-rack",
