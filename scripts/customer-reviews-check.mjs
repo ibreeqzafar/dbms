@@ -63,4 +63,19 @@ assert.equal((await db.query("select manage_project_test_order('TEST-O0521','can
 await assert.rejects(db.exec("select manage_project_test_order('TEST-O0521','processing')"),/cannot move/);
 await assert.rejects(db.exec("update project_test_orders set state='cancelled'"),/permission denied/);
 await db.exec('reset role');assert.equal((await db.query('select count(*)::int n from review_email_queue')).rows[0].n,1);
+// Delivery simulation observes working hours, never changes payment, and queues once.
+await db.exec(`alter table store_orders add column payment_method text default 'cod';alter table store_orders add column payment_state text default 'unpaid';alter table store_orders add column updated_at timestamptz default now();create table audit_logs(actor_id uuid,action text,entity_id uuid,metadata jsonb);`);
+await db.exec((await readFile('supabase/migrations/202610310017_demo_delivery_simulation.sql','utf8')).split('-- Database-side scheduling')[0]);
+const simulated='66666666-6666-4666-a666-666666666666';
+await db.exec(`insert into store_orders(id,owner_id,customer_name,order_state,snapshot,created_at) values('${simulated}','${alice}','Alice','received','[{"productId":"sofa-b"}]','2026-10-29 10:00+05');update store_orders set order_state='cancelled' where id='55555555-5555-4555-a555-555555555555';`);
+assert.equal((await db.query("select private.simulate_due_deliveries('2026-10-31 09:59+05') n")).rows[0].n,0);
+assert.equal((await db.query("select private.simulate_due_deliveries('2026-10-31 18:00+05') n")).rows[0].n,0);
+assert.equal((await db.query("select private.simulate_due_deliveries('2026-10-31 12:00+05') n")).rows[0].n,1);
+assert.equal((await db.query("select private.simulate_due_deliveries('2026-10-31 12:01+05') n")).rows[0].n,0);
+assert.equal((await db.query(`select payment_state from store_orders where id='${simulated}'`)).rows[0].payment_state,'unpaid');
+assert.equal((await db.query('select count(*)::int n from review_email_queue')).rows[0].n,2);
+assert.equal((await db.query('select count(*)::int n from audit_logs')).rows[0].n,1);
+const dates=(await db.query(`select (private.demo_delivery_due('${simulated}','2026-10-31 19:00+05') at time zone 'Asia/Karachi')::text after_close,(private.demo_delivery_due('${simulated}','2026-10-31 17:59+05') at time zone 'Asia/Karachi')::text near_close`)).rows[0];
+assert.ok(dates.after_close.startsWith('2026-11-01'));assert.ok(dates.near_close.startsWith('2026-11-01'));
+await db.exec('set role authenticated');await assert.rejects(db.exec('select private.simulate_due_deliveries()'),/permission denied/);await db.exec('reset role');
 await db.close();console.log('Passed local review security: delivered ownership, guests/foreign orders denied, rating bounds, one review/idempotent retry, negative reviews published, public privacy, private email queue, unique delivery invitation and worker lease isolation. No production emails or orders.');
