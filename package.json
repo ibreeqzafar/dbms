@@ -12,7 +12,7 @@
     "test:admin": "node --experimental-strip-types --test src/lib/admin-report.test.ts && node scripts/admin-security-check.mjs",
     "test:studio": "node --experimental-strip-types --test src/lib/studio-tools.test.ts",
     "test:support": "node --experimental-strip-types --test src/lib/async-deadline.test.ts src/lib/chat-format.test.ts src/lib/support-reply.test.ts && node scripts/support-security-check.mjs && node scripts/support-tickets-check.mjs && node scripts/bestsellers-check.mjs",
-    "test:reviews": "node scripts/customer-reviews-check.mjs && node --experimental-strip-types --test src/lib/admin-test-data.test.ts src/lib/project-presentation.test.ts"
+    "test:reviews": "node scripts/customer-reviews-check.mjs && node --experimental-strip-types --test src/lib/admin-test-data.test.ts src/lib/project-presentation.test.ts src/lib/order-presentation.test.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.0",
