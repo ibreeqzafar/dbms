@@ -1,0 +1,18 @@
+{
+  "name": "essyra-local-n8n",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node launcher.mjs start",
+    "stop": "node launcher.mjs stop",
+    "status": "node launcher.mjs status"
+  },
+  "dependencies": {
+    "n8n": "2.45.4"
+  },
+  "allowScripts": {
+    "sqlite3@5.1.7": true,
+    "isolated-vm@7.0.1": true
+  }
+}

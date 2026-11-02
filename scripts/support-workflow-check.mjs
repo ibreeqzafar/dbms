@@ -1,6 +1,7 @@
 import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const workflow=JSON.parse(await readFile('n8n/essyra-shopping-support.private.json','utf8'));
+for(const file of ['n8n/essyra-shopping-support.private.json','n8n/essyra-design-studio.private.json']){
+const workflow=JSON.parse(await readFile(file,'utf8'));
 assert.equal(workflow.active,false);
 assert.equal(workflow.nodes.find(n=>n.type.endsWith('chatTrigger')).parameters.public,false);
 const tools=workflow.nodes.filter(n=>n.type==='n8n-nodes-base.httpRequestTool');
@@ -14,4 +15,9 @@ assert.equal(evaluate(param('Browse_By_Budget','reference->>category'),{room:'be
 assert.equal(evaluate(param('Compare_Products','slug'),{slugs:'bed,sofa,desk,mirror'}),'in.(bed,sofa,desk)');
 assert.equal(evaluate(param('Product_Details','slug'),{slug:'../../orders?owner_id=*'}),'eq.ordersownerid');
 assert(!JSON.stringify(workflow).includes('http://localhost'));
+assert(workflow.nodes.every(n=>!n.credentials));
+assert.equal(workflow.settings.saveDataSuccessExecution,'none');
+assert.equal(workflow.settings.saveDataErrorExecution,'none');
+console.log('Checked '+file);
+}
 console.log('Passed: private trigger, fixed read-only catalogue endpoints, no privileged credential, bounded tool results, numeric budget bounds, safe sort/room enums, exact-slug sanitizing and three-item comparison limit.');

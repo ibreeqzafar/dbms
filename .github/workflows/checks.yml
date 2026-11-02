@@ -1,0 +1,30 @@
+name: Website and access-control checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm audit --audit-level=moderate
+      - run: node scripts/secret-check.mjs
+      - run: npm test
+      - run: npm run test:database
+      - run: npm run test:admin
+      - run: npm run test:studio
+      - run: npm run test:support
+      - run: npm run test:reviews
+      - run: node scripts/support-workflow-check.mjs
+      - run: npm run build
+        env:
+          VITE_SUPPORT_AGENT_ENABLED: 'true'

@@ -2,6 +2,14 @@ node_modules/
 dist/
 .env
 .env.local
+.env.*
+!.env.example
+.vercel/
+runtime/
+*.sqlite*
+*.log
+*bridge-key*
+*credential-backup*
 *.tsbuildinfo
 *.tar.gz
 scripts/.ikea-reference-cache/
