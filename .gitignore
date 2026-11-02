@@ -10,6 +10,7 @@ runtime/
 *.log
 *bridge-key*
 *credential-backup*
+security-review/
 *.tsbuildinfo
 *.tar.gz
 scripts/.ikea-reference-cache/
