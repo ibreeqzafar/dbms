@@ -24,12 +24,14 @@ create index studio_image_pending on public.studio_image_jobs(created_at) where 
 create table public.studio_worker_health(id boolean primary key default true check(id),seen_at timestamptz not null);
 alter table public.studio_worker_health enable row level security;
 revoke all on public.studio_worker_health from public,anon,authenticated;
+grant select on public.studio_worker_health to service_role;
 create table public.studio_request_limits(owner_id uuid primary key references auth.users on delete cascade,window_start timestamptz not null,requests integer not null check(requests>0));
 alter table public.studio_request_limits enable row level security;
 revoke all on public.studio_request_limits from public,anon,authenticated;
 alter table public.studio_image_jobs enable row level security;
 revoke all on public.studio_image_jobs from public,anon,authenticated;
 grant select on public.studio_image_jobs to authenticated;
+grant select,insert,update,delete on public.studio_image_jobs to service_role;
 create policy own_studio_images on public.studio_image_jobs for select to authenticated
  using(owner_id=auth.uid() and expires_at>now() and exists(select 1 from public.profiles where id=auth.uid() and active));
 insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types)

@@ -28,6 +28,7 @@ await db.exec(queue());await db.exec('select public.lease_studio_image()');await
 for(let i=0;i<40;i++)assert.equal((await db.query(`select public.guard_studio_request('${alice}') ok`)).rows[0].ok,true);assert.equal((await db.query(`select public.guard_studio_request('${alice}') ok`)).rows[0].ok,false);
 assert.equal((await db.query('select count(*) n from public.recommendation_generations')).rows[0].n,1);
 assert.equal((await db.query("select public from storage.buckets where id='studio-images'")).rows[0].public,false);
+await db.exec('set role service_role');assert.equal((await db.query('select id from public.studio_image_jobs')).rows[0].id,job.id);assert.equal((await db.query('select id from public.studio_worker_health')).rows[0].id,true);await db.exec('reset role');
 await db.exec(`update public.profiles set active=false where id='${alice}'`);await assert.rejects(db.exec(queue()),/ACCOUNT_DISABLED/);
 console.log('Passed private image-job RLS, no browser queue/worker privileges, active-owner and matched-product checks, offline handling, idempotency, conflict denial, single lease, no automatic timed-out resubmission, retry cap, private bucket and unchanged recommendation grants.');
 await db.close();
