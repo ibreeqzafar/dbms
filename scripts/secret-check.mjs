@@ -1,6 +1,7 @@
 import {execFileSync,spawnSync} from 'node:child_process';
 const history=process.argv.includes('--history');
 const checks=[['Groq key',/\bgsk_[A-Za-z0-9]{30,}/],['Brevo key',/\bxkeysib-[A-Za-z0-9_-]{30,}/],['Supabase secret',/\bsb_secret_[A-Za-z0-9_-]{20,}/],['GitHub token',/\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,})/],['Private key',/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/],['Provider key',/\bsk-(?:proj-)?[A-Za-z0-9_-]{35,}/]];
+checks.push(['Hugging Face token',/\bhf_[A-Za-z0-9]{20,}/]);
 const findings=[];
 function scan(content,label){
  for(const [name,re] of checks)if(re.test(content))findings.push({file:label,type:name});

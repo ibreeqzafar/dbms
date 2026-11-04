@@ -25,6 +25,8 @@ jobs:
       - run: npm run test:support
       - run: npm run test:reviews
       - run: node scripts/support-workflow-check.mjs
+      - run: node scripts/studio-workflow-check.mjs
       - run: npm run build
         env:
           VITE_SUPPORT_AGENT_ENABLED: 'true'
+          VITE_STUDIO_IMAGE_ENABLED: 'true'

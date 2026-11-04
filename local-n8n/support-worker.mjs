@@ -3,6 +3,7 @@ import {readFile,writeFile,unlink} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {matchesWorker} from './worker-process.mjs';
+import {startStudioWorker} from './studio-worker.mjs';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const endpoint='https://zhehksxuzyxnurmhwylw.supabase.co/functions/v1/support-worker';
 const webhook='http://127.0.0.1:5678/webhook/essyra-support';
@@ -19,6 +20,7 @@ const key=privateKey();
 const record=path.join(root,'runtime','support-worker-process.json');
 try{const previous=JSON.parse(await readFile(record,'utf8'));if(matchesWorker(previous,fileURLToPath(import.meta.url)))throw Error('An ESSYRA support worker is already running. Use the stop shortcut before starting again.')}catch(e){if(e.code!=='ENOENT')throw e}
 await writeFile(record,JSON.stringify({pid:process.pid,script:fileURLToPath(import.meta.url)})+'\n');
+const stopStudio=startStudioWorker({root,key});
 async function broker(payload){const r=await fetch(endpoint,{method:'POST',headers:{'content-type':'application/json','x-essyra-worker-key':key},body:JSON.stringify(payload),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('BROKER_'+r.status);return r.json()}
 console.log('ESSYRA support connector started. It makes outbound HTTPS requests only; no public tunnel or editor exposure.');
 let lastState='',lastReviewCheck=0;
@@ -44,4 +46,4 @@ try{while(!stopping){
   if(lastState!=='offline'){console.log('Support connection unavailable. Check internet, Supabase deployment and connection-key settings. No customer messages are logged here.');lastState='offline'}
   await sleep(15000);
  }
-}}finally{await unlink(record).catch(()=>{})}
+}}finally{stopStudio();await unlink(record).catch(()=>{})}

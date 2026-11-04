@@ -46,7 +46,7 @@ Built as a university DBMS project, it brings the interface, relational data mod
 | **ESSYRA Care** | Local n8n workflow using Groq `openai/gpt-oss-20b` and bounded public catalogue/policy tools. |
 | **Design Studio adviser** | Separate n8n workflow and conversation memory; styling guidance for the studio's matched products. |
 | **Furniture placement** | Browser-based background removal, cropping and adjustable illustrative overlays. |
-| **Photorealistic room editing** | Hugging Face integration under investigation; not yet operational. Planned generated preview will remain separate from the manual canvas. |
+| **Photorealistic room editing** | Local n8n room-validation and FLUX image tests passed. The private website queue and separate finished-image panel are prepared; production activation is pending. [Integration notes](DESIGN-STUDIO-IMAGES.md). |
 
 Self-hosted n8n Community Edition does not depend on the n8n Cloud trial. Both n8n and the connector must run on an awake, connected laptop. Groq and any image service have their own limits.
 
@@ -132,7 +132,7 @@ specifications/         SRS and SDS text
 | `npm test` | Domain rules, catalogue consistency, navigation, chat formatting and rankings. |
 | `npm run test:database` | Database migrations, checkout, stock, idempotency and ownership. |
 | `npm run test:admin` | Administrator MFA, role boundaries, sale prices and reporting. |
-| `npm run test:studio` | Image handling, placement utilities and catalogue matching. |
+| `npm run test:studio` | Image handling, matching, private image-job permissions, leases and request limits. |
 | `npm run test:support` | Chat isolation, worker leases, tickets and public ranking projections. |
 | `npm run test:reviews` | Delivered-purchase reviews, privacy and invitation queues. |
 | `node scripts/support-workflow-check.mjs` | Fixed read-only endpoints and portable workflow boundaries. |
