@@ -1,4 +1,5 @@
 export const studioImageOrigin='https://black-forest-labs-flux-2-klein-4b.hf.space';
+export function studioRecord<T>(value:T|T[]|null):T|null{return Array.isArray(value)?value[0]??null:value}
 export function resultImageUrl(value:unknown):string {
  if(typeof value!=='string'||!/^https:\/\/black-forest-labs-flux-2-klein-4b\.hf\.space\/gradio_api\/file=\/tmp\/gradio\/[a-f0-9]{64}\/[a-zA-Z0-9_.-]+$/.test(value))throw Error('INVALID_RESULT_URL');
  return value;

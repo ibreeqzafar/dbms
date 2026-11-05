@@ -1,6 +1,9 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {boundedBytes,isWebp,resultImageUrl} from '../../supabase/functions/_shared/studio-image.ts';
+import {boundedBytes,isWebp,resultImageUrl,studioRecord} from '../../supabase/functions/_shared/studio-image.ts';
+test('image RPC records accept object and one-row PostgREST responses',()=>{
+ const row={id:'job',state:'queued'};assert.equal(studioRecord(row),row);assert.equal(studioRecord([row]),row);assert.equal(studioRecord([]),null);assert.equal(studioRecord(null),null);
+});
 test('only the selected image provider and exact temporary file path are accepted',()=>{
  const valid='https://black-forest-labs-flux-2-klein-4b.hf.space/gradio_api/file=/tmp/gradio/'+'a'.repeat(64)+'/image.webp';assert.equal(resultImageUrl(valid),valid);
  for(const value of ['http://localhost/','https://evil.test/image.webp',valid+'?redirect=evil',valid.replace('/image.webp','/../secret'),valid.replace('hf.space/','hf.space.evil/'),null])assert.throws(()=>resultImageUrl(value));

@@ -1,8 +1,9 @@
 import {PNG} from 'npm:pngjs@7.0.0';
+import {Buffer} from 'node:buffer';
 import {cors,endpoint,identity,response,service} from '../_shared/http.ts';
 import {supportInput} from '../_shared/support-input.ts';
 import {fetchCatalogueImage} from '../_shared/catalogue-image.ts';
-import {boundedBytes,imageBase64,isWebp,resultImageUrl} from '../_shared/studio-image.ts';
+import {boundedBytes,imageBase64,isWebp,resultImageUrl,studioRecord} from '../_shared/studio-image.ts';
 const uuid=(v:unknown):v is string=>typeof v==='string'&&/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v);
 async function workerKey(req:Request){
  const expected=Deno.env.get('N8N_SUPPORT_WORKER_KEY'),received=req.headers.get('x-essyra-worker-key')||'';
@@ -20,7 +21,7 @@ Deno.serve(endpoint(async req=>{
    // Clean expired private objects when the laptop is running; expiry is enforced even while offline.
    const {data:expired}=await db.from('studio_image_jobs').select('id,source_object,source_history,result_object').lt('expires_at',new Date().toISOString()).is('cleaned_at',null).limit(10);
    for(const j of expired||[]){const keys=[j.source_object,...(j.source_history||[]),j.result_object].filter(Boolean);const {error}=await db.storage.from('studio-images').remove(keys);if(!error)await db.from('studio_image_jobs').update({state:'expired',cleaned_at:new Date().toISOString()}).eq('id',j.id)}
-   const {data:j,error}=await db.rpc('lease_studio_image');if(error)throw error;if(!j?.id)return response({job:null});
+   const {data:leased,error}=await db.rpc('lease_studio_image');if(error)throw error;const j=studioRecord<any>(leased);if(!j?.id)return response({job:null});
    try{
     const {data:profile}=await db.from('profiles').select('active').eq('id',j.owner_id).single();
     const {data:product}=await db.from('products').select('reference').eq('slug',j.product_slug).eq('active',true).single();
@@ -69,12 +70,12 @@ Deno.serve(endpoint(async req=>{
  const raw=Uint8Array.from(atob(p.roomImage.split(',')[1]),c=>c.charCodeAt(0));
  if(raw.byteLength>5*1024*1024||raw.length<24||raw[0]!==137||raw[1]!==80||raw[2]!==78||raw[3]!==71)return response({error:'INVALID_PHOTO'},422);
  const view=new DataView(raw.buffer),width=view.getUint32(16),height=view.getUint32(20);if(width<100||height<100||width>1800||height>1800)return response({error:'INVALID_PHOTO_SIZE'},422);
- const decoded=PNG.sync.read(raw);const clean=PNG.sync.write(decoded,{colorType:6});if(clean.length>5*1024*1024)return response({error:'PHOTO_TOO_LARGE'},413);
+ const decoded=PNG.sync.read(Buffer.from(raw));const clean=PNG.sync.write(decoded,{colorType:6});if(clean.length>5*1024*1024)return response({error:'PHOTO_TOO_LARGE'},413);
  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',clean)),n=>n.toString(16).padStart(2,'0')).join('');
  const key=`${user.id}/${p.generationKey}/${hash}.png`;
  const upload=await db.storage.from('studio-images').upload(key,clean,{contentType:'image/png',upsert:false});
  if(upload.error&&(!('statusCode' in upload.error)||String(upload.error.statusCode)!=='409'))throw upload.error;
- const {data:j,error}=await db.rpc('queue_studio_image',{p_owner:user.id,p_generation_key:p.generationKey,p_slug:p.productSlug,p_object:key,p_hash:hash});
+ const {data:queued,error}=await db.rpc('queue_studio_image',{p_owner:user.id,p_generation_key:p.generationKey,p_slug:p.productSlug,p_object:key,p_hash:hash});const j=studioRecord<any>(queued);
  if(error){if(!upload.error)await db.storage.from('studio-images').remove([key]);const code=['IMAGE_WORKER_OFFLINE','IMAGE_PAUSED','GENERATION_ALREADY_USED','IMAGE_ALREADY_PENDING','IMAGE_RETRY_LIMIT','IMAGE_RATE_LIMIT','MATCHED_PRODUCT_REQUIRED','GENERATION_REQUIRED'].find(c=>error.message.includes(c));return response({error:code||'IMAGE_QUEUE_REJECTED'},code==='IMAGE_WORKER_OFFLINE'||code==='IMAGE_PAUSED'?503:409)}
  return response(visible(j),202);
 }));
