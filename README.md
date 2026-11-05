@@ -46,7 +46,7 @@ Built as a university DBMS project, it brings the interface, relational data mod
 | **ESSYRA Care** | Local n8n workflow using Groq `openai/gpt-oss-20b` and bounded public catalogue/policy tools. |
 | **Design Studio adviser** | Separate n8n workflow and conversation memory; styling guidance for the studio's matched products. |
 | **Furniture placement** | Browser-based background removal, cropping and adjustable illustrative overlays. |
-| **Photorealistic room editing** | n8n/Groq room validation and FLUX editing, with an activated private Supabase queue and owner-only results. Live pipeline/isolation tests passed; the finished-image frontend release is pending Vercel’s GitHub connection. Generated furniture fidelity needs visual review. [Integration notes](DESIGN-STUDIO-IMAGES.md). |
+| **Photorealistic room editing** | Live finished-image panel, n8n/Groq room validation and FLUX editing, with a private Supabase queue and owner-only results. Pipeline/isolation tests passed and the frontend was deployed through GitHub. Generated furniture fidelity needs visual review; the laptop connector and free provider capacity must be available. [Integration notes](DESIGN-STUDIO-IMAGES.md). |
 
 Self-hosted n8n Community Edition does not depend on the n8n Cloud trial. Both n8n and the connector must run on an awake, connected laptop. Groq and any image service have their own limits.
 

@@ -24,7 +24,7 @@ The public Space processes temporary copies. Do not submit photographs containin
 
 The approved migration, private storage bucket and `studio-images` function are installed in Supabase. The laptop image connector is enabled. Live tests passed non-room rejection, owner-only job access, completed-image storage and owner-only image retrieval. These checks verify the pipeline and permissions; generated furniture fidelity still needs visual review and is not guaranteed by the free model.
 
-Vercel is connected to `ibreeqzafar/dbms`, tracking `main`, and the production `VITE_STUDIO_IMAGE_ENABLED=true` flag is saved. The Git-triggered frontend release is being verified. Do not treat the current public website as image-enabled until that release is verified.
+Vercel is connected to `ibreeqzafar/dbms`, tracking `main`, and the production `VITE_STUDIO_IMAGE_ENABLED=true` flag is saved. Commit `bb1092e` deployed successfully through the Git integration. The public `/studio` page was verified with the finished-design panel, external-processing consent and separate collapsed manual-placement controls.
 
 ## Deployment checklist
 
