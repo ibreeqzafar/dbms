@@ -20,9 +20,15 @@ The original Qwen demo rejected its requested GPU duration. The tested FLUX demo
 
 The public Space processes temporary copies. Do not submit photographs containing people or private details. ESSYRA results and sources expire after 24 hours; the laptop worker removes expired objects when running. Access expires even if the laptop is offline.
 
+## Activation status — 5 November 2026
+
+The approved migration, private storage bucket and `studio-images` function are installed in Supabase. The laptop image connector is enabled. Live tests passed non-room rejection, owner-only job access, completed-image storage and owner-only image retrieval. These checks verify the pipeline and permissions; generated furniture fidelity still needs visual review and is not guaranteed by the free model.
+
+The frontend release remains pending the Vercel GitHub app connection and production `VITE_STUDIO_IMAGE_ENABLED=true` deployment. Do not treat the current public website as image-enabled until that release is verified.
+
 ## Deployment checklist
 
-Prepared source, not an assertion that production is activated:
+Source and deployment components:
 
 - Migration: `supabase/migrations/202611040021_studio_images.sql`.
 - Edge function: `supabase/functions/studio-images/index.ts` and its shared imports.
