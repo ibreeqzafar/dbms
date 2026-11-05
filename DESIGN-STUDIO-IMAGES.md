@@ -24,7 +24,7 @@ The public Space processes temporary copies. Do not submit photographs containin
 
 The approved migration, private storage bucket and `studio-images` function are installed in Supabase. The laptop image connector is enabled. Live tests passed non-room rejection, owner-only job access, completed-image storage and owner-only image retrieval. These checks verify the pipeline and permissions; generated furniture fidelity still needs visual review and is not guaranteed by the free model.
 
-The frontend release remains pending the Vercel GitHub app connection and production `VITE_STUDIO_IMAGE_ENABLED=true` deployment. Do not treat the current public website as image-enabled until that release is verified.
+Vercel is connected to `ibreeqzafar/dbms`, tracking `main`, and the production `VITE_STUDIO_IMAGE_ENABLED=true` flag is saved. The Git-triggered frontend release is being verified. Do not treat the current public website as image-enabled until that release is verified.
 
 ## Deployment checklist
 
