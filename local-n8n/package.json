@@ -9,7 +9,7 @@
     "status": "node launcher.mjs status"
   },
   "dependencies": {
-    "n8n": "2.45.4"
+    "n8n": "2.45.7"
   },
   "allowScripts": {
     "sqlite3@5.1.7": true,
