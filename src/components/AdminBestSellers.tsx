@@ -1,0 +1,8 @@
+import {ArrowUpRight,Package} from 'lucide-react';
+import {Link} from 'react-router-dom';
+import type {Product} from '../types';
+import {money} from '../lib/domain';
+import {ProductImage} from './ProductCard';
+export default function AdminBestSellers({ranking,products,sales}:{ranking:[string,number][];products:Product[];sales?:Record<string,number>}){
+ return <section className="admin-bestsellers" aria-labelledby="admin-bestsellers-title"><div className="admin-panel-heading"><div><span className="eyebrow">PRODUCT PERFORMANCE</span><h3 id="admin-bestsellers-title">Best sellers</h3><p>Top pieces by delivered units.</p></div><Package size={21} aria-hidden="true"/></div>{ranking.length?<ol className="admin-bestseller-grid">{ranking.slice(0,5).map(([slug,units],i)=>{const product=products.find(p=>p.id===slug);return <li key={slug}><Link className="admin-bestseller-card" to={'/product/'+slug}><span className="admin-bestseller-rank" aria-label={'Rank '+(i+1)}>{String(i+1).padStart(2,'0')}</span><div className="admin-bestseller-photo">{product?<ProductImage product={product}/>:<Package size={28} aria-label="Product photo unavailable"/>}</div><div className="admin-bestseller-copy"><strong>{product?.name||slug}</strong>{sales?.[slug]!==undefined?<small>Delivered sales · {money(sales[slug]/100)}</small>:product&&<small>Current price · {money(product.demoPricePKR)}</small>}<span className="admin-units-pill">{units.toLocaleString('en-PK')} units sold</span></div><ArrowUpRight size={16} className="admin-bestseller-arrow" aria-hidden="true"/></Link></li>})}</ol>:<p>No delivered products yet.</p>}</section>;
+}

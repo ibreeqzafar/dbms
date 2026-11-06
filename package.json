@@ -9,7 +9,7 @@
     "test": "node --experimental-strip-types --test src/lib/domain.test.ts src/lib/concierge.test.ts src/lib/auth-navigation.test.ts src/lib/reviews.test.ts src/lib/async-deadline.test.ts src/lib/chat-format.test.ts src/lib/featured-products.test.ts src/lib/breadcrumbs.test.ts && node scripts/catalogue-check.mjs",
     "seed": "node scripts/seed.mjs",
     "test:database": "node scripts/database-check.mjs",
-    "test:admin": "node --experimental-strip-types --test src/lib/admin-report.test.ts && node scripts/admin-security-check.mjs",
+    "test:admin": "node --experimental-strip-types --test src/lib/admin-report.test.ts src/lib/admin-analytics.test.ts && node scripts/admin-security-check.mjs",
     "test:studio": "node --experimental-strip-types --test src/lib/studio-tools.test.ts src/lib/studio-image.test.ts && node scripts/studio-images-check.mjs",
     "test:support": "node --experimental-strip-types --test src/lib/async-deadline.test.ts src/lib/chat-format.test.ts src/lib/support-reply.test.ts && node scripts/support-security-check.mjs && node scripts/support-tickets-check.mjs && node scripts/bestsellers-check.mjs",
     "test:reviews": "node scripts/customer-reviews-check.mjs && node --experimental-strip-types --test src/lib/admin-test-data.test.ts src/lib/project-presentation.test.ts src/lib/order-presentation.test.ts"

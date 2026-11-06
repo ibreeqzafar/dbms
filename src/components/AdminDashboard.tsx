@@ -1,4 +1,4 @@
-import {useEffect,useMemo,useRef,useState} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {Link,useSearchParams} from 'react-router-dom';
 import {ArrowUpRight,BarChart3,Download,LayoutDashboard,LockKeyhole,Package,Plus,RefreshCw,Settings2,ShieldCheck,ShoppingBag,Tag,Users} from 'lucide-react';
 import {useStore} from '../lib/store';
@@ -7,12 +7,13 @@ import {withDeadline} from '../lib/async-deadline';
 import {money,roomNames} from '../lib/domain';
 import {sampleProduct} from '../lib/presentation';
 import {discountPercent} from '../lib/sales';
-import {downloadCsv,summarizeOrders} from '../lib/admin-report';
+import {downloadCsv} from '../lib/admin-report';
 import type {StoreOrder} from '../lib/checkout';
 import type {Product} from '../types';
 import AdminMfa from './AdminMfa';
 import AdminOrders from './AdminOrders';
 import AdminTestData from './AdminTestData';
+import AdminAnalytics from './AdminAnalytics';
 import AdminNewReference from './AdminNewReference';
 import {CustomerDirectory} from './CustomerRelationships';
 import SupportTickets from './SupportTickets';
@@ -29,7 +30,7 @@ export default function AdminDashboard(){
 function VerifiedDashboard(){
  const {profile,signOut,refreshProducts,setNotice}=useStore(),[params,setParams]=useSearchParams();
  const demoData=params.get('data')!=='live'||params.get('view')==='test-data';
- const demoSection=demoData&&['overview','orders','customers'].includes(params.get('view')||'overview');
+ const demoSection=demoData&&['orders','customers'].includes(params.get('view')||'overview');
  const section:Section=sections.some(s=>s.id===params.get('view'))?params.get('view') as Section:'overview';
  const [verified,setVerified]=useState(false),[checking,setChecking]=useState(true),[revision,setRevision]=useState(0),[days,setDays]=useState('30');
  const [products,setProducts]=useState<Product[]>([]),[orders,setOrders]=useState<StoreOrder[]>([]),[customers,setCustomers]=useState<number|null>(null),[busy,setBusy]=useState(false),[error,setError]=useState(''),[updated,setUpdated]=useState('');
@@ -38,15 +39,14 @@ function VerifiedDashboard(){
   if(!verified)return;let alive=true;setBusy(true);setError('');setUpdated('');setProducts([]);setOrders([]);setCustomers(null);
   (async()=>{
    const assurance=await supabase!.auth.mfa.getAuthenticatorAssuranceLevel();if(assurance.error||assurance.data?.currentLevel!=='aal2'){if(alive)setVerified(false);return}
-   const since=new Date(Date.now()-Number(days)*86400000).toISOString();
+   const since=section==='overview'?'1970-01-01T00:00:00.000Z':new Date(Date.now()-Number(days)*86400000).toISOString();
    const loadProducts=async()=>{const rows:Product[]=[];for(let offset=0;;offset+=500){const {data,error}=await supabase!.from('products').select('slug,reference,demo_price_paisa,active,variants(stock_on_hand,stock_reserved)').order('slug').range(offset,offset+499);if(error)throw error;for(const p of data||[])rows.push(sampleProduct({...p.reference,id:p.slug,active:p.active,demoPricePKR:p.demo_price_paisa/100,demoStock:p.variants.reduce((s:number,v:{stock_on_hand:number;stock_reserved:number})=>s+v.stock_on_hand-v.stock_reserved,0)} as Product));if(!data||data.length<500){if(alive)setProducts(rows);return rows}}};
    const loadOrders=async()=>{const rows:StoreOrder[]=[];for(let offset=0;;offset+=500){const {data,error}=await supabase!.from('store_orders').select('*').gte('created_at',since).order('created_at',{ascending:false}).order('id').range(offset,offset+499);if(error)throw error;rows.push(...(data||[]) as StoreOrder[]);if(!data||data.length<500)return rows}};
    const [p,o,c]=await Promise.all([loadProducts(),loadOrders(),supabase!.from('customer_contacts').select('owner_id',{count:'exact',head:true})]);if(c.error)throw c.error;
    if(alive){setProducts(p);setOrders(o);setCustomers(c.count||0);setUpdated(new Date().toLocaleTimeString())}
   })().catch(()=>{if(alive)setError('Store data could not load. Verify your MFA and database connection, then refresh. Figures are hidden until the complete report loads.')}).finally(()=>{if(alive)setBusy(false)});
   return()=>{alive=false};
- },[verified,revision,days]);
- const metrics=useMemo(()=>summarizeOrders(orders),[orders]);
+ },[verified,revision,days,section]);
  const refresh=()=>{setRevision(n=>n+1);refreshProducts().catch(()=>setNotice('Storefront catalogue refresh failed. Reload before shopping.'))};
  const exportOrders=()=>downloadCsv(`essyra-orders-${days}-days.csv`,[['Order','Date','Customer','City','Status','Payment','Total PKR'],...orders.map(o=>['ESS-'+o.id,o.created_at,o.customer_name,o.city,o.order_state,o.payment_state,(o.total_paisa/100).toFixed(2)])]);
  const navigate=(id:Section)=>setParams({...id==='overview'?{}:{view:id},data:demoData?'demo':'live'});
@@ -54,14 +54,10 @@ function VerifiedDashboard(){
  return <div className="admin-shell"><aside className="admin-sidebar"><Link className="wordmark" to="/">ESSYRA<span>STORE MANAGEMENT</span></Link><span className="admin-private"><ShieldCheck size={14}/> PRIVATE WORKSPACE</span><nav aria-label="Administration">{sections.filter(s=>s.id!=='test-data').map(s=><button key={s.id} aria-current={section===s.id?'page':undefined} onClick={()=>navigate(s.id)}><s.icon size={18}/>{s.name}</button>)}</nav><div className="admin-sidebar-bottom"><Link to="/">View storefront <ArrowUpRight size={15}/></Link><span>{profile?.email}</span><button onClick={signOut}>Sign out</button></div></aside>
  <div className="admin-workspace"><header className="admin-topbar"><div><span className="eyebrow">ESSYRA / ADMINISTRATION</span><h1>{sections.find(s=>s.id===section)?.name}</h1></div><span className="admin-secure"><LockKeyhole size={14}/>{verified?'MFA verified':'Verification required'}</span></header>
  {checking?<p role="status">Checking administrator verification…</p>:!verified?<section className="admin-verification"><ShieldCheck size={28}/><h2>Verify before you manage.</h2><p>Your administrator role is recognised. Complete two-step verification to access customer records, orders and product controls.</p><AdminMfa onVerified={()=>setVerified(true)}/></section>:<>
- <div className="admin-toolbar"><p>{busy?'Loading store data…':updated?`Store catalogue updated ${updated}`:'Store data unavailable'}</p><div><label className="sr-only" htmlFor="admin-records">Records</label><select id="admin-records" value={demoData?'historical':'store'} onChange={e=>chooseData(e.target.value==='historical')}><option value="historical">Historical records</option><option value="store">Store records</option></select>{!demoSection&&['overview','orders'].includes(section)&&<><label className="sr-only" htmlFor="report-range">Order report period</label><select id="report-range" value={days} onChange={e=>setDays(e.target.value)}><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last 365 days</option></select></>}<button className="admin-button" onClick={refresh} disabled={busy}><RefreshCw size={15}/> Refresh</button></div></div>
+ <div className="admin-toolbar"><p>{busy?'Loading store data…':updated?`Store catalogue updated ${updated}`:'Store data unavailable'}</p><div>{section!=='overview'&&<><label className="sr-only" htmlFor="admin-records">Records</label><select id="admin-records" value={demoData?'historical':'store'} onChange={e=>chooseData(e.target.value==='historical')}><option value="historical">Historical records</option><option value="store">Store records</option></select></>}{!demoSection&&section==='orders'&&<><label className="sr-only" htmlFor="report-range">Order report period</label><select id="report-range" value={days} onChange={e=>setDays(e.target.value)}><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last 365 days</option></select></>}<button className="admin-button" onClick={refresh} disabled={busy}><RefreshCw size={15}/> Refresh</button></div></div>
  {error&&!demoSection&&<p className="error" role="alert">{error}</p>}
  {demoSection&&<AdminTestData key={section} initialView={section} standalone={false} refreshKey={revision}/>}
- {!demoData&&section==='overview'&&<>
- <div className="admin-welcome"><div><span className="eyebrow">YOUR STORE AT A GLANCE</span><h2>Every detail.<br/><em>Under your care.</em></h2><p>Orders and collected payments for the last {days} days. Catalogue and customer counts reflect the current store.</p></div><button className="admin-button primary" onClick={()=>navigate('products')}><Plus size={17}/> Manage products</button></div>
- <div className="admin-metrics">{[{label:'Collected payments',value:money(metrics.collected/100),note:'Recorded as paid; excludes cancelled orders',icon:BarChart3},{label:'Customer orders',value:metrics.count,note:`${metrics.pending} awaiting fulfilment`,icon:ShoppingBag},{label:'Active products',value:products.filter(p=>p.active!==false).length,note:`${products.filter(p=>p.active!==false&&p.demoStock===0).length} sold out`,icon:Package},{label:'Registered customers',value:customers??0,note:'Private customer directory',icon:Users}].map(m=><section className="admin-metric" key={m.label}><div><span>{m.label}</span><m.icon size={19}/></div><strong>{busy||error||!updated?'—':m.value}</strong><small>{m.note}</small></section>)}</div>
- <div className="admin-overview-grid"><section className="admin-panel"><div className="admin-panel-heading"><h2>Recent orders</h2><button className="text-button" onClick={()=>navigate('orders')}>View all orders</button></div>{!busy&&!error&&updated&&(orders.length?<div className="admin-table"><table><thead><tr><th>Order</th><th>Customer</th><th>Status</th><th>Total</th></tr></thead><tbody>{orders.slice(0,6).map(o=><tr key={o.id}><td>ESS-{o.id.slice(0,8).toUpperCase()}</td><td>{o.customer_name}</td><td><span className="admin-status">{o.order_state}</span></td><td>{money(o.total_paisa/100)}</td></tr>)}</tbody></table></div>:<div className="admin-empty"><ShoppingBag size={27}/><h3>No orders in this period.</h3><p>Submitted customer orders will appear here.</p></div>)}</section>
- <section className="admin-panel"><div className="admin-panel-heading"><h2>Needs attention</h2></div><button className="admin-attention" onClick={()=>navigate('orders')}><span>Orders awaiting fulfilment</span><strong>{busy||error?'—':metrics.pending}</strong></button><button className="admin-attention" onClick={()=>navigate('products')}><span>Low stock · 1–3 available</span><strong>{busy||error?'—':products.filter(p=>p.active!==false&&p.demoStock>0&&p.demoStock<=3).length}</strong></button><button className="admin-attention" onClick={()=>navigate('sales')}><span>Products on sale</span><strong>{busy||error?'—':products.filter(p=>discountPercent(p)>0).length}</strong></button><p className="caption">Visitor tracking is not connected. Anonymous visitors are not identified. COD collection and inventory are recorded by staff.</p></section></div></>}
+ {section==='overview'&&<AdminAnalytics orders={orders} products={products} customers={customers} loading={busy} error={error} refreshKey={revision} onOrders={()=>navigate('orders')} onProducts={()=>navigate('products')}/>}
  {!demoData&&section==='orders'&&<><div className="admin-section-actions"><span>Review, fulfil or cancel orders. Record COD when collected.</span><button className="admin-button" disabled={busy||!!error||!updated} onClick={exportOrders}><Download size={15}/> Export {days}-day report</button></div><AdminOrders days={days} onUpdated={refresh}/></>}
  {(section==='products'||section==='sales')&&<ProductManager products={products} salesOnly={section==='sales'} loading={busy||products.length===0} onRefresh={refresh}/>}
  {!demoData&&section==='customers'&&<CustomerDirectory/>}

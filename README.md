@@ -36,7 +36,7 @@ Built as a university DBMS project, it brings the interface, relational data mod
 | **Design Studio** | Preferences, budget and placement constraints; catalogue matching; furniture cutouts; adjustable room compositions and private saved designs. |
 | **ESSYRA Care** | Shopping questions, catalogue searches, product comparisons, policy guidance and links to authenticated order/support tools. |
 | **Customer accounts** | Email/password and configured Google sign-in, password recovery, owned orders and delivered-purchase reviews. |
-| **Store administration** | Products, inventory, sale prices, orders, customer records and reports, protected by administrator permissions and MFA. |
+| **Store administration** | Products, inventory, sale prices, orders, customer records and combined historical/current sales analytics: monthly comparisons, best sellers, recorded collections, optional profit planning and CSV exports. Protected by administrator permissions and MFA. |
 | **Presentation** | Light/dark themes, responsive layouts, cinematic interiors, breadcrumbs, page metadata, sitemap and social previews. |
 
 ### Agent status
